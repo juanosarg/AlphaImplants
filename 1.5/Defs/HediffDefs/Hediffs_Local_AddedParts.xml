@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Added body parts -->
+
+	<HediffDef Name="AI_MutantAddedBodyPartBase" Abstract="True">
+		<hediffClass>Hediff_AddedPart</hediffClass>
+		<defaultLabelColor>(90, 138, 105)</defaultLabelColor>
+		<isBad>false</isBad>
+	</HediffDef>
+
+
+
+	<HediffDef ParentName="AI_MutantAddedBodyPartBase">
+		<defName>AI_MutantLeg</defName>
+		<description>This leg seems to be covered in a slick secretion that constantly drips from every pore. Something seems... off about it, as if it wasn't a completely natural creation.</description>
+		<label>mutant leg</label>
+		<labelNoun>a mutant leg</labelNoun>
+		<spawnThingOnRemoved>AI_MutantLeg</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<PsychicSensitivity>0.1</PsychicSensitivity>
+					<ToxicResistance>-0.1</ToxicResistance>
+				</statOffsets>
+			</li>
+		</stages>
+		<addedPartProps>
+			<solid>false</solid>
+			<partEfficiency>1</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+
+
+</Defs>

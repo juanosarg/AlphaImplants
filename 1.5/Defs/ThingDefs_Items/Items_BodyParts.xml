@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+
+  
+
+  <ThingDef Name="AI_BodyPartMutantBase" ParentName="BodyPartBase"  Abstract="True">
+    <graphicData>
+      <texPath>Things/Item/AI_AnimalBodyPart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <thingCategories>
+      <li>AI_ImplantCategory</li>
+    </thingCategories>
+    <statBases>
+      <DeteriorationRate>4.0</DeteriorationRate>
+    </statBases>
+	<tickerType>Normal</tickerType>
+	<tradeability>Sellable</tradeability>
+	
+  </ThingDef>
+
+  <ThingDef ParentName="AI_BodyPartMutantBase">
+    <defName>AI_MutantLeg</defName>
+	<graphicData>
+      <texPath>Things/Item/AI_AnimalBodyPart</texPath>
+    </graphicData>
+    <label>mutant leg</label>
+    <description>This leg seems to be covered in a slick secretion that constantly drips from every pore. Something seems... off about it, as if it wasn't a completely natural creation.</description>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+  </ThingDef>
+
+
+
+ 
+  
+</Defs>

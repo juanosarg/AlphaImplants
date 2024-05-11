@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>AI_Crude_InstallMutantLeg</defName>
+		<label>install crude leg</label>
+		<description>Install a mutant leg.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing mutant leg.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>3</Medicine>
+		</skillRequirements>
+		
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_MutantLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AI_MutantLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_MutantLeg</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>AI_Prosthetic_InstallMutantLeg</defName>
+		<label>install prosthetic leg</label>
+		<description>Install a mutant leg.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing mutant leg.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>3</Medicine>
+		</skillRequirements>
+		
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_MutantLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AI_MutantLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_MutantLeg</addsHediff>
+	</RecipeDef>
+<RecipeDef ParentName="SurgeryFlesh">
+		<defName>AI_Bionic_InstallMutantLeg</defName>
+		<label>install bionic leg</label>
+		<description>Install a mutant leg.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing mutant leg.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>3</Medicine>
+		</skillRequirements>
+		
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_MutantLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AI_MutantLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_MutantLeg</addsHediff>
+	</RecipeDef>
+	
+</Defs>
