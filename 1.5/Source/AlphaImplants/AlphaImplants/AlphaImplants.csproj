@@ -293,9 +293,14 @@
   <ItemGroup>
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
-    <Compile Include="Harmony\ThingDef_AllRecipes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecipeWorkers\Recipe_InstallArtificialBodyPart_Archotech.cs" />
+    <Compile Include="RecipeWorkers\Recipe_InstallArtificialBodyPart_Bionic.cs" />
+    <Compile Include="RecipeWorkers\Recipe_InstallArtificialBodyPart_Prosthetic.cs" />
     <Compile Include="RefreshCaches.cs" />
+    <Compile Include="Settings\AlphaImplants_Settings.cs" />
+    <Compile Include="Settings\AlphaImplants_SettingsController.cs" />
+    <Compile Include="Settings\SettingsHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Lib.Harmony">

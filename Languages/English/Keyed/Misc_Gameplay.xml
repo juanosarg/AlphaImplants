@@ -3,12 +3,19 @@
 
 
 
-	<!-- Misc -->
 	
+	<!-- Mod options -->
+	
+	<AI_Reset>Reset</AI_Reset>
+	
+	<AI_ProstheticBodyLimit>Prosthetic implant body limit</AI_ProstheticBodyLimit>
+	<AI_ProstheticBodyLimitTooltip>Minimum body size allowed for prosthetic body implants. Any animal below this body size can't receive these implants.</AI_ProstheticBodyLimitTooltip>
+	
+	<AI_BionicBodyLimit>Bionic implant body limit</AI_BionicBodyLimit>
+	<AI_BionicBodyLimitTooltip>Minimum body size allowed for bionic body implants. Any animal below this body size can't receive these implants.</AI_BionicBodyLimitTooltip>
 
-
-
-
+	<AI_ArchotechBodyLimit>Archotech implant body limit</AI_ArchotechBodyLimit>
+	<AI_ArchotechBodyLimitTooltip>Minimum body size allowed for archotech body implants. Any animal below this body size can't receive these implants.</AI_ArchotechBodyLimitTooltip>
 
 
 

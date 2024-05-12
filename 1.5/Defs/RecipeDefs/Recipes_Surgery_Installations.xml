@@ -50,7 +50,7 @@
 		<defName>AI_Prosthetic_InstallMutantLeg</defName>
 		<label>install prosthetic leg</label>
 		<description>Install a mutant leg.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>AlphaImplants.Recipe_InstallArtificialBodyPart_Prosthetic</workerClass>
 		<jobString>Installing mutant leg.</jobString>
 		<workAmount>2000</workAmount>
 		<skillRequirements>
@@ -92,7 +92,7 @@
 		<defName>AI_Bionic_InstallMutantLeg</defName>
 		<label>install bionic leg</label>
 		<description>Install a mutant leg.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>AlphaImplants.Recipe_InstallArtificialBodyPart_Bionic</workerClass>
 		<jobString>Installing mutant leg.</jobString>
 		<workAmount>2000</workAmount>
 		<skillRequirements>
