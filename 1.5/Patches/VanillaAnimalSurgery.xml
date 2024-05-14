@@ -12,11 +12,18 @@
 				<xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
 				<value>
 					
-					<li>AI_Crude_InstallMutantLeg</li>
-					<li>AI_Prosthetic_InstallMutantLeg</li>
-					<li>AI_Bionic_InstallMutantLeg</li>
+					<li>AI_Crude_InstallWoodenLimb</li>
+					<li>AI_Crude_InstallAnimalDenture</li>
+					<li>AI_Crude_InstallClothTail</li>
 					
-
+					<li>AI_AnimalProstheticLeg</li>
+					<li>AI_AnimalProstheticArm</li>
+					<li>AI_AnimalProstheticTail</li>
+					<li>AI_AnimalProstheticJaw</li>
+					<li>AI_AnimalProstheticHeart</li>
+					
+					<li>AI_AnimalBionicLeg</li>
+					
 										
 
 				</value>

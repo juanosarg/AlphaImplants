@@ -1,12 +1,56 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Verse;
 
-namespace AlphaImplants.HediffComps.Properties
+namespace AlphaImplants
 {
-    internal class HediffCompProperties_VerbGiverScaling
+    public class HediffCompProperties_VerbGiverScaling : HediffCompProperties
     {
+        public List<VerbProperties> verbs;
+
+        public List<Tool> tools;
+
+        public ImplementOwnerTypeDef ownerTypeOverride;
+
+        public HediffCompProperties_VerbGiverScaling()
+        {
+            compClass = typeof(HediffComp_VerbGiverScaling);
+        }
+
+        public override void PostLoad()
+        {
+            base.PostLoad();
+            if (tools != null)
+            {
+                for (int i = 0; i < tools.Count; i++)
+                {
+                    tools[i].id = i.ToString();
+                }
+            }
+        }
+
+        public override IEnumerable<string> ConfigErrors(HediffDef parentDef)
+        {
+            foreach (string item in base.ConfigErrors(parentDef))
+            {
+                yield return item;
+            }
+            if (tools == null)
+            {
+                yield break;
+            }
+            Tool tool = tools.SelectMany((Tool lhs) => tools.Where((Tool rhs) => lhs != rhs && lhs.id == rhs.id)).FirstOrDefault();
+            if (tool != null)
+            {
+                yield return $"duplicate hediff tool id {tool.id}";
+            }
+            foreach (Tool tool2 in tools)
+            {
+                foreach (string item2 in tool2.ConfigErrors())
+                {
+                    yield return item2;
+                }
+            }
+        }
     }
 }

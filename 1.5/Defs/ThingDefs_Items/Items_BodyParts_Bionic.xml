@@ -38,7 +38,7 @@
 	<ThingDef ParentName="AI_AnimalBionicPartBase">
 		<defName>AI_AnimalBionicLeg</defName>
 		<label>animal bionic leg</label>
-		<labelNoun>an animal bionic leg</labelNoun>
+		
 		<description>An animal bionic leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalBionicLeg</RecipeDef>

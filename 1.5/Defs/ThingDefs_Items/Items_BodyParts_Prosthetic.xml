@@ -32,7 +32,7 @@
 	<ThingDef ParentName="AI_AnimalProstheticPartBase">
 		<defName>AI_AnimalProstheticLeg</defName>
 		<label>animal prosthetic leg</label>
-		<labelNoun>an animal prosthetic leg</labelNoun>
+	
 		<description>An animal prosthetic leg. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real leg.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalProstheticLeg</RecipeDef>
@@ -51,7 +51,7 @@
 	<ThingDef ParentName="AI_AnimalProstheticPartBase">
 		<defName>AI_AnimalProstheticArm</defName>
 		<label>animal prosthetic arm</label>
-		<labelNoun>an animal prosthetic arm</labelNoun>
+		
 		<description>An animal prosthetic arm. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real arm.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalProstheticArm</RecipeDef>
@@ -70,7 +70,7 @@
 	<ThingDef ParentName="AI_AnimalProstheticPartBase">
 		<defName>AI_AnimalProstheticTail</defName>
 		<label>animal prosthetic tail</label>
-		<labelNoun>an animal prosthetic tail</labelNoun>
+	
 		<description>An animal prosthetic tail, crafted to replace a lost or injured tail, providing support, balance, and expression while facilitating natural movement and comfort.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalProstheticTail</RecipeDef>
@@ -89,7 +89,7 @@
 	<ThingDef ParentName="AI_AnimalProstheticPartBase">
 		<defName>AI_AnimalProstheticJaw</defName>
 		<label>animal prosthetic jaw</label>
-		<labelNoun>an animal prosthetic jaw</labelNoun>
+		
 		<description>An animal prosthetic jaw, tailored to restore oral function and aesthetics, enabling animals to eat, drink, and interact comfortably.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalProstheticJaw</RecipeDef>
@@ -108,7 +108,7 @@
 	<ThingDef ParentName="AI_AnimalProstheticPartBase">
 		<defName>AI_AnimalProstheticHeart</defName>
 		<label>animal prosthetic heart</label>
-		<labelNoun>an animal prosthetic heart</labelNoun>
+		
 		<description>An animal prosthetic heart. It contains an electric motor that pumps blood smoothly around the body.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalProstheticHeart</RecipeDef>

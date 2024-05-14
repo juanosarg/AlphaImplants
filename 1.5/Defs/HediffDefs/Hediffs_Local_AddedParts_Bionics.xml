@@ -3,7 +3,7 @@
 	<!-- Added body parts -->
 	<HediffDef Name="AI_BionicBodyPartBase" ParentName="ImplantHediffBase" Abstract="True">
 		<hediffClass>Hediff_AddedPart</hediffClass>
-		<defaultLabelColor>(90, 138, 105)</defaultLabelColor>
+		<defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
 		<isBad>false</isBad>
 		<priceImpact>true</priceImpact>
 	</HediffDef>
