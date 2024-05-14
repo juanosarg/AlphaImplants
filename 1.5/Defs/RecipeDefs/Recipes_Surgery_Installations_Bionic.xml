@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<workAmount>2500</workAmount>
+		<workerClass>AlphaImplants.Recipe_InstallArtificialBodyPart_Bionic</workerClass>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+		<defName>AI_AnimalBionicLeg</defName>
+		<label>install animal bionic leg</label>
+		<description>Install an animal bionic leg.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicLeg</ThingDef>
+			<HediffDef>AI_AnimalBionicLeg</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal bionic leg.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalBionicLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalBionicLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalBionicLeg</addsHediff>
+	</RecipeDef>
+</Defs>

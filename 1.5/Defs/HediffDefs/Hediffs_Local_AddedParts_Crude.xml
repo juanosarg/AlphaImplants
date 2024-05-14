@@ -34,12 +34,21 @@
 		<defName>AI_ClothTail</defName>
 		<label>cloth tail</label>
 		<labelNoun>a cloth tail</labelNoun>
-		<description>A crude cloth tail replacement to offer animals some comfort.</description>
+		<description>A crude cloth tail replacement to offer animals some comfort. Allows the animal to not wander around without a tail, at the cost of a tiny bit of movement.</description>
 		<priceImpact>false</priceImpact>
 		<addedPartProps>
 			<solid>true</solid>
-			<partEfficiency>0.5</partEfficiency>
 		</addedPartProps>
 		<spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
 	</HediffDef>
 </Defs>

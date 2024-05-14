@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="AI_AnimalBionicPartBase" ParentName="BodyPartBase" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Item/AI_Implant_Bionic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<thingCategories>
+			<li>AI_ImplantCategory</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Bionic</li>
+		</tradeTags>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<statBases>
+			<WorkToMake>26000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<displayPriority>600</displayPriority>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>AI_AnimalProstheticsTable</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+			<researchPrerequisite>Bionics</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicLeg</defName>
+		<label>animal bionic leg</label>
+		<labelNoun>an animal bionic leg</labelNoun>
+		<description>An animal bionic leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicLeg</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>8</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>8</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+</Defs>

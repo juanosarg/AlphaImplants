@@ -80,4 +80,91 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>AI_AnimalProstheticArm</addsHediff>
 	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProstheticPartBase">
+		<defName>AI_AnimalProstheticTail</defName>
+		<label>install animal prosthetic tail</label>
+		<description>Install an animal prosthetic tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticTail</ThingDef>
+			<HediffDef>AI_AnimalProstheticTail</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic tail.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Tail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalProstheticTail</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProstheticPartBase">
+		<defName>AI_AnimalProstheticJaw</defName>
+		<label>install animal prosthetic jaw</label>
+		<description>Install an animal prosthetic jaw.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticJaw</ThingDef>
+			<HediffDef>AI_AnimalProstheticJaw</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic jaw.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticJaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticJaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Jaw</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalProstheticJaw</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProstheticPartBase">
+		<defName>AI_AnimalProstheticHeart</defName>
+		<label>install animal prosthetic heart</label>
+		<description>Install an animal prosthetic heart.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticHeart</ThingDef>
+			<HediffDef>AI_AnimalProstheticHeart</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic heart.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticHeart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticHeart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Heart</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalProstheticHeart</addsHediff>
+	</RecipeDef>
 </Defs>

@@ -20,6 +20,21 @@
 			<solid>true</solid>
 			<partEfficiency>0.85</partEfficiency>
 		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>prosthetic leg</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>8.2</power>
+						<!-- Same as natural fist -->
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
 	</HediffDef>
 	<HediffDef ParentName="AI_ProstheticBodyPartBase">
 		<defName>AI_AnimalProstheticArm</defName>
@@ -33,7 +48,7 @@
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
 					<li>
-						<label>fist</label>
+						<label>prosthetic arm</label>
 						<capacities>
 							<li>Blunt</li>
 						</capacities>
@@ -49,5 +64,56 @@
 			<solid>true</solid>
 			<partEfficiency>0.5</partEfficiency>
 		</addedPartProps>
+	</HediffDef>
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticTail</defName>
+		<label>animal prosthetic tail</label>
+		<labelNoun>an animal prosthetic tail</labelNoun>
+		<description>An installed animal prosthetic tail, crafted to replace a lost or injured tail, providing support, balance, and expression while facilitating natural movement and comfort.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticTail</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+		<spawnThingOnRemoved>AI_AnimalProstheticTail</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticJaw</defName>
+		<label>animal prosthetic jaw</label>
+		<labelNoun>an animal prosthetic jaw</labelNoun>
+		<description>An installed animal prosthetic jaw, tailored to restore oral function and aesthetics, enabling animals to eat, drink, and interact comfortably.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticJaw</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.95</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>AI_AnimalProstheticJaw</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticHeart</defName>
+		<label>animal prosthetic heart</label>
+		<labelNoun>an animal prosthetic heart</labelNoun>
+		<description>An installed animal prosthetic heart. It contains an electric motor that pumps blood smoothly around the body.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticHeart</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.80</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>AI_AnimalProstheticHeart</spawnThingOnRemoved>
 	</HediffDef>
 </Defs>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Added body parts -->
+	<HediffDef Name="AI_BionicBodyPartBase" ParentName="ImplantHediffBase" Abstract="True">
+		<hediffClass>Hediff_AddedPart</hediffClass>
+		<defaultLabelColor>(90, 138, 105)</defaultLabelColor>
+		<isBad>false</isBad>
+		<priceImpact>true</priceImpact>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicLeg</defName>
+		<label>animal bionic leg</label>
+		<labelNoun>an animal bionic leg</labelNoun>
+		<description>An installed animal bionic leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicLeg</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicLeg</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>bionic leg</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>18</power>
+						<!-- Same as natural fist -->
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>
