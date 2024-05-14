@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Added body parts -->
+	<HediffDef Name="AI_ProstheticBodyPartBase" ParentName="ImplantHediffBase" Abstract="True">
+		<hediffClass>Hediff_AddedPart</hediffClass>
+		<defaultLabelColor>(90, 138, 105)</defaultLabelColor>
+		<isBad>false</isBad>
+		<priceImpact>true</priceImpact>
+	</HediffDef>
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticLeg</defName>
+		<label>animal prosthetic leg</label>
+		<labelNoun>an animal prosthetic leg</labelNoun>
+		<description>An installed animal prosthetic leg. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real leg.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticLeg</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalProstheticLeg</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.85</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticArm</defName>
+		<label>animal prosthetic arm</label>
+		<labelNoun>an animal prosthetic arm</labelNoun>
+		<description>An installed animal prosthetic arm. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticArm</ThingDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>8.2</power>
+						<!-- Same as natural fist -->
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>AI_AnimalProstheticArm</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.5</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+</Defs>

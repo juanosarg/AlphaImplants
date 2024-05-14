@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<workAmount>2500</workAmount>
+		<workerClass>AlphaImplants.Recipe_InstallArtificialBodyPart_Prosthetic</workerClass>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProstheticPartBase">
+		<defName>AI_AnimalProstheticLeg</defName>
+		<label>install animal prosthetic leg</label>
+		<description>Install an animal prosthetic leg.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticLeg</ThingDef>
+			<HediffDef>AI_AnimalProstheticLeg</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic leg.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalProstheticLeg</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProstheticPartBase">
+		<defName>AI_AnimalProstheticArm</defName>
+		<label>install animal prosthetic arm</label>
+		<description>Install an animal prosthetic arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticArm</ThingDef>
+			<HediffDef>AI_AnimalProstheticArm</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic arm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalProstheticArm</addsHediff>
+	</RecipeDef>
+</Defs>

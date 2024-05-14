@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Added body parts -->
+	<HediffDef Name="AI_CrudeBodyPartBase" ParentName="ImplantHediffBase" Abstract="True">
+		<hediffClass>Hediff_AddedPart</hediffClass>
+		<defaultLabelColor>(90, 138, 105)</defaultLabelColor>
+		<isBad>false</isBad>
+		<priceImpact>true</priceImpact>
+	</HediffDef>
+	<HediffDef ParentName="AI_CrudeBodyPartBase">
+		<defName>AI_WoodenLimb</defName>
+		<label>wooden limb</label>
+		<labelNoun>wooden limb</labelNoun>
+		<description>A custom-designed wooden limb replacement that provides the animal with mobility and support after limb loss, although not much.</description>
+		<priceImpact>false</priceImpact>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.60</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>WoodLog</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="AI_CrudeBodyPartBase">
+		<defName>AI_AnimalDenture</defName>
+		<label>animal denture</label>
+		<labelNoun>an animal denture</labelNoun>
+		<description>A custom-made oral appliance crafted to restore dental function and aesthetics. Allows for some basic functionality like eating.</description>
+		<priceImpact>false</priceImpact>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.80</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+	<HediffDef ParentName="AI_CrudeBodyPartBase">
+		<defName>AI_ClothTail</defName>
+		<label>cloth tail</label>
+		<labelNoun>a cloth tail</labelNoun>
+		<description>A crude cloth tail replacement to offer animals some comfort.</description>
+		<priceImpact>false</priceImpact>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.5</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+	</HediffDef>
+</Defs>

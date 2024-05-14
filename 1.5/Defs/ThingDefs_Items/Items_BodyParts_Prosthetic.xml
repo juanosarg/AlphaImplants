@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="AI_AnimalProstheticPartBase" ParentName="BodyPartBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Things/Item/AI_Implant_Prosthetic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<thingCategories>
+			<li>AI_ImplantCategory</li>
+		</thingCategories>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<displayPriority>600</displayPriority>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>AI_AnimalProstheticsTable</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+			<researchPrerequisite>Prosthetics</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticLeg</defName>
+		<label>animal prosthetic leg</label>
+		<labelNoun>an animal prosthetic leg</labelNoun>
+		<description>An installed animal prosthetic leg. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real leg.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticLeg</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>8</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticArm</defName>
+		<label>animal prosthetic arm</label>
+		<labelNoun>an animal prosthetic arm</labelNoun>
+		<description>An installed animal prosthetic arm. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real arm.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticArm</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticHeart</defName>
+		<label>animal prosthetic arm</label>
+		<labelNoun>an animal prosthetic arm</labelNoun>
+		<description>An installed animal prosthetic arm. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real arm.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticArm</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+</Defs>
