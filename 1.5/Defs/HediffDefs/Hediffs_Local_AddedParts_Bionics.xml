@@ -12,6 +12,7 @@
 		<label>animal bionic leg</label>
 		<labelNoun>an animal bionic leg</labelNoun>
 		<description>An installed animal bionic leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
+		<extraTooltip>Provides a Scratch attack with a strength 50% higher than the animal's original leg / paws / claws attack, plus 80% of its cooldown.</extraTooltip>
 		<descriptionHyperlinks>
 			<ThingDef>AI_AnimalBionicLeg</ThingDef>
 		</descriptionHyperlinks>
@@ -29,12 +30,162 @@
 						<capacities>
 							<li>Scratch</li>
 						</capacities>
-						<power>18</power>
-						<!-- Same as natural fist -->
-						<cooldownTime>2</cooldownTime>
+						<power>1</power>
+						<cooldownTime>1</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
 					</li>
 				</tools>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>FrontLeftLeg</li>
+					<li>FrontRightLeg</li>
+					<li>FrontLeftPaw</li>
+					<li>FrontRightPaw</li>
+					<li>FrontLeftClaws</li>
+					<li>FrontRightClaws</li>
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>1.5</powerMultiplier>
+				<cooldownTimeMultiplier>0.8</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicArm</defName>
+		<label>animal bionic arm</label>
+		<labelNoun>an animal bionic arm</labelNoun>
+		<description>An installed animal bionic arm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
+		<extraTooltip>Provides a Blunt attack with a strength 50% higher than the animal's original fist attack, plus 80% of its cooldown.</extraTooltip>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicArm</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicArm</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>bionic arm</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>1</power>
+						<cooldownTime>1</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>LeftHand</li>
+					<li>RightHand</li>
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>1.5</powerMultiplier>
+				<cooldownTimeMultiplier>0.8</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicTail</defName>
+		<label>animal bionic tail</label>
+		<labelNoun>an animal bionic tail</labelNoun>
+		<description>An installed animal bionic tail. It integrates silent mini-servos for strength and a biogel nerve-link for precise control, enhancing agility and speed. This surpasses biological tails, enabling faster and more agile movement.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicTail</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicJaw</defName>
+		<label>animal bionic jaw</label>
+		<labelNoun>an animal bionic jaw</labelNoun>
+		<description>An installed animal bionic jaw. Enhanced with quantum-synchronized actuators, cutting-edge nanomaterials and neural interface technology to optimize bite strength and control.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicJaw</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicJaw</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicHeart</defName>
+		<label>animal bionic heart</label>
+		<labelNoun>an animal bionic heart</labelNoun>
+		<description>An installed animal bionic heart. Equipped with neural-networked sensors, it offers real-time performance monitoring and adaptive response and will outperform any biological counterparts.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicHeart</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicHeart</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicSpine</defName>
+		<label>animal bionic spine</label>
+		<labelNoun>an animal bionic spine</labelNoun>
+		<description>An installed animal bionic spine. Enhanced with bio-feedback algorithms, it offers real-time biomechanical adaptation and proprioceptive feedback. It matches the performance of a biological spine.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicSpine</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicSpine</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicStomach</defName>
+		<label>animal bionic stomach</label>
+		<labelNoun>an animal bionic stomach</labelNoun>
+		<description>An installed animal bionic stomach. It incorporates nano-gastric chambers and hyper-digestive enzymes, synchronized with gastric processors for optimal nutrient absorption and metabolic efficiency. It is better than a biological stomach in almost every way.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicStomach</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicStomach</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
 	</HediffDef>
 </Defs>

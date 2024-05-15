@@ -5,7 +5,7 @@
 		<graphicData>
 			<texPath>Things/Item/AI_Implant_Bionic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.80</drawSize>
+			<drawSize>0.90</drawSize>
 		</graphicData>
 		<thingCategories>
 			<li>AI_ImplantCategory</li>
@@ -54,4 +54,119 @@
 			<li>RewardStandardMidFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicArm</defName>
+		<label>animal bionic arm</label>
+		
+		<description>An animal bionic arm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicArm</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>8</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicTail</defName>
+		<label>animal bionic tail</label>
+		
+		<description>An animal bionic tail. It integrates silent mini-servos for strength and a biogel nerve-link for precise control, enhancing agility and speed. This surpasses biological tails, enabling faster and more agile movement.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicTail</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>8</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicJaw</defName>
+		<label>animal bionic jaw</label>
+		
+		<description>An animal bionic jaw. Enhanced with quantum-synchronized actuators, cutting-edge nanomaterials and neural interface technology to optimize bite strength and control.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicJaw</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1.5</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicHeart</defName>
+		<label>animal bionic heart</label>
+		
+		<description>An animal bionic heart. Equipped with neural-networked sensors, it offers real-time performance monitoring and adaptive response and will outperform any biological counterparts.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicHeart</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>7</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicSpine</defName>
+		<label>animal bionic spine</label>
+		
+		<description>An animal bionic spine. Enhanced with bio-feedback algorithms, it offers real-time biomechanical adaptation and proprioceptive feedback. It matches the performance of a biological spine.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicSpine</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>7</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicStomach</defName>
+		<label>animal bionic stomach</label>
+		
+		<description>An animal bionic stomach. It incorporates nano-gastric chambers and hyper-digestive enzymes, synchronized with gastric processors for optimal nutrient absorption and metabolic efficiency. It is better than a biological stomach in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicStomach</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
 </Defs>

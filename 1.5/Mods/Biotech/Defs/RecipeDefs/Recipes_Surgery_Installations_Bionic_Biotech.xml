@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+		<defName>AI_AnimalBionicLung</defName>
+		<label>install animal detoxifier lung</label>
+		<description>Install an animal detoxifier lung.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicLung</ThingDef>
+			<HediffDef>AI_AnimalBionicLung</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal detoxifier lung.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalBionicLung</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalBionicLung</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Lung</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalBionicLung</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+		<defName>AI_AnimalBionicKidney</defName>
+		<label>install animal detoxifier kidney</label>
+		<description>Install an animal detoxifier kidney.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicKidney</ThingDef>
+			<HediffDef>AI_AnimalBionicKidney</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal detoxifier kidney.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalBionicKidney</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalBionicKidney</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Kidney</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalBionicKidney</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+		<defName>AI_AnimalBionicLiver</defName>
+		<label>install animal detoxifier liver</label>
+		<description>Install an animal detoxifier liver.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicLiver</ThingDef>
+			<HediffDef>AI_AnimalBionicLiver</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal detoxifier liver.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalBionicLiver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalBionicLiver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Liver</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalBionicLiver</addsHediff>
+	</RecipeDef>
+</Defs>

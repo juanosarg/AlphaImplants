@@ -12,6 +12,7 @@
 		<label>animal prosthetic leg</label>
 		<labelNoun>an animal prosthetic leg</labelNoun>
 		<description>An installed animal prosthetic leg. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real leg.</description>
+		<extraTooltip>Provides a Scratch attack with a strength and cooldown identical to the animal's original leg / paws / claws attack.</extraTooltip>
 		<descriptionHyperlinks>
 			<ThingDef>AI_AnimalProstheticLeg</ThingDef>
 		</descriptionHyperlinks>
@@ -28,33 +29,46 @@
 						<capacities>
 							<li>Scratch</li>
 						</capacities>
-						<power>8.2</power>
-						<!-- Same as natural fist -->
-						<cooldownTime>2</cooldownTime>
+						<power>1</power>
+						<cooldownTime>1</cooldownTime>
 					</li>
 				</tools>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>FrontLeftLeg</li>
+					<li>FrontRightLeg</li>
+					<li>FrontLeftPaw</li>
+					<li>FrontRightPaw</li>
+					<li>FrontLeftClaws</li>
+					<li>FrontRightClaws</li>
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>1</powerMultiplier>
+				<cooldownTimeMultiplier>1</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
 	</HediffDef>
 	<HediffDef ParentName="AI_ProstheticBodyPartBase">
 		<defName>AI_AnimalProstheticArm</defName>
 		<label>animal prosthetic arm</label>
 		<labelNoun>an animal prosthetic arm</labelNoun>
 		<description>An installed animal prosthetic arm. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real arm.</description>
+		<extraTooltip>Provides a Blunt attack with a strength and cooldown identical to the animal's original fist attack.</extraTooltip>
 		<descriptionHyperlinks>
 			<ThingDef>AI_AnimalProstheticArm</ThingDef>
 		</descriptionHyperlinks>
 		<comps>
-			<li Class="AlphaImplants.HediffCompProperties_VerbGiverScaling">
+			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
 					<li>
 						<label>prosthetic arm</label>
 						<capacities>
 							<li>Blunt</li>
 						</capacities>
-						<power>8.2</power>
-						<!-- Same as natural fist -->
-						<cooldownTime>2</cooldownTime>
+						<power>1</power>
+						<cooldownTime>1</cooldownTime>
 					</li>
 				</tools>
 			</li>
@@ -64,6 +78,17 @@
 			<solid>true</solid>
 			<partEfficiency>0.5</partEfficiency>
 		</addedPartProps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>LeftHand</li>
+					<li>RightHand</li>
+				
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>1</powerMultiplier>
+				<cooldownTimeMultiplier>1</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
 	</HediffDef>
 	<HediffDef ParentName="AI_ProstheticBodyPartBase">
 		<defName>AI_AnimalProstheticTail</defName>
@@ -115,5 +140,76 @@
 			<partEfficiency>0.80</partEfficiency>
 		</addedPartProps>
 		<spawnThingOnRemoved>AI_AnimalProstheticHeart</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticSpine</defName>
+		<label>animal prosthetic spine</label>
+		<labelNoun>an animal prosthetic spine</labelNoun>
+		<description>An installed animal prosthetic spine consisting of basic materials and rudimentary construction, offering modest support and mobility enhancement. Worse than an undamaged natural spine.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticSpine</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.6</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>AI_AnimalProstheticSpine</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticStomach</defName>
+		<label>animal prosthetic stomach</label>
+		<labelNoun>an animal prosthetic stomach</labelNoun>
+		<description>An installed animal prosthetic stomach constructed from rudimentary materials, providing minimal digestive support. It lacks advanced features and offers a simple solution for basic nutrient processing, although it is worse than an undamaged natural stomach.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticStomach</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.75</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>AI_AnimalProstheticStomach</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticLung</defName>
+		<label>animal prosthetic lung</label>
+		<labelNoun>an animal prosthetic lung</labelNoun>
+		<description>An installed animal prosthetic lung made with simple components, offering basic respiratory support. Despite its simplicity, it aids in oxygenation to a limited extent, supporting the animal's breathing function. Worse than an undamaged natural lung.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticLung</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.75</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>AI_AnimalProstheticLung</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticKidney</defName>
+		<label>animal prosthetic kidney</label>
+		<labelNoun>an animal prosthetic kidney</labelNoun>
+		<description>An installed animal prosthetic kidney providing elementary filtration capabilities. Though lacking complexity, it offers a simple solution for waste removal, aiding in maintaining basic metabolic balance. Worse than an undamaged natural kidney.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticKidney</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.75</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>AI_AnimalProstheticKidney</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticLiver</defName>
+		<label>animal prosthetic liver</label>
+		<labelNoun>an animal prosthetic liver</labelNoun>
+		<description>An installed animal prosthetic liver offering rudimentary detoxification functions. Despite its simplicity, it provides a straightforward solution for metabolic regulation. Worse than an undamaged natural liver.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticLiver</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.75</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>AI_AnimalProstheticLiver</spawnThingOnRemoved>
 	</HediffDef>
 </Defs>

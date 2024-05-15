@@ -3,15 +3,9 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-
-
-
-
-			
-			<li Class="PatchOperationAdd"> 
+			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
 				<value>
-					
 					<li>AI_Crude_InstallWoodenLimb</li>
 					<li>AI_Crude_InstallAnimalDenture</li>
 					<li>AI_Crude_InstallClothTail</li>
@@ -21,22 +15,22 @@
 					<li>AI_AnimalProstheticTail</li>
 					<li>AI_AnimalProstheticJaw</li>
 					<li>AI_AnimalProstheticHeart</li>
+					<li>AI_AnimalProstheticSpine</li>
+					<li>AI_AnimalProstheticStomach</li>
+					<li>AI_AnimalProstheticLung</li>
+					<li>AI_AnimalProstheticKidney</li>
+					<li>AI_AnimalProstheticLiver</li>
 					
 					<li>AI_AnimalBionicLeg</li>
-					
-										
-
+					<li>AI_AnimalBionicArm</li>
+					<li>AI_AnimalBionicTail</li>
+					<li>AI_AnimalBionicJaw</li>
+					<li>AI_AnimalBionicHeart</li>
+					<li>AI_AnimalBionicSpine</li>
+					<li>AI_AnimalBionicStomach</li>
 				</value>
 			</li>
-
-		
-		
-
-
-
 		</operations>
 	</Operation>
-
-
 </Patch>
 

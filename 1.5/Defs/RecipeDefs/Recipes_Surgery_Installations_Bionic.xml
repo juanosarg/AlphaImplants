@@ -48,7 +48,188 @@
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Leg</li>
+			<li>InsectLeg</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>AI_AnimalBionicLeg</addsHediff>
 	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+		<defName>AI_AnimalBionicArm</defName>
+		<label>install animal bionic arm</label>
+		<description>Install an animal bionic arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicArm</ThingDef>
+			<HediffDef>AI_AnimalBionicArm</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal bionic arm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalBionicArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalBionicArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalBionicArm</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+		<defName>AI_AnimalBionicTail</defName>
+		<label>install animal bionic tail</label>
+		<description>Install an animal bionic tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicTail</ThingDef>
+			<HediffDef>AI_AnimalBionicTail</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal bionic tail.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalBionicTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalBionicTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Tail</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalBionicTail</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+		<defName>AI_AnimalBionicJaw</defName>
+		<label>install animal bionic jaw</label>
+		<description>Install an animal bionic jaw.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicJaw</ThingDef>
+			<HediffDef>AI_AnimalBionicJaw</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal bionic jaw.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalBionicJaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalBionicJaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Jaw</li>
+			<li>AnimalJaw</li>
+			<li>InsectMouth</li>
+			<li>TurtleBeak</li>
+			<li>SnakeMouth</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalBionicJaw</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+		<defName>AI_AnimalBionicHeart</defName>
+		<label>install animal bionic heart</label>
+		<description>Install an animal bionic heart.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicHeart</ThingDef>
+			<HediffDef>AI_AnimalBionicHeart</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal bionic heart.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalBionicHeart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalBionicHeart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Heart</li>
+			<li>InsectHeart</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalBionicHeart</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+		<defName>AI_AnimalBionicSpine</defName>
+		<label>install animal bionic spine</label>
+		<description>Install an animal bionic spine.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicSpine</ThingDef>
+			<HediffDef>AI_AnimalBionicSpine</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal bionic spine.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalBionicSpine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalBionicSpine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Spine</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalBionicSpine</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+		<defName>AI_AnimalBionicStomach</defName>
+		<label>install animal bionic stomach</label>
+		<description>Install an animal bionic stomach.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicStomach</ThingDef>
+			<HediffDef>AI_AnimalBionicStomach</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal bionic stomach.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalBionicStomach</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalBionicStomach</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Stomach</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalBionicStomach</addsHediff>
+	</RecipeDef>
+	
 </Defs>

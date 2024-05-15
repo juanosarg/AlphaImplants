@@ -44,6 +44,7 @@
 		<appliedOnFixedBodyParts>
 			<li>Leg</li>
 			<li>Arm</li>
+			<li>InsectLeg</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>AI_WoodenLimb</addsHediff>
 		<uiIconThing>WoodLog</uiIconThing>
@@ -71,6 +72,10 @@
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Jaw</li>
+			<li>AnimalJaw</li>
+			<li>InsectMouth</li>
+			<li>TurtleBeak</li>
+			<li>SnakeMouth</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>AI_AnimalDenture</addsHediff>
 	</RecipeDef>

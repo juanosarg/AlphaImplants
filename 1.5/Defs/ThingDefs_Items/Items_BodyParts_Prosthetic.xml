@@ -5,7 +5,7 @@
 		<graphicData>
 			<texPath>Things/Item/AI_Implant_Prosthetic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.80</drawSize>
+			<drawSize>0.90</drawSize>
 		</graphicData>
 		<thingCategories>
 			<li>AI_ImplantCategory</li>
@@ -119,6 +119,101 @@
 		</costList>
 		<statBases>
 			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticSpine</defName>
+		<label>animal prosthetic spine</label>
+		
+		<description>An animal prosthetic spine consisting of basic materials and rudimentary construction, offering modest support and mobility enhancement. Worse than an undamaged natural spine.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticSpine</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>15</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticStomach</defName>
+		<label>animal prosthetic stomach</label>
+		
+		<description>An animal prosthetic stomach constructed from rudimentary materials, providing minimal digestive support. It lacks advanced features and offers a simple solution for basic nutrient processing, although it is worse than an undamaged natural stomach.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticStomach</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>15</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticLung</defName>
+		<label>animal prosthetic lung</label>
+		
+		<description>An animal prosthetic lung made with simple components, offering basic respiratory support. Despite its simplicity, it aids in oxygenation to a limited extent, supporting the animal's breathing function. Worse than an undamaged natural lung.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticLung</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>7</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticKidney</defName>
+		<label>animal prosthetic kidney</label>
+		
+		<description>An animal prosthetic kidney providing elementary filtration capabilities. Though lacking complexity, it offers a simple solution for waste removal, aiding in maintaining basic metabolic balance. Worse than an undamaged natural kidney.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticKidney</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>7</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticLiver</defName>
+		<label>animal prosthetic liver</label>
+		
+		<description>An animal prosthetic liver offering rudimentary detoxification functions. Despite its simplicity, it provides a straightforward solution for metabolic regulation. Worse than an undamaged natural liver.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticLiver</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>15</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
 		</statBases>
 		<techHediffsTags>
 			<li>Simple</li>

@@ -48,6 +48,7 @@
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Leg</li>
+			<li>InsectLeg</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>AI_AnimalProstheticLeg</addsHediff>
 	</RecipeDef>
@@ -135,6 +136,10 @@
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Jaw</li>
+			<li>AnimalJaw</li>
+			<li>InsectMouth</li>
+			<li>TurtleBeak</li>
+			<li>SnakeMouth</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>AI_AnimalProstheticJaw</addsHediff>
 	</RecipeDef>
@@ -164,7 +169,158 @@
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Heart</li>
+			<li>InsectHeart</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>AI_AnimalProstheticHeart</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProstheticPartBase">
+		<defName>AI_AnimalProstheticSpine</defName>
+		<label>install animal prosthetic spine</label>
+		<description>Install an animal prosthetic spine.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticSpine</ThingDef>
+			<HediffDef>AI_AnimalProstheticSpine</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic spine.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticSpine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticSpine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Spine</li>
+			
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalProstheticSpine</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProstheticPartBase">
+		<defName>AI_AnimalProstheticStomach</defName>
+		<label>install animal prosthetic stomach</label>
+		<description>Install an animal prosthetic stomach.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticStomach</ThingDef>
+			<HediffDef>AI_AnimalProstheticStomach</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic stomach.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticStomach</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticStomach</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Stomach</li>
+			
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalProstheticStomach</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProstheticPartBase">
+		<defName>AI_AnimalProstheticLung</defName>
+		<label>install animal prosthetic lung</label>
+		<description>Install an animal prosthetic lung.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticLung</ThingDef>
+			<HediffDef>AI_AnimalProstheticLung</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic lung.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticLung</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticLung</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Lung</li>
+			
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalProstheticLung</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProstheticPartBase">
+		<defName>AI_AnimalProstheticKidney</defName>
+		<label>install animal prosthetic kidney</label>
+		<description>Install an animal prosthetic kidney.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticKidney</ThingDef>
+			<HediffDef>AI_AnimalProstheticKidney</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic kidney.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticKidney</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticKidney</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Kidney</li>
+			
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalProstheticKidney</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProstheticPartBase">
+		<defName>AI_AnimalProstheticLiver</defName>
+		<label>install animal prosthetic liver</label>
+		<description>Install an animal prosthetic liver.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticLiver</ThingDef>
+			<HediffDef>AI_AnimalProstheticLiver</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic liver.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticLiver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticLiver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Liver</li>
+			
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalProstheticLiver</addsHediff>
 	</RecipeDef>
 </Defs>

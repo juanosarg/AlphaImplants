@@ -291,10 +291,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefExtensions\HediffImplantExtension.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
-    <Compile Include="HediffComps\HediffComp_VerbGiverScaling.cs" />
-    <Compile Include="HediffComps\Properties\HediffCompProperties_VerbGiverScaling.cs" />
+    <Compile Include="Harmony\Pawn_MeleeVerbs_GetUpdatedAvailableVerbsList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecipeWorkers\Recipe_InstallArtificialBodyPart_Archotech.cs" />
     <Compile Include="RecipeWorkers\Recipe_InstallArtificialBodyPart_Bionic.cs" />

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="AI_AnimalBionicPartBase_Tox" ParentName="AI_AnimalBionicPartBase" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Bionics</li>
+				<li>ToxFiltration</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase_Tox">
+		<defName>AI_AnimalBionicLung</defName>
+		<label>animal detoxifier lung</label>
+		<description>An animal detoxifier lung. Includes a series of nanoweave microfilters that remove any pollutants from the air, allowing the animal to breathe comfortably. It is better than a biological lung in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicLung</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>7</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase_Tox">
+		<defName>AI_AnimalBionicKidney</defName>
+		<label>animal detoxifier kidney</label>
+		<description>An animal detoxifier kidney. Using a series of nanofilters, it can rapidly remove a vast range of toxins from the blood, making it effective against environmental toxins, venoms, and injected poisons. It is better than a biological kidney in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicKidney</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>7</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase_Tox">
+		<defName>AI_AnimalBionicLiver</defName>
+		<label>animal detoxifier liver</label>
+		<description>An animal detoxifier liver. Utilizes advanced technology for precise toxin removal. Enhanced with real-time monitoring, it ensures optimal metabolic health, surpassing natural detoxification processes. It is better than a biological liver in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicLiver</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+</Defs>
