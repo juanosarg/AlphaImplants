@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+		<defName>AI_AnimalTentacle</defName>
+		<label>install animal flesh tentacle</label>
+		<description>Install an animal flesh tentacle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalTentacle</ThingDef>
+			<HediffDef>AI_AnimalTentacle</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal flesh tentacle.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalTentacle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalTentacle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+			<li>InsectLeg</li>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalTentacle</addsHediff>
+	</RecipeDef>
+	
+</Defs>

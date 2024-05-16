@@ -231,5 +231,33 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>AI_AnimalBionicStomach</addsHediff>
 	</RecipeDef>
-	
+	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+		<defName>AI_AnimalBionicEye</defName>
+		<label>install animal bionic eye</label>
+		<description>Install an animal bionic eye.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicEye</ThingDef>
+			<HediffDef>AI_AnimalBionicEye</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal bionic eye.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalBionicEye</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalBionicEye</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Eye</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalBionicEye</addsHediff>
+	</RecipeDef>
 </Defs>

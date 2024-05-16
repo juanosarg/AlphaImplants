@@ -188,4 +188,20 @@
 			</li>
 		</stages>
 	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicEye</defName>
+		<label>animal bionic eye</label>
+		<labelNoun>an animal bionic eye</labelNoun>
+		<description>An installed animal bionic eye. With its biogel nerve-link, internal signal pre-processor, and wide-spectrum sensors, it is better than a biological eye in almost every way.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicEye</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicEye</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		
+	</HediffDef>
 </Defs>

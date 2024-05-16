@@ -32,7 +32,6 @@
 	<ThingDef ParentName="AI_AnimalProstheticPartBase">
 		<defName>AI_AnimalProstheticLeg</defName>
 		<label>animal prosthetic leg</label>
-	
 		<description>An animal prosthetic leg. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real leg.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalProstheticLeg</RecipeDef>
@@ -51,7 +50,6 @@
 	<ThingDef ParentName="AI_AnimalProstheticPartBase">
 		<defName>AI_AnimalProstheticArm</defName>
 		<label>animal prosthetic arm</label>
-		
 		<description>An animal prosthetic arm. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real arm.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalProstheticArm</RecipeDef>
@@ -70,7 +68,6 @@
 	<ThingDef ParentName="AI_AnimalProstheticPartBase">
 		<defName>AI_AnimalProstheticTail</defName>
 		<label>animal prosthetic tail</label>
-	
 		<description>An animal prosthetic tail, crafted to replace a lost or injured tail, providing support, balance, and expression while facilitating natural movement and comfort.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalProstheticTail</RecipeDef>
@@ -89,7 +86,6 @@
 	<ThingDef ParentName="AI_AnimalProstheticPartBase">
 		<defName>AI_AnimalProstheticJaw</defName>
 		<label>animal prosthetic jaw</label>
-		
 		<description>An animal prosthetic jaw, tailored to restore oral function and aesthetics, enabling animals to eat, drink, and interact comfortably.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalProstheticJaw</RecipeDef>
@@ -108,7 +104,6 @@
 	<ThingDef ParentName="AI_AnimalProstheticPartBase">
 		<defName>AI_AnimalProstheticHeart</defName>
 		<label>animal prosthetic heart</label>
-		
 		<description>An animal prosthetic heart. It contains an electric motor that pumps blood smoothly around the body.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalProstheticHeart</RecipeDef>
@@ -127,7 +122,6 @@
 	<ThingDef ParentName="AI_AnimalProstheticPartBase">
 		<defName>AI_AnimalProstheticSpine</defName>
 		<label>animal prosthetic spine</label>
-		
 		<description>An animal prosthetic spine consisting of basic materials and rudimentary construction, offering modest support and mobility enhancement. Worse than an undamaged natural spine.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalProstheticSpine</RecipeDef>
@@ -146,7 +140,6 @@
 	<ThingDef ParentName="AI_AnimalProstheticPartBase">
 		<defName>AI_AnimalProstheticStomach</defName>
 		<label>animal prosthetic stomach</label>
-		
 		<description>An animal prosthetic stomach constructed from rudimentary materials, providing minimal digestive support. It lacks advanced features and offers a simple solution for basic nutrient processing, although it is worse than an undamaged natural stomach.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalProstheticStomach</RecipeDef>
@@ -165,7 +158,6 @@
 	<ThingDef ParentName="AI_AnimalProstheticPartBase">
 		<defName>AI_AnimalProstheticLung</defName>
 		<label>animal prosthetic lung</label>
-		
 		<description>An animal prosthetic lung made with simple components, offering basic respiratory support. Despite its simplicity, it aids in oxygenation to a limited extent, supporting the animal's breathing function. Worse than an undamaged natural lung.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalProstheticLung</RecipeDef>
@@ -184,7 +176,6 @@
 	<ThingDef ParentName="AI_AnimalProstheticPartBase">
 		<defName>AI_AnimalProstheticKidney</defName>
 		<label>animal prosthetic kidney</label>
-		
 		<description>An animal prosthetic kidney providing elementary filtration capabilities. Though lacking complexity, it offers a simple solution for waste removal, aiding in maintaining basic metabolic balance. Worse than an undamaged natural kidney.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalProstheticKidney</RecipeDef>
@@ -203,7 +194,6 @@
 	<ThingDef ParentName="AI_AnimalProstheticPartBase">
 		<defName>AI_AnimalProstheticLiver</defName>
 		<label>animal prosthetic liver</label>
-		
 		<description>An animal prosthetic liver offering rudimentary detoxification functions. Despite its simplicity, it provides a straightforward solution for metabolic regulation. Worse than an undamaged natural liver.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalProstheticLiver</RecipeDef>
@@ -217,6 +207,28 @@
 		</statBases>
 		<techHediffsTags>
 			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalPowerClaw</defName>
+		<label>animal power claw</label>
+		<description>A combat-oriented paw replacement consisting of a hooked claw extending besides the animal's original limb. It cuts deep, and it is strong enough to crush a skull like a hand crushes an egg. Its overall ungainliness slows down movement slightly.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallPowerClaw</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
 		</techHediffsTags>
 	</ThingDef>
 </Defs>

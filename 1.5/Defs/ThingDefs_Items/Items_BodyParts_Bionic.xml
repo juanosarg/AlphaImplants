@@ -51,7 +51,7 @@
 			<Mass>8</Mass>
 		</statBases>
 		<thingSetMakerTags>
-			<li>RewardStandardMidFreq</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef ParentName="AI_AnimalBionicPartBase">
@@ -70,7 +70,7 @@
 			<Mass>5</Mass>
 		</statBases>
 		<thingSetMakerTags>
-			<li>RewardStandardMidFreq</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef ParentName="AI_AnimalBionicPartBase">
@@ -89,7 +89,7 @@
 			<Mass>5</Mass>
 		</statBases>
 		<thingSetMakerTags>
-			<li>RewardStandardMidFreq</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef ParentName="AI_AnimalBionicPartBase">
@@ -108,7 +108,7 @@
 			<Mass>1.5</Mass>
 		</statBases>
 		<thingSetMakerTags>
-			<li>RewardStandardMidFreq</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef ParentName="AI_AnimalBionicPartBase">
@@ -127,7 +127,7 @@
 			<Mass>1</Mass>
 		</statBases>
 		<thingSetMakerTags>
-			<li>RewardStandardMidFreq</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef ParentName="AI_AnimalBionicPartBase">
@@ -146,7 +146,7 @@
 			<Mass>2</Mass>
 		</statBases>
 		<thingSetMakerTags>
-			<li>RewardStandardMidFreq</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef ParentName="AI_AnimalBionicPartBase">
@@ -165,8 +165,25 @@
 			<Mass>2</Mass>
 		</statBases>
 		<thingSetMakerTags>
-			<li>RewardStandardMidFreq</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
-	
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicEye</defName>
+		<label>animal bionic eye</label>		
+		<description>An animal bionic eye. With its biogel nerve-link, internal signal pre-processor, and wide-spectrum sensors, it is better than a biological eye in almost every way.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicEye</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>0.5</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
 </Defs>

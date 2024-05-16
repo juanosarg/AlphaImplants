@@ -83,7 +83,6 @@
 				<bodyPartGroupsToMultiplyDamage>
 					<li>LeftHand</li>
 					<li>RightHand</li>
-				
 				</bodyPartGroupsToMultiplyDamage>
 				<powerMultiplier>1</powerMultiplier>
 				<cooldownTimeMultiplier>1</cooldownTimeMultiplier>
@@ -169,7 +168,6 @@
 		</addedPartProps>
 		<spawnThingOnRemoved>AI_AnimalProstheticStomach</spawnThingOnRemoved>
 	</HediffDef>
-	
 	<HediffDef ParentName="AI_ProstheticBodyPartBase">
 		<defName>AI_AnimalProstheticLung</defName>
 		<label>animal prosthetic lung</label>
@@ -211,5 +209,59 @@
 			<partEfficiency>0.75</partEfficiency>
 		</addedPartProps>
 		<spawnThingOnRemoved>AI_AnimalProstheticLiver</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalPowerClaw</defName>
+		<labelNoun>an animal power claw</labelNoun>
+		<label>animal power claw</label>
+		<description>An installed combat-oriented paw replacement consisting of a hooked claw extending besides the animal's original limb. It cuts deep, and it is strong enough to crush a skull like a hand crushes an egg. Its overall ungainliness slows down movement slightly.</description>
+		<extraTooltip>Provides a Scratch attack doubling the strength of the animal's original paw attack, with the same cooldown.</extraTooltip>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPowerClaw</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalPowerClaw</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.08</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<addedPartProps>
+			<isGoodWeapon>true</isGoodWeapon>
+			<solid>true</solid>
+			<partEfficiency>1.00</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>power claw</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>1</power>
+						<cooldownTime>1</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>Pawn_Melee_PowerClaw_Hit</soundMeleeHit>
+						<soundMeleeMiss>Pawn_Melee_PowerClaw_Miss</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>FrontLeftPaw</li>
+					<li>FrontRightPaw</li>
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>2</powerMultiplier>
+				<cooldownTimeMultiplier>1</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
 	</HediffDef>
 </Defs>

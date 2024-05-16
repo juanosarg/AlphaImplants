@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+
+	<DamageDef>
+		<defName>AI_Grapple</defName>
+		<label>grapple</label>
+		<workerClass>DamageWorker_Blunt</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been grappled to death.</deathMessage>
+		<hediff>Crush</hediff>
+		<hediffSkin>Shredded</hediffSkin>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+		<additionalHediffs>
+			<li>
+				<hediff>AI_Grabbed</hediff>
+				<severityPerDamageDealt>0.025</severityPerDamageDealt>
+
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+	
+
+
+
+</Defs>

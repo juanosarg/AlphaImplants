@@ -23,7 +23,7 @@
 			<Mass>2</Mass>
 		</statBases>
 		<thingSetMakerTags>
-			<li>RewardStandardMidFreq</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef ParentName="AI_AnimalBionicPartBase_Tox">
@@ -41,7 +41,7 @@
 			<Mass>1</Mass>
 		</statBases>
 		<thingSetMakerTags>
-			<li>RewardStandardMidFreq</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef ParentName="AI_AnimalBionicPartBase_Tox">
@@ -59,7 +59,7 @@
 			<Mass>2</Mass>
 		</statBases>
 		<thingSetMakerTags>
-			<li>RewardStandardMidFreq</li>
+			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
 </Defs>

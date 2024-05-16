@@ -323,4 +323,34 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>AI_AnimalProstheticLiver</addsHediff>
 	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProstheticPartBase">
+		<defName>AI_AnimalPowerClaw</defName>
+		<label>install animal power claw</label>
+		<description>Install an animal power claw.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPowerClaw</ThingDef>
+			<HediffDef>AI_AnimalPowerClaw</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal power claw.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalPowerClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalPowerClaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Paw</li>
+			
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalPowerClaw</addsHediff>
+	</RecipeDef>
 </Defs>

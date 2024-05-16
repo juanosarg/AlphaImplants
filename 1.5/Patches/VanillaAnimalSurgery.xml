@@ -20,6 +20,7 @@
 					<li>AI_AnimalProstheticLung</li>
 					<li>AI_AnimalProstheticKidney</li>
 					<li>AI_AnimalProstheticLiver</li>
+					<li>AI_AnimalPowerClaw</li>
 					
 					<li>AI_AnimalBionicLeg</li>
 					<li>AI_AnimalBionicArm</li>
@@ -28,6 +29,7 @@
 					<li>AI_AnimalBionicHeart</li>
 					<li>AI_AnimalBionicSpine</li>
 					<li>AI_AnimalBionicStomach</li>
+					<li>AI_AnimalBionicEye</li>
 				</value>
 			</li>
 		</operations>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="AI_AnimalBionicPartBase_Mutation" ParentName="AI_AnimalBionicPartBase" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MutationWeaponry</li>
+				
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase_Mutation">
+		<defName>AI_AnimalTentacle</defName>
+		<label>animal flesh tentacle</label>
+		<description>An animal flesh tentacle. A fleshy, muscled tentacle resembling a partial transformation into a fleshbeast. The tentacle is excellent at manipulation and grabbing targets.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalTentacle</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Bioferrite>35</Bioferrite>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>
