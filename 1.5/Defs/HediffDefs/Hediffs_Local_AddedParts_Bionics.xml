@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Added body parts -->
-	<HediffDef Name="AI_BionicBodyPartBase" ParentName="ImplantHediffBase" Abstract="True">
+	<HediffDef Name="AI_BionicBodyPartBase" ParentName="AI_ImplantHediffBase" Abstract="True">
 		<hediffClass>Hediff_AddedPart</hediffClass>
-		<defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
-		<isBad>false</isBad>
-		<priceImpact>true</priceImpact>
+		
 	</HediffDef>
+	
+	
+		
+	
 	<HediffDef ParentName="AI_BionicBodyPartBase">
 		<defName>AI_AnimalBionicLeg</defName>
 		<label>animal bionic leg</label>

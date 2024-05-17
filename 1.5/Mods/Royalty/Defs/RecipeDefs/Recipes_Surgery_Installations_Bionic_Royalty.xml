@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef ParentName="AI_SurgeryInstallImplantBase">
+		<defName>AI_AnimalImmunoenhancer</defName>
+		<label>install animal immunoenhancer</label>
+		<description>Install an animal immunoenhancer.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalImmunoenhancer</ThingDef>
+			<HediffDef>AI_AnimalImmunoenhancer</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal immunoenhancer.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalImmunoenhancer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalImmunoenhancer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Kidney</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalImmunoenhancer</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalImmunoenhancer</defName>
+		<label>remove animal immunoenhancer</label>
+		<description>Remove animal immunoenhancer.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalImmunoenhancer</ThingDef>
+			<HediffDef>AI_AnimalImmunoenhancer</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal immunoenhancer.</jobString>
+		<removesHediff>AI_AnimalImmunoenhancer</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallImplantBase">
+		<defName>AI_AnimalCircadianSupercharger</defName>
+		<label>install animal circadian supercharger</label>
+		<description>Install an animal circadian supercharger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalCircadianSupercharger</ThingDef>
+			<HediffDef>AI_AnimalCircadianSupercharger</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal circadian supercharger.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalCircadianSupercharger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalCircadianSupercharger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalCircadianSupercharger</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalCircadianSupercharger</defName>
+		<label>remove animal circadian supercharger</label>
+		<description>Remove animal circadian supercharger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalCircadianSupercharger</ThingDef>
+			<HediffDef>AI_AnimalCircadianSupercharger</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal circadian supercharger.</jobString>
+		<removesHediff>AI_AnimalCircadianSupercharger</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallImplantBase">
+		<defName>AI_AnimalHealClotSynergizer</defName>
+		<label>install animal healclot synergizer</label>
+		<description>Install an animal healclot synergizer.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalHealClotSynergizer</ThingDef>
+			<HediffDef>AI_AnimalHealClotSynergizer</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal healclot synergizer.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalHealClotSynergizer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalHealClotSynergizer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Body</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalHealClotSynergizer</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalHealClotSynergizer</defName>
+		<label>remove animal healclot synergizer</label>
+		<description>Remove animal healclot synergizer.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalHealClotSynergizer</ThingDef>
+			<HediffDef>AI_AnimalHealClotSynergizer</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal healclot synergizer.</jobString>
+		<removesHediff>AI_AnimalHealClotSynergizer</removesHediff>
+	</RecipeDef>
+</Defs>

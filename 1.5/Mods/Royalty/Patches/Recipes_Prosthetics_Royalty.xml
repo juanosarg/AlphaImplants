@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- These body parts exist in vanilla, but only become craftable in Royalty with Royalty-specific research -->
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="AI_AnimalPowerClaw"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>AI_AnimalProstheticPartBase</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AI_AnimalPowerClaw"]</xpath>
+    <value>
+      <recipeMaker>
+        <researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+      </recipeMaker>
+    </value>
+  </Operation>
+
+
+
+
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="AI_AnimalPainstopper"]</xpath>
+    <attribute>ParentName</attribute>
+    <value>AI_AnimalProstheticPartBase</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AI_AnimalPainstopper"]</xpath>
+    <value>
+      <recipeMaker>
+        <researchPrerequisite>BrainWiring</researchPrerequisite>
+      </recipeMaker>
+    </value>
+  </Operation>
+
+</Patch>

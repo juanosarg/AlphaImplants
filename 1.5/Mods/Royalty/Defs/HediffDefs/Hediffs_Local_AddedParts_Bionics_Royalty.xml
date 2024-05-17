@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalImmunoenhancer</defName>
+		<label>animal immunoenhancer</label>
+		<labelNoun>an animal immunoenhancer</labelNoun>
+		<description>An installed analysis computer which inspects the bloodstream, classifies pathogens, and rapidly prompts the body's natural immune system to respond to them faster than it could alone. This speeds immunity gain significantly.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalImmunoenhancer</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalImmunoenhancer</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<ImmunityGainSpeed>0.08</ImmunityGainSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalCircadianSupercharger</defName>
+		<label>animal circadian supercharger</label>
+		<labelNoun>an animal circadian supercharger</labelNoun>
+		<description>An installed combination assistant and half-cycler, disables the need to rest of the animal without affecting its consciousness. An animal using this implant will be susceptible to EMP weapons.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalCircadianSupercharger</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalCircadianSupercharger</spawnThingOnRemoved>
+		<disablesNeeds>
+			<li>Rest</li>
+		</disablesNeeds>
+		<comps>
+			<li Class="HediffCompProperties_ReactOnDamage">
+				<damageDefIncoming>EMP</damageDefIncoming>
+				<createHediff>BrainShock</createHediff>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalHealClotSynergizer</defName>
+		<label>animal healclot synergizer</label>
+		<labelNoun>an animal healclot synergizer</labelNoun>
+		<description>An installed combination coagulator and healing enhancer, combines advanced coagulation and accelerated healing technologies, providing rapid blood clotting and enhanced tissue repair.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalHealClotSynergizer</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalHealClotSynergizer</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<totalBleedFactor>0.5</totalBleedFactor>
+				<naturalHealingFactor>1.5</naturalHealingFactor>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

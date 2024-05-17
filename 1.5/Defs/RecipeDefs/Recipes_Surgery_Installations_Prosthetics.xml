@@ -22,6 +22,30 @@
 			</categories>
 		</fixedIngredientFilter>
 	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallImplantBase" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryRemoveImplantBase" ParentName="AI_SurgeryInstallImplantBase" Abstract="True">
+		<workerClass>Recipe_RemoveImplant</workerClass>
+		<isViolation>true</isViolation>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallProstheticPartBase">
 		<defName>AI_AnimalProstheticLeg</defName>
 		<label>install animal prosthetic leg</label>
@@ -199,7 +223,6 @@
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Spine</li>
-			
 		</appliedOnFixedBodyParts>
 		<addsHediff>AI_AnimalProstheticSpine</addsHediff>
 	</RecipeDef>
@@ -229,7 +252,6 @@
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Stomach</li>
-			
 		</appliedOnFixedBodyParts>
 		<addsHediff>AI_AnimalProstheticStomach</addsHediff>
 	</RecipeDef>
@@ -259,7 +281,6 @@
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Lung</li>
-			
 		</appliedOnFixedBodyParts>
 		<addsHediff>AI_AnimalProstheticLung</addsHediff>
 	</RecipeDef>
@@ -289,7 +310,6 @@
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Kidney</li>
-			
 		</appliedOnFixedBodyParts>
 		<addsHediff>AI_AnimalProstheticKidney</addsHediff>
 	</RecipeDef>
@@ -319,7 +339,6 @@
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Liver</li>
-			
 		</appliedOnFixedBodyParts>
 		<addsHediff>AI_AnimalProstheticLiver</addsHediff>
 	</RecipeDef>
@@ -349,8 +368,47 @@
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
 			<li>Paw</li>
-			
 		</appliedOnFixedBodyParts>
 		<addsHediff>AI_AnimalPowerClaw</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallImplantBase">
+		<defName>AI_AnimalPainstopper</defName>
+		<label>install animal painstopper</label>
+		<description>Install an animal painstopper.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPainstopper</ThingDef>
+			<HediffDef>AI_AnimalPainstopper</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal painstopper.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalPainstopper</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalPainstopper</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalPainstopper</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemovePainstopper</defName>
+		<label>remove animal painstopper</label>
+		<description>Remove the animal painstopper.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPainstopper</ThingDef>
+			<HediffDef>AI_AnimalPainstopper</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal painstopper.</jobString>
+		<removesHediff>AI_AnimalPainstopper</removesHediff>
 	</RecipeDef>
 </Defs>

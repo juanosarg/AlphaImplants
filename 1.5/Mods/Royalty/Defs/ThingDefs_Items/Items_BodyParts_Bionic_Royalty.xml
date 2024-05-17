@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalImmunoenhancer</defName>
+		<label>animal immunoenhancer</label>
+		<description>An analysis computer which inspects the bloodstream, classifies pathogens, and rapidly prompts the body's natural immune system to respond to them faster than it could alone. This speeds immunity gain significantly.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalImmunoenhancer</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>8</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>MolecularAnalysis</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalCircadianSupercharger</defName>
+		<label>animal circadian supercharger</label>
+		<description>A combination assistant and half-cycler, disables the need to rest of the animal without affecting its consciousness. An animal using this implant will be susceptible to EMP weapons.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalCircadianSupercharger</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>8</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>CircadianInfluence</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalHealClotSynergizer</defName>
+		<label>animal healclot synergizer</label>
+		<description>A combination coagulator and healing enhancer, combines advanced coagulation and accelerated healing technologies, providing rapid blood clotting and enhanced tissue repair.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalHealClotSynergizer</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>3</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>HealingFactors</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+</Defs>

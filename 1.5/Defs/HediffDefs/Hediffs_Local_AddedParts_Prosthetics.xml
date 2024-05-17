@@ -1,12 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- Added body parts -->
-	<HediffDef Name="AI_ProstheticBodyPartBase" ParentName="ImplantHediffBase" Abstract="True">
-		<hediffClass>Hediff_AddedPart</hediffClass>
+	<HediffDef Name="AI_ImplantHediffBase" Abstract="True">
+		<hediffClass>Hediff_Implant</hediffClass>
 		<defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
 		<isBad>false</isBad>
 		<priceImpact>true</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 	</HediffDef>
+	<HediffDef Name="AI_ProstheticBodyPartBase" ParentName="AI_ImplantHediffBase" Abstract="True">
+		<hediffClass>Hediff_AddedPart</hediffClass>		
+	</HediffDef>
+	
 	<HediffDef ParentName="AI_ProstheticBodyPartBase">
 		<defName>AI_AnimalProstheticLeg</defName>
 		<label>animal prosthetic leg</label>
@@ -263,5 +268,20 @@
 				<cooldownTimeMultiplier>1</cooldownTimeMultiplier>
 			</li>
 		</modExtensions>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalPainstopper</defName>
+		<label>animal painstopper</label>
+		<labelNoun>an animal painstopper</labelNoun>
+		<description>An installed animal painstopper implant. While it does allow the user to accomplish more, it turns out pain has a purpose. When you don't feel it, you can get hurt really bad really easily.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPainstopper</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>AI_AnimalPainstopper</spawnThingOnRemoved>
 	</HediffDef>
 </Defs>

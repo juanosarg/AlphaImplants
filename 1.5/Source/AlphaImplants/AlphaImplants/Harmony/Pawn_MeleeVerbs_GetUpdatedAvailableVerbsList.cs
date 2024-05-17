@@ -29,12 +29,14 @@ namespace AlphaImplants
                 foreach (Tool tool in __result)
                 {
                     Pawn pawn = __instance.parent.pawn;
-                    Tool originalTool = pawn.Tools.Where(x => extension.bodyPartGroupsToMultiplyDamage.Contains(x.linkedBodyPartsGroup)).RandomElement();
+                    Tool originalTool = pawn.Tools?.Where(x => extension.bodyPartGroupsToMultiplyDamage.Contains(x.linkedBodyPartsGroup)).RandomElement();
 
+                    float powerBase = originalTool != null ? originalTool.power : 1;
+                    float cooldownBase = originalTool != null ? originalTool.cooldownTime : 1;
 
                     Tool tool2 = tool;
-                    tool2.power = originalTool.power * extension.powerMultiplier;
-                    tool2.cooldownTime = originalTool.cooldownTime * extension.cooldownTimeMultiplier;
+                    tool2.power = powerBase * extension.powerMultiplier;
+                    tool2.cooldownTime = cooldownBase * extension.cooldownTimeMultiplier;
                     multipliedTools.Add(tool2);
 
                 }

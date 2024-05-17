@@ -29,6 +29,19 @@
 			<researchPrerequisite>Prosthetics</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
+	
+	<ThingDef Name="AI_AnimalProstheticPartBase_NotMakeable" ParentName="BodyPartBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Things/Item/AI_Implant_Prosthetic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<thingCategories>
+			<li>AI_ImplantCategory</li>
+		</thingCategories>		
+	</ThingDef>
+	
 	<ThingDef ParentName="AI_AnimalProstheticPartBase">
 		<defName>AI_AnimalProstheticLeg</defName>
 		<label>animal prosthetic leg</label>
@@ -209,12 +222,12 @@
 			<li>Simple</li>
 		</techHediffsTags>
 	</ThingDef>
-	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+	<ThingDef ParentName="AI_AnimalProstheticPartBase_NotMakeable">
 		<defName>AI_AnimalPowerClaw</defName>
 		<label>animal power claw</label>
 		<description>A combat-oriented paw replacement consisting of a hooked claw extending besides the animal's original limb. It cuts deep, and it is strong enough to crush a skull like a hand crushes an egg. Its overall ungainliness slows down movement slightly.</description>
 		<descriptionHyperlinks>
-			<RecipeDef>InstallPowerClaw</RecipeDef>
+			<RecipeDef>AI_AnimalPowerClaw</RecipeDef>
 		</descriptionHyperlinks>
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
@@ -230,5 +243,24 @@
 			<li>Advanced</li>
 			<li>AdvancedWeapon</li>
 		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase_NotMakeable">
+		<defName>AI_AnimalPainstopper</defName>
+		<label>animal painstopper</label>
+		<description>An animal brain implant which inhibits nociception, or pain sensation. While it does allow the user to accomplish more, it turns out pain has a purpose. When you don't feel it, you can get hurt really bad really easily.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalPainstopper</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		
 	</ThingDef>
 </Defs>
