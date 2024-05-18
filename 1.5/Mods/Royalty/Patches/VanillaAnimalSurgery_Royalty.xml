@@ -13,6 +13,11 @@
 					<li>AI_RemoveAnimalCircadianSupercharger</li>
 					<li>AI_AnimalHealClotSynergizer</li>
 					<li>AI_RemoveAnimalHealClotSynergizer</li>
+					<li>AI_AnimalSkinHardener</li>
+					<li>AI_RemoveAnimalSkinHardener</li>
+					<li>AI_AnimalDermalArmorGland</li>
+					<li>AI_RemoveAnimalDermalArmorGland</li>
+					<li>AI_AnimalNuclearStomach</li>
 				</value>
 			</li>
 		</operations>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="AI_SurgeryInstallImplantBase">
+		<defName>AI_AnimalSkinHardener</defName>
+		<label>install animal skin hardener</label>
+		<description>Install an animal skin hardener.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalSkinHardener</ThingDef>
+			<HediffDef>AI_AnimalSkinHardener</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal skin hardener.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalSkinHardener</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalSkinHardener</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Body</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalSkinHardener</addsHediff>
+		<incompatibleWithHediffTags>
+			<li>ArmorGland</li>
+		</incompatibleWithHediffTags>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalSkinHardener</defName>
+		<label>remove animal skin hardener</label>
+		<description>Remove the animal skin hardener.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalSkinHardener</ThingDef>
+			<HediffDef>AI_AnimalSkinHardener</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal skin hardener.</jobString>
+		<removesHediff>AI_AnimalSkinHardener</removesHediff>
+	</RecipeDef>
+</Defs>

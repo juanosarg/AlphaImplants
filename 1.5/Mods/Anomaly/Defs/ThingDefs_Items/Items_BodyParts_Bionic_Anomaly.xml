@@ -10,8 +10,8 @@
 	</ThingDef>
 	<ThingDef ParentName="AI_AnimalBionicPartBase_Mutation">
 		<defName>AI_AnimalTentacle</defName>
-		<label>animal flesh tentacle</label>
-		<description>An animal flesh tentacle. A fleshy, muscled tentacle resembling a partial transformation into a fleshbeast. The tentacle is excellent at manipulation and grabbing targets.</description>
+		<label>animal eldritch flesh tentacle</label>
+		<description>An animal eldritch flesh tentacle. A fleshy, muscled tentacle resembling a partial transformation into a fleshbeast. The tentacle is excellent at manipulation and grabbing targets.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalTentacle</RecipeDef>
 		</descriptionHyperlinks>
@@ -21,6 +21,25 @@
 		</costList>
 		<statBases>
 			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="AI_AnimalBionicPartBase_Mutation">
+		<defName>AI_AnimalToughspikes</defName>
+		<label>animal toughspikes</label>
+		<description>An animal implant that adds two rending claws to the animal's body, independent of their original limbs.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalToughspikes</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Bioferrite>35</Bioferrite>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
 		</statBases>
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>

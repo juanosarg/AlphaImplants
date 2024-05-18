@@ -63,4 +63,46 @@
 			<researchPrerequisite>HealingFactors</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalDermalArmorGland</defName>
+		<label>animal dermal armor gland</label>
+		<description>An animal dermal armor gland implant. Releases chemical and nanomachines that transform the user's skin into a built-in suit of armor. The whole epidermis thickens and hardens to resist burns, while jointed exterior keratin plates form everywhere they can - including the head and face.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalDermalArmorGland</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>SkinHardening</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalNuclearStomach</defName>
+		<label>animal nuclear stomach</label>
+		<description>An animal nuclear stomach implant. A micro-nuclear reactor combined with complex chemical synthesis replaces the body's need for food energy. Food is required only to replace matter lost from the body, reducing the animal's intake needs significantly. However, there is little room to shield the reactor, so the radiation increases the risk of cancer.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalNuclearStomach</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>ArtificialMetabolism</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
 </Defs>

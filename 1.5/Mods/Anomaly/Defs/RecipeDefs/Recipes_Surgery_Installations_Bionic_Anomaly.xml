@@ -2,13 +2,13 @@
 <Defs>
 	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
 		<defName>AI_AnimalTentacle</defName>
-		<label>install animal flesh tentacle</label>
-		<description>Install an animal flesh tentacle.</description>
+		<label>install animal eldritch flesh tentacle</label>
+		<description>Install an animal eldritch flesh tentacle.</description>
 		<descriptionHyperlinks>
 			<ThingDef>AI_AnimalTentacle</ThingDef>
 			<HediffDef>AI_AnimalTentacle</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Installing animal flesh tentacle.</jobString>
+		<jobString>Installing animal eldritch flesh tentacle.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -30,6 +30,47 @@
 			<li>Arm</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>AI_AnimalTentacle</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AI_SurgeryInstallImplantBase">
+		<defName>AI_AnimalToughspikes</defName>
+		<label>install animal toughspikes</label>
+		<description>Install an animal toughspikes.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalToughspikes</ThingDef>
+			<HediffDef>AI_AnimalToughspikes</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal toughspikes.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalToughspikes</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalToughspikes</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Body</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalToughspikes</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalToughspikes</defName>
+		<label>remove animal toughspikes</label>
+		<description>Remove animal toughspikes.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalToughspikes</ThingDef>
+			<HediffDef>AI_AnimalToughspikes</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal toughspikes.</jobString>
+		<removesHediff>AI_AnimalToughspikes</removesHediff>
 	</RecipeDef>
 	
 </Defs>

@@ -2,9 +2,9 @@
 <Defs>
 	<HediffDef ParentName="AI_BionicBodyPartBase">
 		<defName>AI_AnimalTentacle</defName>
-		<label>animal flesh tentacle</label>
-		<labelNoun>an animal flesh tentacle</labelNoun>
-		<description>An installed animal flesh tentacle. A fleshy, muscled tentacle resembling a partial transformation into a fleshbeast. The tentacle is excellent at manipulation and grabbing targets.</description>
+		<label>animal eldritch flesh tentacle</label>
+		<labelNoun>an animal eldritch flesh tentacle</labelNoun>
+		<description>An installed animal eldritch flesh tentacle. A fleshy, muscled tentacle resembling a partial transformation into a fleshbeast. The tentacle is excellent at manipulation and grabbing targets.</description>
 		<extraTooltip>Provides a Grapple attack with a strength 50% higher than the animal's original leg / paws / claws / fist attack, plus 80% of its cooldown.</extraTooltip>
 		<descriptionHyperlinks>
 			<ThingDef>AI_AnimalTentacle</ThingDef>
@@ -24,7 +24,6 @@
 				</texPaths>
 				<pawnType>NonHumanlikeOnly</pawnType>
 				<parentTagDef>Body</parentTagDef>
-				
 				<drawSize>2</drawSize>
 				<colorType>Custom</colorType>
 				<color>(199,150,150)</color>
@@ -36,14 +35,13 @@
 				<nextSpasmTicksRange>10~50</nextSpasmTicksRange>
 				<drawData>
 					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
-				    <useHediffAnchor>true</useHediffAnchor>
+					<useHediffAnchor>true</useHediffAnchor>
 					<defaultData>
 						<layer>49</layer>
 					</defaultData>
 					<dataNorth>
 						<rotationOffset>310</rotationOffset>
 						<flip>true</flip>
-						
 					</dataNorth>
 					<dataEast>
 						<rotationOffset>270</rotationOffset>
@@ -86,6 +84,111 @@
 				</bodyPartGroupsToMultiplyDamage>
 				<powerMultiplier>1.5</powerMultiplier>
 				<cooldownTimeMultiplier>0.8</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalToughspikes</defName>
+		<label>animal toughspikes</label>
+		<labelNoun>an animal toughspikes</labelNoun>
+		<description>An installed animal toughspikes implant. Adds two rending claws to the animal's body, independent of their original limbs.</description>
+		<extraTooltip>Provides a Cut attack with a strength 75% higher than the animal's original leg / paws / claws / fist attack, and same cooldown.</extraTooltip>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalToughspikes</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalToughspikes</spawnThingOnRemoved>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Spastic">
+				<pawnType>NonHumanlikeOnly</pawnType>
+				<texPath>Things/Pawn/Fleshbeast/Toughspike/Attachments/Toughspike_Spike</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<rotateFacing>false</rotateFacing>
+				<rotationRange>-30~30</rotationRange>
+				<durationTicksRange>10~35</durationTicksRange>
+				<nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+				<drawSize>1.4</drawSize>
+				<baseLayer>10</baseLayer>
+				<useRottenColor>true</useRottenColor>
+				<drawData>
+					<dataNorth>
+						<offset>(-0.25, 0.01, 0.25)</offset>
+						<rotationOffset>-45</rotationOffset>
+					</dataNorth>
+					<dataEast>
+						<offset>(0, 0, 0.15)</offset>
+						<layer>-5</layer>
+					</dataEast>
+					<dataSouth>
+						<offset>(0.15, 0, 0.3)</offset>
+						<rotationOffset>45</rotationOffset>
+					</dataSouth>
+					<dataWest>
+						<offset>(0, 0, 0.15)</offset>
+						<flip>true</flip>
+					</dataWest>
+				</drawData>
+			</li>
+			<li Class="PawnRenderNodeProperties_Spastic">
+				<pawnType>NonHumanlikeOnly</pawnType>
+				<texPath>Things/Pawn/Fleshbeast/Toughspike/Attachments/Toughspike_Spike</texPath>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<rotateFacing>false</rotateFacing>
+				<rotationRange>-30~30</rotationRange>
+				<durationTicksRange>10~35</durationTicksRange>
+				<nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+				<drawSize>1.4</drawSize>
+				<baseLayer>10</baseLayer>
+				<useRottenColor>true</useRottenColor>
+				<drawData>
+					<dataNorth>
+						<offset>(0.25, 0.01, 0.25)</offset>
+						<rotationOffset>45</rotationOffset>
+						<flip>true</flip>
+					</dataNorth>
+					<dataEast>
+						<offset>(0, 0, 0.15)</offset>
+					</dataEast>
+					<dataSouth>
+						<offset>(-0.15, 0, 0.3)</offset>
+						<rotationOffset>-45</rotationOffset>
+						<flip>true</flip>
+					</dataSouth>
+					<dataWest>
+						<offset>(0, 0, 0.15)</offset>
+						<layer>-5</layer>
+						<flip>true</flip>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>toughspikes</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>1</power>
+						<cooldownTime>1</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>FrontLeftLeg</li>
+					<li>FrontRightLeg</li>
+					<li>FrontLeftPaw</li>
+					<li>FrontRightPaw</li>
+					<li>FrontLeftClaws</li>
+					<li>FrontRightClaws</li>
+					<li>LeftHand</li>
+					<li>RightHand</li>
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>1.75</powerMultiplier>
+				<cooldownTimeMultiplier>1</cooldownTimeMultiplier>
 			</li>
 		</modExtensions>
 	</HediffDef>

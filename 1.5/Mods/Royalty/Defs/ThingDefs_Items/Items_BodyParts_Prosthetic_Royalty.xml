@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalSkinHardener</defName>
+		<label>animal skin hardener</label>
+		<description>An animal skin hardener. Releases chemicals and nanomachines that toughen the skin, making it somewhat more resistant to damage.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalSkinHardener</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>7</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>SkinHardening</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+</Defs>
