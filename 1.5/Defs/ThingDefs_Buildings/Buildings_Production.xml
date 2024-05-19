@@ -3,13 +3,13 @@
 
 	<ThingDef ParentName="BenchBase">
 		<defName>AI_AnimalProstheticsTable</defName>
-		<label>animal prosthetics table</label>
+		<label>animal prosthetics and bionics table</label>
 		<thingClass>Building_WorkTable</thingClass>
-		<description>Allows you to extract certain abilities from animals and implant them in others. Ranged animal attacks can also be implanted in a different animal</description>
+		<description>A compact workbench for assembling all kinds of prosthetic and bionic implants for animals.</description>
 		<graphicData>
-			<texPath>Things/Building/VEF_AdvancedAnimalImplantsTable</texPath>
+			<texPath>Things/Building/AI_AnimalImplantsTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2.33,1.5)</drawSize>
+			<drawSize>(2.95,1.75)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>

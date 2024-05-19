@@ -284,4 +284,19 @@
 		</stages>
 		<spawnThingOnRemoved>AI_AnimalPainstopper</spawnThingOnRemoved>
 	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalController</defName>
+		<label>animal controller</label>
+		<labelNoun>an animal controller</labelNoun>
+		<description>An installed animal controller implant. This implant will allow this creature to be drafted and controlled by the player.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalController</ThingDef>
+		</descriptionHyperlinks>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_Draftable">
+				<makeNonFleeingToo>true</makeNonFleeingToo>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>AI_AnimalController</spawnThingOnRemoved>
+	</HediffDef>
 </Defs>

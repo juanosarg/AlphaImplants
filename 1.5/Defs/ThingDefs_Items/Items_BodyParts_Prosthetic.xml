@@ -263,4 +263,25 @@
 		</statBases>
 		
 	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalController</defName>
+		<label>animal controller</label>
+		<description>An animal mind controller implant. This implant will allow this creature to be drafted and controlled by the player.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalController</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
 </Defs>

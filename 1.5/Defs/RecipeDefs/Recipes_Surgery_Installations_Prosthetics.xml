@@ -411,4 +411,44 @@
 		<jobString>Removing animal painstopper.</jobString>
 		<removesHediff>AI_AnimalPainstopper</removesHediff>
 	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallImplantBase">
+		<defName>AI_AnimalController</defName>
+		<label>install animal controller</label>
+		<description>Install an animal controller.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalController</ThingDef>
+			<HediffDef>AI_AnimalController</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal controller.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalController</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalController</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalController</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalController</defName>
+		<label>remove animal controller</label>
+		<description>Remove the animal controller.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalController</ThingDef>
+			<HediffDef>AI_AnimalController</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal controller.</jobString>
+		<removesHediff>AI_AnimalController</removesHediff>
+	</RecipeDef>
 </Defs>

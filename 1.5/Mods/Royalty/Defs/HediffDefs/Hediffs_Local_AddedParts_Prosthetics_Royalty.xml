@@ -26,4 +26,48 @@
 		<spawnThingOnRemoved>AI_AnimalSkinHardener</spawnThingOnRemoved>
 		<tags><li>ArmorGland</li></tags>
 	</HediffDef>
+	
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalVenomFangs</defName>
+		<label>animal venom fangs</label>
+		<labelNoun>animal venom fangs</labelNoun>
+		<description>Installed animal venom fangs. Injector tubules that are carefully set inside the animal's original teeth, and connected to small sacs of a very powerful venom. Contrary to the human implant, these integrate too much with the animal's teeth and can't be removed afterwards.</description>
+		<extraTooltip>Provides a Toxic Buildup attack with a strength 50% higher than the original animal's jaw / beak attack, with the same cooldown.</extraTooltip>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalVenomFangs</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalVenomFangs</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>venom fangs</label>
+            <capacities>
+              <li>ToxicBite</li>
+            </capacities>
+            <power>1</power>
+            <cooldownTime>1</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+          </li>
+        </tools>
+      </li>
+		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>Teeth</li>
+					<li>Beak</li>
+					<li>TurtleBeakAttackTool</li>
+					<li>Mouth</li>
+					
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>1.5</powerMultiplier>
+				<cooldownTimeMultiplier>1</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
+	</HediffDef>
 </Defs>
