@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_AllLimbs">
 		<defName>AI_AnimalTentacle</defName>
 		<label>install animal eldritch flesh tentacle</label>
 		<description>Install an animal eldritch flesh tentacle.</description>
@@ -24,15 +24,11 @@
 				<li>AI_AnimalTentacle</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Leg</li>
-			<li>InsectLeg</li>
-			<li>Arm</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalTentacle</addsHediff>
 	</RecipeDef>
 	
-	<RecipeDef ParentName="AI_SurgeryInstallImplantBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
 		<defName>AI_AnimalToughspikes</defName>
 		<label>install animal toughspikes</label>
 		<description>Install an animal toughspikes.</description>
@@ -56,9 +52,7 @@
 				<li>AI_AnimalToughspikes</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Body</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalToughspikes</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">

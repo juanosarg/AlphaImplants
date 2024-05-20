@@ -25,6 +25,7 @@
 					<li>AI_RemovePainstopper</li>
 					<li>AI_AnimalController</li>
 					<li>AI_RemoveAnimalController</li>
+					<li>AI_AnimalJump</li>
 					
 					<li>AI_AnimalBionicLeg</li>
 					<li>AI_AnimalBionicArm</li>

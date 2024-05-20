@@ -6,7 +6,32 @@
 			<Medicine>3</Medicine>
 		</skillRequirements>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallCrudePartBase">
+	
+	<RecipeDef Name="AI_SurgeryInstallCrude_AllLimbs" ParentName="AI_SurgeryInstallCrudePartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+			<li>Arm</li>
+			<li>InsectLeg</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
+	<RecipeDef Name="AI_SurgeryInstallCrude_Mouth" ParentName="AI_SurgeryInstallCrudePartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Jaw</li>
+			<li>AnimalJaw</li>
+			<li>InsectMouth</li>
+			<li>TurtleBeak</li>
+			<li>SnakeMouth</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
+	<RecipeDef Name="AI_SurgeryInstallCrude_Tail" ParentName="AI_SurgeryInstallCrudePartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Tail</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AI_SurgeryInstallCrude_AllLimbs">
 		<defName>AI_Crude_InstallWoodenLimb</defName>
 		<label>install wooden limb</label>
 		<description>Install wooden limb.</description>
@@ -41,15 +66,11 @@
 				<li>WoodLog</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Leg</li>
-			<li>Arm</li>
-			<li>InsectLeg</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_WoodenLimb</addsHediff>
 		<uiIconThing>WoodLog</uiIconThing>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallCrudePartBase">
+	<RecipeDef ParentName="AI_SurgeryInstallCrude_Mouth">
 		<defName>AI_Crude_InstallAnimalDenture</defName>
 		<label>install animal denture</label>
 		<description>Install animal denture.</description>
@@ -70,16 +91,10 @@
 				<li>Medicine</li>
 			</categories>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Jaw</li>
-			<li>AnimalJaw</li>
-			<li>InsectMouth</li>
-			<li>TurtleBeak</li>
-			<li>SnakeMouth</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalDenture</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallCrudePartBase">
+	<RecipeDef ParentName="AI_SurgeryInstallCrude_Tail">
 		<defName>AI_Crude_InstallClothTail</defName>
 		<label>install cloth tail</label>
 		<description>Install cloth tail.</description>
@@ -114,9 +129,7 @@
 				<li>Cloth</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Tail</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_ClothTail</addsHediff>
 		<uiIconThing>Cloth</uiIconThing>
 	</RecipeDef>

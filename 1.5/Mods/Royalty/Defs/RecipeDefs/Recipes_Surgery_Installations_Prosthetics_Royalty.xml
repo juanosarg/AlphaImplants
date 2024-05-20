@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<RecipeDef ParentName="AI_SurgeryInstallImplantBase">
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Body">
 		<defName>AI_AnimalSkinHardener</defName>
 		<label>install animal skin hardener</label>
 		<description>Install an animal skin hardener.</description>
@@ -25,9 +25,7 @@
 				<li>AI_AnimalSkinHardener</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Body</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalSkinHardener</addsHediff>
 		<incompatibleWithHediffTags>
 			<li>ArmorGland</li>
@@ -44,7 +42,7 @@
 		<jobString>Removing animal skin hardener.</jobString>
 		<removesHediff>AI_AnimalSkinHardener</removesHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallProstheticPartBase">
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Mouth">
 		<defName>AI_AnimalVenomFangs</defName>
 		<label>install animal venom fangs</label>
 		<description>Install animal venom fangs.</description>
@@ -68,13 +66,7 @@
 				<li>AI_AnimalVenomFangs</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Jaw</li>
-			<li>AnimalJaw</li>
-			<li>InsectMouth</li>
-			<li>TurtleBeak</li>
-			<li>SnakeMouth</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalVenomFangs</addsHediff>
 	</RecipeDef>
 </Defs>

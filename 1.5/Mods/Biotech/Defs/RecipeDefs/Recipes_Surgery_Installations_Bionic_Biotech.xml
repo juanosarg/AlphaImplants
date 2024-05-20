@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Lung">
 		<defName>AI_AnimalBionicLung</defName>
 		<label>install animal detoxifier lung</label>
 		<description>Install an animal detoxifier lung.</description>
@@ -24,12 +24,10 @@
 				<li>AI_AnimalBionicLung</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Lung</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalBionicLung</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Kidney">
 		<defName>AI_AnimalBionicKidney</defName>
 		<label>install animal detoxifier kidney</label>
 		<description>Install an animal detoxifier kidney.</description>
@@ -53,12 +51,10 @@
 				<li>AI_AnimalBionicKidney</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Kidney</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalBionicKidney</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Liver">
 		<defName>AI_AnimalBionicLiver</defName>
 		<label>install animal detoxifier liver</label>
 		<description>Install an animal detoxifier liver.</description>
@@ -82,9 +78,7 @@
 				<li>AI_AnimalBionicLiver</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Liver</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalBionicLiver</addsHediff>
 	</RecipeDef>
 </Defs>

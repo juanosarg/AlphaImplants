@@ -29,7 +29,27 @@
 			<researchPrerequisite>Prosthetics</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-	
+	<ThingDef Name="AI_AnimalProstheticPartBase_AdvancedResearch" ParentName="AI_AnimalProstheticPartBase" Abstract="True">
+		<statBases>
+			<WorkToMake>25000</WorkToMake>
+		</statBases>
+		<recipeMaker Inherit="false">
+			<displayPriority>600</displayPriority>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>AI_AdvancedAnimalProstheticsTable</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+			<researchPrerequisite>AI_AdvancedAnimalBionics</researchPrerequisite>
+		</recipeMaker>
+		
+	</ThingDef>
 	<ThingDef Name="AI_AnimalProstheticPartBase_NotMakeable" ParentName="BodyPartBase" Abstract="True">
 		<techLevel>Industrial</techLevel>
 		<graphicData>
@@ -263,10 +283,10 @@
 		</statBases>
 		
 	</ThingDef>
-	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+	<ThingDef ParentName="AI_AnimalProstheticPartBase_AdvancedResearch">
 		<defName>AI_AnimalController</defName>
 		<label>animal controller</label>
-		<description>An animal mind controller implant. This implant will allow this creature to be drafted and controlled by the player.</description>
+		<description>An animal mind controller implant. This implant will allow this creature to be drafted and controlled by the player. Counts as a prosthetic when considering animal body size to be installed.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>AI_AnimalController</RecipeDef>
 		</descriptionHyperlinks>
@@ -283,5 +303,24 @@
 		<techHediffsTags>
 			<li>Advanced</li>
 		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalJump</defName>
+		<label>animal pouncing leg</label>
+		<description>An animal pouncing leg. Engineered with high-tension springs and advanced composite materials, it enables the animal to make precise, powerful leaps.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalJump</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+		</statBases>
+		
 	</ThingDef>
 </Defs>

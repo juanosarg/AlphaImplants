@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+				<value>
+					
+					<li>AB_InstallSimpleTentacle</li>
+						<li>AB_InstallBionicTentacle</li>
+						<li>AA_InstallSimpleBeak</li>
+						<li>AA_InstallBionicBeak</li>
+						<li>AA_InstallBionicMotionDetector</li>
+						<li>AB_InstallSimpleBuoyancy</li>
+						<li>AA_InstallBionicBuoyancy</li>
+						<li>AB_InstallSimpleShell</li>
+						<li>AA_InstallBionicShell</li>
+						<li>AB_InstallSimpleWing</li>
+						<li>AA_InstallBionicWing</li>
+						<li>AB_InstallSimpleClaw</li>
+						<li>AA_InstallBionicClaw</li>
+						<li>AA_InstallRangedSpinneretImplant</li>
+						<li>AA_RemoveRangedSpinneretImplant</li>
+						<li>AA_InstallVenomousSpitterImplant</li>
+						<li>AA_RemoveVenomousSpitterImplant</li>
+						<li>AA_InstallAcidicSpitterImplant</li>
+						<li>AA_RemoveAcidicSpitterImplant</li>
+						<li>AA_InstallBarbedQuillThrowerImplant</li>
+						<li>AA_RemoveBarbedQuillThrowerImplant</li>
+						<li>AA_InstallQuadTeslaCannonImplant</li>
+						<li>AA_RemoveQuadTeslaCannonImplant</li>
+						<li>AA_InstallBioelectricOrganImplant</li>
+						<li>AA_RemoveBioelectricOrganImplant</li>
+						<li>AA_InstallLightFocusingLensImplant</li>
+						<li>AA_RemoveLightFocusingLensImplant</li>
+						<li>AA_InstallHyperAcidicStomachImplant</li>
+						<li>AA_RemoveHyperAcidicStomachImplant</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
+
+	

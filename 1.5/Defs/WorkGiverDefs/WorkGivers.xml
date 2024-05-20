@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<WorkGiverDef>
+		<defName>AI_DoBillsImplantsTable</defName>
+		<label>works at animal prosthetics and bionics table</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>AI_AnimalProstheticsTable</li>
+		</fixedBillGiverDefs>
+		<verb>create animal implant</verb>
+		<gerund>creating animal implant at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	<WorkGiverDef>
+		<defName>AI_DoBillsAdvancedImplantsTable</defName>
+		<label>works at advanced animal prosthetics and bionics table</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>AI_AdvancedAnimalProstheticsTable</li>
+		</fixedBillGiverDefs>
+		<verb>create advanced animal implant</verb>
+		<gerund>creating advanced animal implant at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+</Defs>

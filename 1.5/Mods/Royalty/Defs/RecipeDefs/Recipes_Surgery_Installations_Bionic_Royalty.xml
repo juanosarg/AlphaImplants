@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<RecipeDef ParentName="AI_SurgeryInstallImplantBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Kidney">
 		<defName>AI_AnimalImmunoenhancer</defName>
 		<label>install animal immunoenhancer</label>
 		<description>Install an animal immunoenhancer.</description>
@@ -24,9 +24,7 @@
 				<li>AI_AnimalImmunoenhancer</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Kidney</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalImmunoenhancer</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
@@ -40,7 +38,7 @@
 		<jobString>Removing animal immunoenhancer.</jobString>
 		<removesHediff>AI_AnimalImmunoenhancer</removesHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallImplantBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Brain">
 		<defName>AI_AnimalCircadianSupercharger</defName>
 		<label>install animal circadian supercharger</label>
 		<description>Install an animal circadian supercharger.</description>
@@ -64,9 +62,7 @@
 				<li>AI_AnimalCircadianSupercharger</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Brain</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalCircadianSupercharger</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
@@ -80,7 +76,7 @@
 		<jobString>Removing animal circadian supercharger.</jobString>
 		<removesHediff>AI_AnimalCircadianSupercharger</removesHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallImplantBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
 		<defName>AI_AnimalHealClotSynergizer</defName>
 		<label>install animal healclot synergizer</label>
 		<description>Install an animal healclot synergizer.</description>
@@ -104,9 +100,7 @@
 				<li>AI_AnimalHealClotSynergizer</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Body</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalHealClotSynergizer</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
@@ -120,7 +114,7 @@
 		<jobString>Removing animal healclot synergizer.</jobString>
 		<removesHediff>AI_AnimalHealClotSynergizer</removesHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallImplantBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
 		<defName>AI_AnimalDermalArmorGland</defName>
 		<label>install animal dermal armor gland</label>
 		<description>Install an animal dermal armor gland.</description>
@@ -144,9 +138,7 @@
 				<li>AI_AnimalDermalArmorGland</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Body</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalDermalArmorGland</addsHediff>
 		<incompatibleWithHediffTags>
 			<li>ArmorGland</li>
@@ -164,7 +156,7 @@
 		<removesHediff>AI_AnimalDermalArmorGland</removesHediff>
 	</RecipeDef>
 	
-	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Stomach">
 		<defName>AI_AnimalNuclearStomach</defName>
 		<label>install animal nuclear stomach</label>
 		<description>Install an animal nuclear stomach.</description>
@@ -188,10 +180,7 @@
 				<li>AI_AnimalNuclearStomach</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Heart</li>
-			<li>InsectHeart</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalNuclearStomach</addsHediff>
 	</RecipeDef>
 </Defs>

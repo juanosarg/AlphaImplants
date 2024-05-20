@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>AI_AdvancedAnimalBionics</defName>
+    <label>advanced animal bionics</label>
+    <description>Build advanced bionic body parts that provide extraordinary abilities to animals. Requires a skilled doctor to attach.</description>
+    <baseCost>2500</baseCost>
+    <researchViewX>17.00</researchViewX>
+    <researchViewY>5.40</researchViewY>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>Bionics</li>
+    </prerequisites>
+	<hiddenPrerequisites>
+      <li>Prosthetics</li>
+    </hiddenPrerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->advanced bionic prosthesis</li>
+
+        <li>subject_story->worked in an animal experimentation lab, pushing the limits of biological sciences</li>
+        <li>subject_story->studied thousands of live specimens to understand what made them tick</li>
+        <li>subject_story->enraged all animal rights activists on the planet due to insane, deranged experiments on live specimens</li>
+
+        <li>subject_gerund->creating advanced bionic prosthetics</li>
+        <li>subject_gerund->applying advanced bionics to animals</li>
+
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+ 
+
+</Defs>

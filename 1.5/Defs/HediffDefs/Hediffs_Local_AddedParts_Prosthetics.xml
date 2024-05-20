@@ -288,7 +288,7 @@
 		<defName>AI_AnimalController</defName>
 		<label>animal controller</label>
 		<labelNoun>an animal controller</labelNoun>
-		<description>An installed animal controller implant. This implant will allow this creature to be drafted and controlled by the player.</description>
+		<description>An installed animal controller implant. This implant will allow this creature to be drafted and controlled by the player. Counts as a prosthetic when considering animal body size to be installed.</description>
 		<descriptionHyperlinks>
 			<ThingDef>AI_AnimalController</ThingDef>
 		</descriptionHyperlinks>
@@ -299,4 +299,25 @@
 		</comps>
 		<spawnThingOnRemoved>AI_AnimalController</spawnThingOnRemoved>
 	</HediffDef>
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalJump</defName>
+		<label>animal pouncing leg</label>
+		<labelNoun>an animal pouncing leg</labelNoun>
+		<description>An installed animal pouncing leg. Engineered with high-tension springs and advanced composite materials, it enables the animal to make precise, powerful leaps.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalJump</ThingDef>
+		</descriptionHyperlinks>
+		 <comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_Ability">
+				<ability>AI_AnimalJump</ability>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>AI_AnimalJump</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.9</partEfficiency>
+		</addedPartProps>
+		
+	</HediffDef>
+	
 </Defs>

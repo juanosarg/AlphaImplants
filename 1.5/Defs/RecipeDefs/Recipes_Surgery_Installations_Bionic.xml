@@ -22,7 +22,89 @@
 			</categories>
 		</fixedIngredientFilter>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+	
+	<RecipeDef Name="AI_SurgeryInstallBionic_AllLimbs" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+			<li>InsectLeg</li>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallBionic_Leg" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+			<li>InsectLeg</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallBionic_Arm" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallBionic_Tail" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Tail</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallBionic_Mouth" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Jaw</li>
+			<li>AnimalJaw</li>
+			<li>InsectMouth</li>
+			<li>TurtleBeak</li>
+			<li>SnakeMouth</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallBionic_Heart" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Heart</li>
+			<li>InsectHeart</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallBionic_Spine" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Spine</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallBionic_Stomach" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Stomach</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallBionic_Lung" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Lung</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallBionic_Kidney" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Kidney</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallBionic_Liver" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Liver</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
+	<RecipeDef Name="AI_SurgeryInstallBionic_Brain" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallBionic_Eye" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Eye</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallBionic_Body" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Body</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Leg">
 		<defName>AI_AnimalBionicLeg</defName>
 		<label>install animal bionic leg</label>
 		<description>Install an animal bionic leg.</description>
@@ -46,13 +128,10 @@
 				<li>AI_AnimalBionicLeg</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Leg</li>
-			<li>InsectLeg</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalBionicLeg</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Arm">
 		<defName>AI_AnimalBionicArm</defName>
 		<label>install animal bionic arm</label>
 		<description>Install an animal bionic arm.</description>
@@ -76,12 +155,10 @@
 				<li>AI_AnimalBionicArm</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Arm</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalBionicArm</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Tail">
 		<defName>AI_AnimalBionicTail</defName>
 		<label>install animal bionic tail</label>
 		<description>Install an animal bionic tail.</description>
@@ -105,12 +182,10 @@
 				<li>AI_AnimalBionicTail</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Tail</li>
-		</appliedOnFixedBodyParts>
+	
 		<addsHediff>AI_AnimalBionicTail</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Mouth">
 		<defName>AI_AnimalBionicJaw</defName>
 		<label>install animal bionic jaw</label>
 		<description>Install an animal bionic jaw.</description>
@@ -134,16 +209,10 @@
 				<li>AI_AnimalBionicJaw</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Jaw</li>
-			<li>AnimalJaw</li>
-			<li>InsectMouth</li>
-			<li>TurtleBeak</li>
-			<li>SnakeMouth</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalBionicJaw</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Heart">
 		<defName>AI_AnimalBionicHeart</defName>
 		<label>install animal bionic heart</label>
 		<description>Install an animal bionic heart.</description>
@@ -167,13 +236,10 @@
 				<li>AI_AnimalBionicHeart</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Heart</li>
-			<li>InsectHeart</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalBionicHeart</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Spine">
 		<defName>AI_AnimalBionicSpine</defName>
 		<label>install animal bionic spine</label>
 		<description>Install an animal bionic spine.</description>
@@ -197,12 +263,10 @@
 				<li>AI_AnimalBionicSpine</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Spine</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalBionicSpine</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Stomach">
 		<defName>AI_AnimalBionicStomach</defName>
 		<label>install animal bionic stomach</label>
 		<description>Install an animal bionic stomach.</description>
@@ -226,12 +290,10 @@
 				<li>AI_AnimalBionicStomach</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Stomach</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalBionicStomach</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallBionicPartBase">
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Eye">
 		<defName>AI_AnimalBionicEye</defName>
 		<label>install animal bionic eye</label>
 		<description>Install an animal bionic eye.</description>
@@ -255,9 +317,7 @@
 				<li>AI_AnimalBionicEye</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Eye</li>
-		</appliedOnFixedBodyParts>
+		
 		<addsHediff>AI_AnimalBionicEye</addsHediff>
 	</RecipeDef>
 </Defs>
