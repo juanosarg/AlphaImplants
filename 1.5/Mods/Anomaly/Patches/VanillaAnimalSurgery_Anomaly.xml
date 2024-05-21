@@ -10,6 +10,8 @@
 					<li>AI_AnimalTentacle</li>
 					<li>AI_AnimalToughspikes</li>
 					<li>AI_RemoveAnimalToughspikes</li>
+					<li>AI_AnimalRangedTrispikes</li>
+					<li>AI_RemoveAnimalRangedTrispikes</li>
 					
 				</value>
 			</li>

@@ -86,6 +86,8 @@
 						<li>AA_SentientPlantBody</li>
 						<li>AA_SlugBody</li>
 						<li>AA_SquidBody</li>
+						<li>AA_Protoplasm</li>
+						<li>AA_Thorax</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -96,6 +98,8 @@
 						<li>AA_SentientPlantBody</li>
 						<li>AA_SlugBody</li>
 						<li>AA_SquidBody</li>
+						<li>AA_Protoplasm</li>
+						<li>AA_Thorax</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -157,14 +161,14 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Wings"]/appliedOnFixedBodyParts</xpath>
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Wing"]/appliedOnFixedBodyParts</xpath>
 					<value>
 						<li>AA_InsectWing</li>
 						<li>AA_ReptileWing</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Wings"]/appliedOnFixedBodyParts</xpath>
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Wing"]/appliedOnFixedBodyParts</xpath>
 					<value>
 						<li>AA_InsectWing</li>
 						<li>AA_ReptileWing</li>
@@ -194,7 +198,6 @@
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Stinger"]/appliedOnFixedBodyParts</xpath>
 					<value>
 						<li>AA_InsectSting</li>
-						
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -203,7 +206,6 @@
 						<li>AA_InsectSting</li>
 					</value>
 				</li>
-				
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/HediffDef[defName= "AI_AnimalProstheticBlade"]/modExtensions/li[@Class="AlphaImplants.HediffImplantExtension"]/bodyPartGroupsToMultiplyDamage</xpath>
 					<value>
@@ -216,7 +218,6 @@
 						<li>AA_BladeAttackTool</li>
 					</value>
 				</li>
-				
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/HediffDef[defName= "AI_AnimalProstheticStinger"]/modExtensions/li[@Class="AlphaImplants.HediffImplantExtension"]/bodyPartGroupsToMultiplyDamage</xpath>
 					<value>

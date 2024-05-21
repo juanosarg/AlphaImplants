@@ -377,7 +377,7 @@
 					<li>
 						<label>bionic stinger</label>
 						<capacities>
-							<li>ToxicBuildup</li>
+							<li>ToxicBite</li>
 						</capacities>
 						<power>1</power>
 						<cooldownTime>1</cooldownTime>

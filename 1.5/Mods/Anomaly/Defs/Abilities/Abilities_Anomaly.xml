@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <AbilityDef>
+     <defName>AI_TrispikeLaunch</defName>
+    <label>spike launch</label>
+	  <iconPath>UI/Abilities/AI_TrispikeLaunch</iconPath>
+    <description>Launch a bone spike at a target.</description>
+    <cooldownTicksRange>120</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+	  <range>5.9</range>
+      <defaultProjectile>Spike_Toughspike</defaultProjectile>
+      <verbClass>Verb_AbilityShoot</verbClass>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>Ability_SpineLaunch</soundCast>
+      <ai_IsWeapon>false</ai_IsWeapon>
+    </verbProperties>
+  </AbilityDef>
+
+
+
+  
+  
+
+</Defs>

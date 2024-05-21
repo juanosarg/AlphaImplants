@@ -4,8 +4,10 @@
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>MutationWeaponry</li>
-				
 			</researchPrerequisites>
+			<recipeUsers>
+				<li>BioferriteShaper</li>
+			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
 	<ThingDef ParentName="AI_AnimalBionicPartBase_Mutation">
@@ -26,7 +28,6 @@
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
-	
 	<ThingDef ParentName="AI_AnimalBionicPartBase_Mutation">
 		<defName>AI_AnimalToughspikes</defName>
 		<label>animal toughspikes</label>
@@ -45,5 +46,22 @@
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
-
+	<ThingDef ParentName="AI_AnimalBionicPartBase_Mutation">
+		<defName>AI_AnimalRangedTrispikes</defName>
+		<label>animal ranged trispikes</label>
+		<description>An animal implant that adds three fleshy spikes to the animal's body, independent of their original limbs. These extra limbs allow them to use a ranged attack.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalRangedTrispikes</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Bioferrite>35</Bioferrite>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
 </Defs>

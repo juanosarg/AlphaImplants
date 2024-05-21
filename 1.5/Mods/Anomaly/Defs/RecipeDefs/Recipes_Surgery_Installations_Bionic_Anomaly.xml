@@ -66,5 +66,43 @@
 		<jobString>Removing animal toughspikes.</jobString>
 		<removesHediff>AI_AnimalToughspikes</removesHediff>
 	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalRangedTrispikes</defName>
+		<label>install animal ranged trispikes</label>
+		<description>Install an animal ranged trispikes.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalRangedTrispikes</ThingDef>
+			<HediffDef>AI_AnimalRangedTrispikes</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal ranged trispikes.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalRangedTrispikes</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalRangedTrispikes</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalRangedTrispikes</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalRangedTrispikes</defName>
+		<label>remove animal ranged trispikes</label>
+		<description>Remove animal ranged trispikes.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalRangedTrispikes</ThingDef>
+			<HediffDef>AI_AnimalRangedTrispikes</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal ranged trispikes.</jobString>
+		<removesHediff>AI_AnimalRangedTrispikes</removesHediff>
+	</RecipeDef>
 	
 </Defs>

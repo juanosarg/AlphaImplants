@@ -6,25 +6,23 @@
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
 				<value>
-					
 					<li>AI_GooAcidifier</li>
-					<!--
-						<li>AA_InstallRangedSpinneretImplant</li>
-						<li>AA_RemoveRangedSpinneretImplant</li>
-						<li>AA_InstallVenomousSpitterImplant</li>
-						<li>AA_RemoveVenomousSpitterImplant</li>
-						<li>AA_InstallAcidicSpitterImplant</li>
-						<li>AA_RemoveAcidicSpitterImplant</li>
-						<li>AA_InstallBarbedQuillThrowerImplant</li>
-						<li>AA_RemoveBarbedQuillThrowerImplant</li>
-						<li>AA_InstallQuadTeslaCannonImplant</li>
-						<li>AA_RemoveQuadTeslaCannonImplant</li>
-						<li>AA_InstallBioelectricOrganImplant</li>
-						<li>AA_RemoveBioelectricOrganImplant</li>
-						<li>AA_InstallLightFocusingLensImplant</li>
-						<li>AA_RemoveLightFocusingLensImplant</li>
-						<li>AA_InstallHyperAcidicStomachImplant</li>
-						<li>AA_RemoveHyperAcidicStomachImplant</li>-->
+					<li>AI_AnimalRangedSpinneret</li>
+					<li>AI_RemoveAnimalRangedSpinneret</li>
+					<li>AI_AnimalVenomousSpitter</li>
+					<li>AI_RemoveAnimalVenomousSpitter</li>
+					<li>AI_AnimalAcidicSpitter</li>
+					<li>AI_RemoveAnimalAcidicSpitter</li>
+					<li>AI_AnimalBarbedQuillThrower</li>
+					<li>AI_RemoveAnimalBarbedQuillThrower</li>
+					<li>AI_AnimalQuadTeslaCannon</li>
+					<li>AI_RemoveAnimalQuadTeslaCannon</li>
+					<li>AI_AnimalBioelectricOrgan</li>
+					<li>AI_RemoveAnimalBioelectricOrgan</li>
+					<li>AI_AnimalLightFocusingLens</li>
+					<li>AI_RemoveAnimalLightFocusingLens</li>
+					<li>AI_AnimalHyperAcidicStomach</li>
+					<li>AI_RemoveAnimalHyperAcidicStomach</li>
 				</value>
 			</li>
 		</operations>
