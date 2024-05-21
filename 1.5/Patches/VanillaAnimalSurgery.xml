@@ -20,6 +20,14 @@
 					<li>AI_AnimalProstheticLung</li>
 					<li>AI_AnimalProstheticKidney</li>
 					<li>AI_AnimalProstheticLiver</li>
+					<li>AI_AnimalProstheticBeak</li>
+					<li>AI_AnimalProstheticTentacle</li>
+					<li>AI_AnimalProstheticBuoyancy</li>
+					<li>AI_AnimalProstheticShell</li>
+					<li>AI_AnimalProstheticWing</li>
+					<li>AI_AnimalProstheticBlade</li>
+					<li>AI_AnimalProstheticStinger</li>
+					<li>AI_AnimalProstheticHorn</li>
 					<li>AI_AnimalPowerClaw</li>
 					<li>AI_AnimalPainstopper</li>
 					<li>AI_RemovePainstopper</li>
@@ -35,6 +43,14 @@
 					<li>AI_AnimalBionicSpine</li>
 					<li>AI_AnimalBionicStomach</li>
 					<li>AI_AnimalBionicEye</li>
+					<li>AI_AnimalBionicBeak</li>
+					<li>AI_AnimalBionicTentacle</li>
+					<li>AI_AnimalBionicBuoyancy</li>
+					<li>AI_AnimalBionicShell</li>
+					<li>AI_AnimalBionicWing</li>
+					<li>AI_AnimalBionicBlade</li>
+					<li>AI_AnimalBionicStinger</li>
+					<li>AI_AnimalBionicHorn</li>
 				</value>
 			</li>
 		</operations>

@@ -269,6 +269,216 @@
 			</li>
 		</modExtensions>
 	</HediffDef>
+	
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticBeak</defName>
+		<label>animal prosthetic beak</label>
+		<labelNoun>an animal prosthetic beak</labelNoun>
+		<description>An installed animal prosthetic beak built with simple materials. Should be able to replace almost any avian-like beak.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticBeak</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.95</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>AI_AnimalProstheticBeak</spawnThingOnRemoved>
+	</HediffDef>
+<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticTentacle</defName>
+		<label>animal prosthetic tentacle</label>
+		<labelNoun>an animal prosthetic tentacle</labelNoun>
+		<description>An installed animal prosthetic tentacle built with simple materials. Should be able to replace almost any tentacle, though they'll be quite rigid and not very functional, specially if the animal uses it for locomotion.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticTentacle</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.7</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>AI_AnimalProstheticTentacle</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticBuoyancy</defName>
+		<label>animal prosthetic buoyancy mechanism</label>
+		<labelNoun>an animal prosthetic buoyancy mechanism</labelNoun>
+		<description>An installed animal prosthetic buoyancy mechanism built with simple materials. Should be able to replace hydrogen sacs and other exotic organs keeping hovering creatures in the air.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticBuoyancy</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.85</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>AI_AnimalProstheticBuoyancy</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticShell</defName>
+		<label>animal prosthetic shell</label>
+		<labelNoun>an animal prosthetic shell</labelNoun>
+		<description>An installed animal prosthetic shell constructed from basic, durable materials, providing essential protection and structural support. Though simple in design, it offers a practical solution for shielding the animal from harm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticShell</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.85</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.05</ArmorRating_Heat>
+				</statOffsets>
+			</li>			
+		</stages>
+		<spawnThingOnRemoved>AI_AnimalProstheticShell</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticWing</defName>
+		<label>animal prosthetic wing</label>
+		<labelNoun>an animal prosthetic wing</labelNoun>
+		<description>An installed animal prosthetic wing made from basic, sturdy materials, offering essential support for limited flight and gliding. Though simple, it provides a functional solution for basic aerial mobility. Note that base game birds DON'T have wings (yes, really).</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticWing</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.85</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.02</ArmorRating_Heat>
+				</statOffsets>
+			</li>			
+		</stages>
+		<spawnThingOnRemoved>AI_AnimalProstheticWing</spawnThingOnRemoved>
+	</HediffDef>
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticBlade</defName>
+		<label>animal prosthetic blade</label>
+		<labelNoun>an animal prosthetic blade</labelNoun>
+		<description>An installed animal prosthetic blade made from basic, sturdy materials. Will replace a range of biological structures such as single claws (not claws that are part of a paw, for example) and an insect's headclaw.</description>
+		<extraTooltip>Provides a Cut attack with a strength 50% higher than the animal's original claw attack, and same cooldown.</extraTooltip>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticBlade</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.5</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>prosthetic blade</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>1</power>
+						<cooldownTime>1</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>HeadClaw</li>
+					<li>FrontLeftClaws</li>
+					<li>FrontRightClaws</li>
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>1.5</powerMultiplier>
+				<cooldownTimeMultiplier>1</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
+		<spawnThingOnRemoved>AI_AnimalProstheticBlade</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticStinger</defName>
+		<label>animal prosthetic stinger</label>
+		<labelNoun>an animal prosthetic stinger</labelNoun>
+		<description>An installed animal prosthetic stinger made from basic, sturdy materials and designed to replace a lost or damaged stinger.</description>
+		<extraTooltip>Provides a Toxic Buildup attack with a strength 50% higher than the animal's original claw attack, and same cooldown.</extraTooltip>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticStinger</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.5</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>prosthetic stinger</label>
+						<capacities>
+							<li>ToxicBuildup</li>
+						</capacities>
+						<power>1</power>
+						<cooldownTime>1</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>HeadClaw</li>
+				
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>1.5</powerMultiplier>
+				<cooldownTimeMultiplier>1</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
+		<spawnThingOnRemoved>AI_AnimalProstheticStinger</spawnThingOnRemoved>
+	</HediffDef>
+	
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalProstheticHorn</defName>
+		<label>animal prosthetic horn</label>
+		<labelNoun>an animal prosthetic horn</labelNoun>
+		<description>An installed animal prosthetic horn acting as a synthetic replacement for a lost or damaged horn, crafted from durable materials to restore natural appearance and function.</description>
+		<extraTooltip>Provides a Blunt attack with a strength 50% higher than the animal's original claw attack, and same cooldown.</extraTooltip>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticHorn</ThingDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.5</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>prosthetic horn</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>1</power>
+						<cooldownTime>1</cooldownTime>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>HornAttackTool</li>
+				
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>1.5</powerMultiplier>
+				<cooldownTimeMultiplier>1</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
+		<spawnThingOnRemoved>AI_AnimalProstheticHorn</spawnThingOnRemoved>
+	</HediffDef>
+	
 	<HediffDef ParentName="AI_ImplantHediffBase">
 		<defName>AI_AnimalPainstopper</defName>
 		<label>animal painstopper</label>

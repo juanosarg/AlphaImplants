@@ -5,8 +5,7 @@
 			<li>Alpha Animals</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<operations>					
-		
+			<operations>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallCrude_Mouth"]/appliedOnFixedBodyParts</xpath>
 					<value>
@@ -14,7 +13,7 @@
 						<li>AA_CrocodileJaw</li>
 						<li>AA_SentientPlantMouth</li>
 					</value>
-				</li>	
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Mouth"]/appliedOnFixedBodyParts</xpath>
 					<value>
@@ -22,7 +21,7 @@
 						<li>AA_CrocodileJaw</li>
 						<li>AA_SentientPlantMouth</li>
 					</value>
-				</li>	
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Mouth"]/appliedOnFixedBodyParts</xpath>
 					<value>
@@ -30,58 +29,55 @@
 						<li>AA_CrocodileJaw</li>
 						<li>AA_SentientPlantMouth</li>
 					</value>
-				</li>	
-				
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Eye"]/appliedOnFixedBodyParts</xpath>
 					<value>
 						<li>AA_SnailEyeStalk</li>
 					</value>
-				</li>	
-				
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallCrude_AllLimbs"]/appliedOnFixedBodyParts</xpath>
 					<value>
 						<li>AA_SmallInsectLeg</li>
 					</value>
-				</li>	
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_AllLimbs"]/appliedOnFixedBodyParts</xpath>
 					<value>
 						<li>AA_SmallInsectLeg</li>
 					</value>
-				</li>	
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Leg"]/appliedOnFixedBodyParts</xpath>
 					<value>
 						<li>AA_SmallInsectLeg</li>
 					</value>
-				</li>	
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Leg"]/appliedOnFixedBodyParts</xpath>
 					<value>
 						<li>AA_SmallInsectLeg</li>
 					</value>
-				</li>	
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallCrude_Tail"]/appliedOnFixedBodyParts</xpath>
 					<value>
 						<li>AA_SmallInsectLeg</li>
 					</value>
-				</li>	
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Tail"]/appliedOnFixedBodyParts</xpath>
 					<value>
 						<li>AA_SmallInsectLeg</li>
 					</value>
-				</li>	
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Tail"]/appliedOnFixedBodyParts</xpath>
 					<value>
 						<li>AA_SmallInsectLeg</li>
 					</value>
-				</li>	
-				
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Body"]/appliedOnFixedBodyParts</xpath>
 					<value>
@@ -91,7 +87,7 @@
 						<li>AA_SlugBody</li>
 						<li>AA_SquidBody</li>
 					</value>
-				</li>	
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Body"]/appliedOnFixedBodyParts</xpath>
 					<value>
@@ -101,11 +97,138 @@
 						<li>AA_SlugBody</li>
 						<li>AA_SquidBody</li>
 					</value>
-				</li>	
-
-			
-
-			
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Tentacle"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_JellyfishTentacle</li>
+						<li>AA_ManTrapTentacle</li>
+						<li>AA_SquidTentacle</li>
+						<li>AA_NautilusTentacles</li>
+						<li>AA_JellyfishTentacles</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Tentacle"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_JellyfishTentacle</li>
+						<li>AA_ManTrapTentacle</li>
+						<li>AA_SquidTentacle</li>
+						<li>AA_NautilusTentacles</li>
+						<li>AA_JellyfishTentacles</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Buoyancy"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_HydrogenSac</li>
+						<li>AA_BoatHydrogenSac</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Buoyancy"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_HydrogenSac</li>
+						<li>AA_BoatHydrogenSac</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Shell"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_FirstWormSegment</li>
+						<li>AA_SecondWormSegment</li>
+						<li>AA_ThirdWormSegment</li>
+						<li>AA_FourthWormSegment</li>
+						<li>AA_Carapace</li>
+						<li>AA_ConicalShell</li>
+						<li>AA_NautilusShell</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Shell"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_FirstWormSegment</li>
+						<li>AA_SecondWormSegment</li>
+						<li>AA_ThirdWormSegment</li>
+						<li>AA_FourthWormSegment</li>
+						<li>AA_Carapace</li>
+						<li>AA_ConicalShell</li>
+						<li>AA_NautilusShell</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Wings"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_InsectWing</li>
+						<li>AA_ReptileWing</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Wings"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_InsectWing</li>
+						<li>AA_ReptileWing</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Blade"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_LeftPincer</li>
+						<li>AA_RightPincer</li>
+						<li>AA_LeftCreatureBlade</li>
+						<li>AA_RightCreatureBlade</li>
+						<li>AA_FrontClaw</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Blade"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_LeftPincer</li>
+						<li>AA_RightPincer</li>
+						<li>AA_LeftCreatureBlade</li>
+						<li>AA_RightCreatureBlade</li>
+						<li>AA_FrontClaw</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Stinger"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_InsectSting</li>
+						
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Stinger"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_InsectSting</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[defName= "AI_AnimalProstheticBlade"]/modExtensions/li[@Class="AlphaImplants.HediffImplantExtension"]/bodyPartGroupsToMultiplyDamage</xpath>
+					<value>
+						<li>AA_BladeAttackTool</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[defName= "AI_AnimalBionicBlade"]/modExtensions/li[@Class="AlphaImplants.HediffImplantExtension"]/bodyPartGroupsToMultiplyDamage</xpath>
+					<value>
+						<li>AA_BladeAttackTool</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[defName= "AI_AnimalProstheticStinger"]/modExtensions/li[@Class="AlphaImplants.HediffImplantExtension"]/bodyPartGroupsToMultiplyDamage</xpath>
+					<value>
+						<li>AA_Sting</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[defName= "AI_AnimalBionicStinger"]/modExtensions/li[@Class="AlphaImplants.HediffImplantExtension"]/bodyPartGroupsToMultiplyDamage</xpath>
+					<value>
+						<li>AA_Sting</li>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>

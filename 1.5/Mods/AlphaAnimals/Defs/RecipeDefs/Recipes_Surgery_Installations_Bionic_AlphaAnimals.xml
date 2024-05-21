@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="AI_SurgeryInstallBionic_Nucleus" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>AA_Nucleus</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Nucleus">
+		<defName>AI_GooAcidifier</defName>
+		<label>install goo acidifier</label>
+		<description>Install goo acidifier.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_GooAcidifier</ThingDef>
+			<HediffDef>AI_GooAcidifier</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing goo acidifier.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_GooAcidifier</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_GooAcidifier</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_GooAcidifier</addsHediff>
+	</RecipeDef>
+</Defs>

@@ -186,4 +186,148 @@
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicBeak</defName>
+		<label>animal bionic beak</label>
+		
+		<description>An animal bionic beak engineered from advanced, durable materials to restore biting and pecking functions. Should be able to replace almost any avian-like beak.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicBeak</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2.5</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicTentacle</defName>
+		<label>animal bionic tentacle</label>
+		
+		<description>An animal bionic tentacle that replicates natural tentacle movements, offering superior grasping and manipulation capabilities for the animal. Bear in mind the original animal needs to have tentacles of its own. For extra tentacles, look into Anomaly implants.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicTentacle</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>5.5</Mass>
+		</statBases>
+		
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicBuoyancy</defName>
+		<label>animal bionic buoyancy mechanism</label>
+		
+		<description>An animal bionic buoyancy mechanism. Should be able to replace hydrogen sacs and other exotic organs keeping hovering creatures in the air.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicBuoyancy</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicShell</defName>
+		<label>animal bionic shell</label>
+		
+		<description>An animal bionic shell built with advanced, resilient materials, offering superior protection and structural support and designed to perfectly mimic natural shells.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicShell</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>10</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicWing</defName>
+		<label>animal bionic wing</label>
+		
+		<description>An animal bionic wing engineered from lightweight, durable materials and providing enhanced maneuverability. Designed to replicate natural wing movements.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicWing</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicBlade</defName>
+		<label>animal bionic blade</label>
+		
+		<description>An animal bionic blade built with advanced, resilient materials. Will replace a range of biological structures such as single claws (not claws that are part of a paw, for example) and an insect's headclaw.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicBlade</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicStinger</defName>
+		<label>animal bionic stinger</label>
+		
+		<description>An animal bionic stinger incorporating cutting-edge technology to enhance natural stinging capabilities. Engineered for precision and potency.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicStinger</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>3</Mass>
+		</statBases>
+		
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicHorn</defName>
+		<label>animal bionic hotn</label>
+		
+		<description>An animal bionic horn integrating advanced materials and engineering. It offers superior strength, durability, and potential enhancements such as sensory capabilities.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicHorn</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
 </Defs>

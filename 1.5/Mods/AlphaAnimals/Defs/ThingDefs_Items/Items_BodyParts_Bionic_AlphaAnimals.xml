@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_GooAcidifier</defName>
+		<label>goo acidifier</label>
+		<description>A goo acidifier increases the acidity of a goo's internal organs, making it explode as soon as it is downed. Basically transforms goos into biological suicide bombers.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_GooAcidifier</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		
+		<recipeMaker>
+			<researchPrerequisite>AI_AdvancedAnimalBionics</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+
+</Defs>
