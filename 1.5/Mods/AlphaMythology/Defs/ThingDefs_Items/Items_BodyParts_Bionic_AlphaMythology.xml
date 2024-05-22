@@ -1,34 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<ThingDef Name="AI_AdvancedAnimalBionicPartBase" ParentName="AI_AnimalBionicPartBase" Abstract="true">
-		<recipeMaker>
-			<researchPrerequisite>AI_AdvancedAnimalBionics</researchPrerequisite>
-		</recipeMaker>
-	</ThingDef>
-	<!-- Goo acidifier -->
+	
+	
+	<!-- Petrifying Gaze -->
 	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
-		<defName>AI_GooAcidifier</defName>
-		<label>animal goo acidifier</label>
-		<description>A goo acidifier increases the acidity of a goo's internal organs, making it explode as soon as it is downed. Basically transforms goos into biological suicide bombers.</description>
+		<defName>AI_AnimalPetrifyingGaze</defName>
+		<label>animal petrifying gaze</label>
+		<description>An animal petrifying gaze implant. This implant will allow this creature to use a very dangerous petrifying gaze that will slow down its target, and eventually kill it.\n\nNote that installing this on a creature that already has a petrifying attack will have no effect. And obviously a creature will need eyes to use this attack.</description>
 		<descriptionHyperlinks>
-			<RecipeDef>AI_GooAcidifier</RecipeDef>
-		</descriptionHyperlinks>
-		<costList>
-			<Steel>30</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-		</costList>
-		<statBases>
-			<Mass>1</Mass>
-		</statBases>
-	</ThingDef>
-	<!-- Ranged spinneret -->
-	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
-		<defName>AI_AnimalRangedSpinneret</defName>
-		<label>animal ranged spinneret</label>
-		<description>A ranged spinneret implant. This implant will allow this creature to use a ranged stunning web attack.\n\nNote that installing this on a creature that already has a ranged spinneret will have no effect.</description>
-		<descriptionHyperlinks>
-			<RecipeDef>AI_AnimalRangedSpinneret</RecipeDef>
+			<RecipeDef>AI_AnimalPetrifyingGaze</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
 			<Plasteel>10</Plasteel>
@@ -41,13 +22,13 @@
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
-	<!-- Venomous Spitter -->
+	<!-- Venomous Quills -->
 	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
-		<defName>AI_AnimalVenomousSpitter</defName>
-		<label>animal venomous spitter</label>
-		<description>A venomous spitter implant. This implant will allow this creature to use a ranged venomous spit attack.\n\nNote that installing this on a creature that already has a venomous spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
+		<defName>AI_AnimalVenomousQuills</defName>
+		<label>animal venomous quills</label>
+		<description>A venomous quills implant. This implant will allow this creature to use a ranged venomous quill attack.\n\nNote that installing this on a creature that already has a venomous quill will have no effect. This implant can only be installed in creatures that have a tail.</description>
 		<descriptionHyperlinks>
-			<RecipeDef>AI_AnimalVenomousSpitter</RecipeDef>
+			<RecipeDef>AI_AnimalVenomousQuills</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
 			<Plasteel>10</Plasteel>
@@ -60,13 +41,13 @@
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
-	<!-- Acidic Spitter -->
+	<!-- Wisp Fire -->
 	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
-		<defName>AI_AnimalAcidicSpitter</defName>
-		<label>animal acidic spitter</label>
-		<description>An acidic spitter implant. This implant will allow this creature to use a ranged acidic spit attack that causes additional damage over time.\n\nNote that installing this on a creature that already has an acidic spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
+		<defName>AI_AnimalWispFire</defName>
+		<label>animal wisp fire</label>
+		<description>An animal wisp fire implant. This implant will allow this creature to use a ranged fire attack.\n\nNote that installing this on a creature that already has a wisp fire will have no effect.</description>
 		<descriptionHyperlinks>
-			<RecipeDef>AI_AnimalAcidicSpitter</RecipeDef>
+			<RecipeDef>AI_AnimalWispFire</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
 			<Plasteel>10</Plasteel>
@@ -79,13 +60,13 @@
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
-	<!-- Barbed Quill Thrower -->
+	<!-- Acidic Breath -->
 	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
-		<defName>AI_AnimalBarbedQuillThrower</defName>
-		<label>animal barbed quill thrower</label>
-		<description>A barbed quill thrower implant. This implant will allow this creature to use a ranged venomous quill attack that causes toxic buildup.\n\nNote that installing this on a creature that already has a barbed quill thrower will have no effect.</description>
+		<defName>AI_AnimalAcidicBreath</defName>
+		<label>animal acidic breath</label>
+		<description>An animal acidic breath implant. This implant will allow this creature to use a ranged acidic breath attack that causes damage over time.\n\nNote that installing this on a creature that already has an acidic breath will have no effect.</description>
 		<descriptionHyperlinks>
-			<RecipeDef>AI_AnimalBarbedQuillThrower</RecipeDef>
+			<RecipeDef>AI_AnimalAcidicBreath</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
 			<Plasteel>10</Plasteel>
@@ -98,13 +79,13 @@
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
-	<!-- Quad Tesla Cannon -->
+	<!-- Fire Breath -->
 	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
-		<defName>AI_AnimalQuadTeslaCannon</defName>
-		<label>animal quad tesla cannon</label>
-		<description>A quad tesla cannon implant. This implant will allow this creature to use a powerful ranged plasma attack.\n\nNote that installing this on a creature that already has a quad tesla cannon will have no effect.</description>
+		<defName>AI_AnimalFireBreath</defName>
+		<label>animal fire breath</label>
+		<description>An animal fire breath implant. This implant will allow this creature to use a ranged fire breath attack that lights enemies on fire.\n\nNote that installing this on a creature that already has a fire breath of this kind will have no effect.</description>
 		<descriptionHyperlinks>
-			<RecipeDef>AI_AnimalQuadTeslaCannon</RecipeDef>
+			<RecipeDef>AI_AnimalFireBreath</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
 			<Plasteel>10</Plasteel>
@@ -117,13 +98,13 @@
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
-	<!-- Bioelectric Organ -->
+	<!-- Toxic Breath -->
 	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
-		<defName>AI_AnimalBioelectricOrgan</defName>
-		<label>animal bioelectric organ</label>
-		<description>A bioelectric organ implant. This implant will allow this creature to use a powerful ranged electric attack that may paralyze and cause heart attacks.\n\nNote that installing this on a creature that already has a bioelectric organ will have no effect.</description>
+		<defName>AI_AnimalToxicBreath</defName>
+		<label>animal toxic breath</label>
+		<description>An animal toxic breath implant. This implant will allow this creature to use a ranged toxic breath attack that causes toxic buildup in its targer.\n\nNote that installing this on a creature that already has a toxic breath of this kind will have no effect.</description>
 		<descriptionHyperlinks>
-			<RecipeDef>AI_AnimalBioelectricOrgan</RecipeDef>
+			<RecipeDef>AI_AnimalToxicBreath</RecipeDef>
 		</descriptionHyperlinks>
 		<costList>
 			<Plasteel>10</Plasteel>
@@ -136,42 +117,5 @@
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
-	<!-- Light Focusing Lens -->
-	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
-		<defName>AI_AnimalLightFocusingLens</defName>
-		<label>animal light focusing lens</label>
-		<description>A light focusing lens implant. This implant will allow this creature to use a powerful ranged laser attack that sets enemies on fire.\n\nNote that installing this on a creature that already has a light focusing lens will have no effect. This implant takes the space of one of the creature's eyes, so it can't be installed in eyeless animals.</description>
-		<descriptionHyperlinks>
-			<RecipeDef>AI_AnimalLightFocusingLens</RecipeDef>
-		</descriptionHyperlinks>
-		<costList>
-			<Plasteel>10</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-		<statBases>
-			<Mass>2</Mass>
-		</statBases>
-		<thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-		</thingSetMakerTags>
-	</ThingDef>
-	<!-- Hyper Acidic Stomach -->
-	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
-		<defName>AI_AnimalHyperAcidicStomach</defName>
-		<label>animal hyper acidic stomach</label>
-		<description>A hyper acidic stomach implant. This implant will allow this creature to use a ranged acid attack that causes damage over time.\n\nNote that installing this on a creature that already has a hyper acidic stomach will have no effect. This implant takes the space of the creature's stomach, so it can't be installed in animals that lack one.</description>
-		<descriptionHyperlinks>
-			<RecipeDef>AI_AnimalHyperAcidicStomach</RecipeDef>
-		</descriptionHyperlinks>
-		<costList>
-			<Plasteel>10</Plasteel>
-			<ComponentSpacer>1</ComponentSpacer>
-		</costList>
-		<statBases>
-			<Mass>2</Mass>
-		</statBases>
-		<thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-		</thingSetMakerTags>
-	</ThingDef>
+	
 </Defs>

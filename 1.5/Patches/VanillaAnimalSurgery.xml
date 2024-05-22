@@ -43,6 +43,8 @@
 					<li>AI_AnimalBionicSpine</li>
 					<li>AI_AnimalBionicStomach</li>
 					<li>AI_AnimalBionicEye</li>
+					<li>AI_AnimalBionicNose</li>
+					<li>AI_AnimalBionicEar</li>
 					<li>AI_AnimalBionicBeak</li>
 					<li>AI_AnimalBionicTentacle</li>
 					<li>AI_AnimalBionicBuoyancy</li>
@@ -51,6 +53,22 @@
 					<li>AI_AnimalBionicBlade</li>
 					<li>AI_AnimalBionicStinger</li>
 					<li>AI_AnimalBionicHorn</li>
+					<li>AI_AnimalStealthskinImplant</li>
+					<li>AI_RemoveAnimalStealthskinImplant</li>
+					<li>AI_AnimalWorkChipFlick</li>
+					<li>AI_RemoveAnimalWorkChipFlick</li>
+					<li>AI_AnimalWorkChipClean</li>
+					<li>AI_RemoveAnimalWorkChipClean</li>
+					<li>AI_AnimalWorkChipSlaughter</li>
+					<li>AI_RemoveAnimalWorkChipSlaughter</li>
+					<li>AI_AnimalWorkChipMine</li>
+					<li>AI_RemoveAnimalWorkChipMine</li>
+					<li>AI_AnimalWorkChipFeedPatient</li>
+					<li>AI_RemoveAnimalWorkChipFeedPatient</li>
+					<li>AI_AnimalWorkChipHarvest</li>
+					<li>AI_RemoveAnimalWorkChipHarvest</li>
+					<li>AI_AnimalWorkChipHunt</li>
+					<li>AI_RemoveAnimalWorkChipHunt</li>
 				</value>
 			</li>
 		</operations>

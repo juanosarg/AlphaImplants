@@ -207,6 +207,50 @@
 		
 	</HediffDef>
 	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicNose</defName>
+		<label>animal bionic nose</label>
+		<labelNoun>an animal bionic nose</labelNoun>
+		<description>An installed animal bionic nose equipped with advanced olfactory sensors and targeting systems, enhancing the animal's ability to detect and precisely locate targets.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicNose</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicNose</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeHitChance>0.25</MeleeHitChance>					
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicEar</defName>
+		<label>animal bionic ear</label>
+		<labelNoun>an animal bionic ear</labelNoun>
+		<description>An installed animal bionic ear featuring advanced auditory sensors and real-time threat detection, enhancing the animal's ability to hear and pinpoint approaching dangers.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicEar</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicEar</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>0.125</MeleeDodgeChance>					
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
 		<defName>AI_AnimalBionicBeak</defName>
 		<label>animal bionic beak</label>
 		<labelNoun>an animal bionic beak</labelNoun>
@@ -439,5 +483,136 @@
 				<cooldownTimeMultiplier>0.8</cooldownTimeMultiplier>
 			</li>
 		</modExtensions>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalStealthskinImplant</defName>
+		<label>animal stealthskin implant</label>
+		<labelNoun>an animal stealthskin implant</labelNoun>
+		<description>An installed animal stealthskin implant that renders the animal invisible by reflecting light around its body, allowing it to seamlessly blend with the environment.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalStealthskinImplant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalStealthskinImplant</spawnThingOnRemoved>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_Ability">
+				<ability>AI_Stealthskin</ability>
+			</li>
+		</comps>
+		<addedPartProps>
+			<solid>true</solid>								
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalWorkChipFlick</defName>
+		<label>animal work chip: flick</label>
+		<labelNoun>an animal work chip: flick</labelNoun>
+		<description>An installed animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Flick jobs.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipFlick</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalWorkChipFlick</spawnThingOnRemoved>
+		<comps>
+			<li Class="AlphaImplants.HediffCompProperties_AddJob">
+				<jobToAdd>Flick</jobToAdd>
+			</li>
+		</comps>
+		
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalWorkChipClean</defName>
+		<label>animal work chip: clean</label>
+		<labelNoun>an animal work chip: clean</labelNoun>
+		<description>An installed animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Clean jobs.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipClean</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalWorkChipClean</spawnThingOnRemoved>
+		<comps>
+			<li Class="AlphaImplants.HediffCompProperties_AddJob">
+				<jobToAdd>Clean</jobToAdd>
+			</li>
+		</comps>
+		
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalWorkChipSlaughter</defName>
+		<label>animal work chip: slaughter</label>
+		<labelNoun>an animal work chip: slaughter</labelNoun>
+		<description>An installed animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Slaughter animal jobs.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipSlaughter</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalWorkChipSlaughter</spawnThingOnRemoved>
+		<comps>
+			<li Class="AlphaImplants.HediffCompProperties_AddJob">
+				<jobToAdd>Slaughter</jobToAdd>
+			</li>
+		</comps>
+		
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalWorkChipMine</defName>
+		<label>animal work chip: mine</label>
+		<labelNoun>an animal work chip: mine</labelNoun>
+		<description>An installed animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Mine jobs.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipMine</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalWorkChipMine</spawnThingOnRemoved>
+		<comps>
+			<li Class="AlphaImplants.HediffCompProperties_AddJob">
+				<jobToAdd>Mine</jobToAdd>
+			</li>
+		</comps>
+		
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalWorkChipFeedPatient</defName>
+		<label>animal work chip: feed patient</label>
+		<labelNoun>an animal work chip: feed patient</labelNoun>
+		<description>An installed animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Feed Patient jobs.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipFeedPatient</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalWorkChipFeedPatient</spawnThingOnRemoved>
+		<comps>
+			<li Class="AlphaImplants.HediffCompProperties_AddJob">
+				<jobToAdd>FeedPatient</jobToAdd>
+			</li>
+		</comps>
+		
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalWorkChipHarvest</defName>
+		<label>animal work chip: harvest</label>
+		<labelNoun>an animal work chip: harvest</labelNoun>
+		<description>An installed animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Harvest jobs.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipHarvest</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalWorkChipHarvest</spawnThingOnRemoved>
+		<comps>
+			<li Class="AlphaImplants.HediffCompProperties_AddJob">
+				<jobToAdd>Harvest</jobToAdd>
+			</li>
+		</comps>
+		
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalWorkChipHunt</defName>
+		<label>animal work chip: hunting</label>
+		<labelNoun>an animal work chip: hunting</labelNoun>
+		<description>An installed animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Hunting jobs.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipHunt</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalWorkChipHunt</spawnThingOnRemoved>
+		<comps>
+			<li Class="AlphaImplants.HediffCompProperties_AddJob">
+				<jobToAdd>Hunt</jobToAdd>
+			</li>
+		</comps>
+		
 	</HediffDef>
 </Defs>

@@ -73,12 +73,18 @@
 					<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
 					<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
 					<ArmorRating_Heat>0.5</ArmorRating_Heat>
+					<MaxHitPoints>30</MaxHitPoints>
 				</statOffsets>
 			</li>
 		</stages>
 		<tags>
 			<li>ArmorGland</li>
 		</tags>
+		<modExtensions>
+			<li Class="AlphaImplants.HealthModifierExtension">
+				<healthPointToAdd>30</healthPointToAdd>
+			</li>
+		</modExtensions>
 	</HediffDef>
 	<HediffDef ParentName="AI_BionicBodyPartBase">
 		<defName>AI_AnimalNuclearStomach</defName>

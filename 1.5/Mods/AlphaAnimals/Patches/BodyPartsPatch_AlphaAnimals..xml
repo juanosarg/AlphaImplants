@@ -195,6 +195,14 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Nose"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_PlantVibrationSensor</li>
+						<li>AA_VibrationReceptor</li>
+						<li>AA_EcholocationOrgan</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Stinger"]/appliedOnFixedBodyParts</xpath>
 					<value>
 						<li>AA_InsectSting</li>

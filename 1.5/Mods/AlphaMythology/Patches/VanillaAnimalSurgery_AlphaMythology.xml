@@ -6,23 +6,21 @@
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
 				<value>
-					<li>AI_GooAcidifier</li>
-					<li>AI_AnimalRangedSpinneret</li>
-					<li>AI_RemoveAnimalRangedSpinneret</li>
-					<li>AI_AnimalVenomousSpitter</li>
-					<li>AI_RemoveAnimalVenomousSpitter</li>
-					<li>AI_AnimalAcidicSpitter</li>
-					<li>AI_RemoveAnimalAcidicSpitter</li>
-					<li>AI_AnimalBarbedQuillThrower</li>
-					<li>AI_RemoveAnimalBarbedQuillThrower</li>
-					<li>AI_AnimalQuadTeslaCannon</li>
-					<li>AI_RemoveAnimalQuadTeslaCannon</li>
-					<li>AI_AnimalBioelectricOrgan</li>
-					<li>AI_RemoveAnimalBioelectricOrgan</li>
-					<li>AI_AnimalLightFocusingLens</li>
-					<li>AI_RemoveAnimalLightFocusingLens</li>
-					<li>AI_AnimalHyperAcidicStomach</li>
-					<li>AI_RemoveAnimalHyperAcidicStomach</li>
+				
+					<li>AI_AnimalPetrifyingGaze</li>
+					<li>AI_RemoveAnimalPetrifyingGaze</li>
+					<li>AI_AnimalVenomousQuills</li>
+					<li>AI_RemoveAnimalVenomousQuills</li>
+					<li>AI_AnimalWispFire</li>
+					<li>AI_RemoveAnimalWispFire</li>
+					<li>AI_AnimalAcidicBreath</li>
+					<li>AI_RemoveAnimalAcidicBreath</li>
+					<li>AI_AnimalFireBreath</li>
+					<li>AI_RemoveAnimalFireBreath</li>
+					<li>AI_AnimalToxicBreath</li>
+					<li>AI_RemoveAnimalToxicBreath</li>
+					
+					
 				</value>
 			</li>
 		</operations>

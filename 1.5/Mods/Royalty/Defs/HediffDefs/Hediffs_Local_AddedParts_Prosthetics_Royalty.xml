@@ -20,11 +20,17 @@
 					<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
 					<ArmorRating_Heat>0.3</ArmorRating_Heat>
+					<MaxHitPoints>15</MaxHitPoints>
 				</statOffsets>
 			</li>
 		</stages>
 		<spawnThingOnRemoved>AI_AnimalSkinHardener</spawnThingOnRemoved>
 		<tags><li>ArmorGland</li></tags>
+		<modExtensions>
+			<li Class="AlphaImplants.HealthModifierExtension">
+				<healthPointToAdd>15</healthPointToAdd>
+			</li>
+		</modExtensions>
 	</HediffDef>
 	
 	<HediffDef ParentName="AI_ProstheticBodyPartBase">

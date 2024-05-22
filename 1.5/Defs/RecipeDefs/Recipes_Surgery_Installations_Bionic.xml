@@ -22,7 +22,6 @@
 			</categories>
 		</fixedIngredientFilter>
 	</RecipeDef>
-	
 	<RecipeDef Name="AI_SurgeryInstallBionic_AllLimbs" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
 		<appliedOnFixedBodyParts>
 			<li>Leg</li>
@@ -39,7 +38,6 @@
 	<RecipeDef Name="AI_SurgeryInstallBionic_Arm" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
 		<appliedOnFixedBodyParts>
 			<li>Arm</li>
-		
 		</appliedOnFixedBodyParts>
 	</RecipeDef>
 	<RecipeDef Name="AI_SurgeryInstallBionic_Tail" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
@@ -87,7 +85,6 @@
 			<li>Liver</li>
 		</appliedOnFixedBodyParts>
 	</RecipeDef>
-	
 	<RecipeDef Name="AI_SurgeryInstallBionic_Brain" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
 		<appliedOnFixedBodyParts>
 			<li>Brain</li>
@@ -147,7 +144,17 @@
 			<li>Horn</li>
 		</appliedOnFixedBodyParts>
 	</RecipeDef>
-	
+	<RecipeDef Name="AI_SurgeryInstallBionic_Nose" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Nose</li>
+			<li>InsectNostril</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallBionic_Ear" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Ear</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Leg">
 		<defName>AI_AnimalBionicLeg</defName>
 		<label>install animal bionic leg</label>
@@ -172,7 +179,6 @@
 				<li>AI_AnimalBionicLeg</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		
 		<addsHediff>AI_AnimalBionicLeg</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Arm">
@@ -199,7 +205,6 @@
 				<li>AI_AnimalBionicArm</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		
 		<addsHediff>AI_AnimalBionicArm</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Tail">
@@ -226,7 +231,6 @@
 				<li>AI_AnimalBionicTail</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-	
 		<addsHediff>AI_AnimalBionicTail</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Mouth">
@@ -253,7 +257,6 @@
 				<li>AI_AnimalBionicJaw</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		
 		<addsHediff>AI_AnimalBionicJaw</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Heart">
@@ -280,7 +283,6 @@
 				<li>AI_AnimalBionicHeart</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		
 		<addsHediff>AI_AnimalBionicHeart</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Spine">
@@ -307,7 +309,6 @@
 				<li>AI_AnimalBionicSpine</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		
 		<addsHediff>AI_AnimalBionicSpine</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Stomach">
@@ -334,7 +335,6 @@
 				<li>AI_AnimalBionicStomach</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		
 		<addsHediff>AI_AnimalBionicStomach</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Eye">
@@ -361,8 +361,59 @@
 				<li>AI_AnimalBionicEye</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		
 		<addsHediff>AI_AnimalBionicEye</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Nose">
+		<defName>AI_AnimalBionicNose</defName>
+		<label>install animal bionic nose</label>
+		<description>Install an animal bionic nose.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicNose</ThingDef>
+			<HediffDef>AI_AnimalBionicNose</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal bionic nose.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalBionicNose</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalBionicNose</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalBionicNose</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Ear">
+		<defName>AI_AnimalBionicEar</defName>
+		<label>install animal bionic ear</label>
+		<description>Install an animal bionic ear.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicEar</ThingDef>
+			<HediffDef>AI_AnimalBionicEar</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal bionic ear.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalBionicEar</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalBionicEar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalBionicEar</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Beak">
 		<defName>AI_AnimalBionicBeak</defName>
@@ -388,7 +439,6 @@
 				<li>AI_AnimalBionicBeak</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		
 		<addsHediff>AI_AnimalBionicBeak</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Tentacle">
@@ -415,7 +465,6 @@
 				<li>AI_AnimalBionicTentacle</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		
 		<addsHediff>AI_AnimalBionicTentacle</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Buoyancy">
@@ -442,7 +491,6 @@
 				<li>AI_AnimalBionicBuoyancy</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		
 		<addsHediff>AI_AnimalBionicBuoyancy</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Shell">
@@ -469,7 +517,6 @@
 				<li>AI_AnimalBionicShell</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		
 		<addsHediff>AI_AnimalBionicShell</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Wing">
@@ -496,7 +543,6 @@
 				<li>AI_AnimalBionicWing</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		
 		<addsHediff>AI_AnimalBionicWing</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Blade">
@@ -523,7 +569,6 @@
 				<li>AI_AnimalBionicBlade</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		
 		<addsHediff>AI_AnimalBionicBlade</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Stinger">
@@ -550,7 +595,6 @@
 				<li>AI_AnimalBionicStinger</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		
 		<addsHediff>AI_AnimalBionicStinger</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Horn">
@@ -577,7 +621,302 @@
 				<li>AI_AnimalBionicHorn</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		
 		<addsHediff>AI_AnimalBionicHorn</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalStealthskinImplant</defName>
+		<label>install animal stealthskin implant</label>
+		<description>Install an animal stealthskin implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalStealthskinImplant</ThingDef>
+			<HediffDef>AI_AnimalStealthskinImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal stealthskin implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalStealthskinImplant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalStealthskinImplant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalStealthskinImplant</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalStealthskinImplant</defName>
+		<label>remove animal stealthskin implant</label>
+		<description>Remove animal stealthskin implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalStealthskinImplant</ThingDef>
+			<HediffDef>AI_AnimalStealthskinImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal stealthskin implant.</jobString>
+		<removesHediff>AI_AnimalStealthskinImplant</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Brain">
+		<defName>AI_AnimalWorkChipFlick</defName>
+		<label>install animal work chip: flick</label>
+		<description>Install an animal work chip: flick.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipFlick</ThingDef>
+			<HediffDef>AI_AnimalWorkChipFlick</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal work chip: flick.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalWorkChipFlick</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalWorkChipFlick</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalWorkChipFlick</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalWorkChipFlick</defName>
+		<label>remove animal work chip: flick</label>
+		<description>Remove animal work chip: flick.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipFlick</ThingDef>
+			<HediffDef>AI_AnimalWorkChipFlick</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal work chip: flick.</jobString>
+		<removesHediff>AI_AnimalWorkChipFlick</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Brain">
+		<defName>AI_AnimalWorkChipClean</defName>
+		<label>install animal work chip: clean</label>
+		<description>Install an animal work chip: clean.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipClean</ThingDef>
+			<HediffDef>AI_AnimalWorkChipClean</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal work chip: clean.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalWorkChipClean</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalWorkChipClean</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalWorkChipClean</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalWorkChipClean</defName>
+		<label>remove animal work chip: clean</label>
+		<description>Remove animal work chip: clean.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipClean</ThingDef>
+			<HediffDef>AI_AnimalWorkChipClean</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal work chip: clean.</jobString>
+		<removesHediff>AI_AnimalWorkChipClean</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Brain">
+		<defName>AI_AnimalWorkChipSlaughter</defName>
+		<label>install animal work chip: slaughter</label>
+		<description>Install an animal work chip: slaughter.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipSlaughter</ThingDef>
+			<HediffDef>AI_AnimalWorkChipSlaughter</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal work chip: slaughter.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalWorkChipSlaughter</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalWorkChipSlaughter</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalWorkChipSlaughter</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalWorkChipSlaughter</defName>
+		<label>remove animal work chip: slaughter</label>
+		<description>Remove animal work chip: slaughter.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipSlaughter</ThingDef>
+			<HediffDef>AI_AnimalWorkChipSlaughter</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal work chip: slaughter.</jobString>
+		<removesHediff>AI_AnimalWorkChipSlaughter</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Brain">
+		<defName>AI_AnimalWorkChipMine</defName>
+		<label>install animal work chip: mine</label>
+		<description>Install an animal work chip: mine.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipMine</ThingDef>
+			<HediffDef>AI_AnimalWorkChipMine</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal work chip: mine.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalWorkChipMine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalWorkChipMine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalWorkChipMine</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalWorkChipMine</defName>
+		<label>remove animal work chip: mine</label>
+		<description>Remove animal work chip: mine.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipMine</ThingDef>
+			<HediffDef>AI_AnimalWorkChipMine</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal work chip: mine.</jobString>
+		<removesHediff>AI_AnimalWorkChipMine</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Brain">
+		<defName>AI_AnimalWorkChipFeedPatient</defName>
+		<label>install animal work chip: feed patient</label>
+		<description>Install an animal work chip: feed patient.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipFeedPatient</ThingDef>
+			<HediffDef>AI_AnimalWorkChipFeedPatient</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal work chip: feed patient.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalWorkChipFeedPatient</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalWorkChipFeedPatient</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalWorkChipFeedPatient</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalWorkChipFeedPatient</defName>
+		<label>remove animal work chip: feed patient</label>
+		<description>Remove animal work chip: feed patient.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipFeedPatient</ThingDef>
+			<HediffDef>AI_AnimalWorkChipFeedPatient</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal work chip: feed patient.</jobString>
+		<removesHediff>AI_AnimalWorkChipFeedPatient</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Brain">
+		<defName>AI_AnimalWorkChipHarvest</defName>
+		<label>install animal work chip: harvest</label>
+		<description>Install an animal work chip: harvest.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipHarvest</ThingDef>
+			<HediffDef>AI_AnimalWorkChipHarvest</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal work chip: harvest.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalWorkChipHarvest</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalWorkChipHarvest</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalWorkChipHarvest</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalWorkChipHarvest</defName>
+		<label>remove animal work chip: harvest</label>
+		<description>Remove animal work chip: harvest.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipHarvest</ThingDef>
+			<HediffDef>AI_AnimalWorkChipHarvest</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal work chip: harvest.</jobString>
+		<removesHediff>AI_AnimalWorkChipHarvest</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Brain">
+		<defName>AI_AnimalWorkChipHunt</defName>
+		<label>install animal work chip: hunting</label>
+		<description>Install an animal work chip: hunting.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipHunt</ThingDef>
+			<HediffDef>AI_AnimalWorkChipHunt</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal work chip: hunting.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalWorkChipHunt</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalWorkChipHunt</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalWorkChipHunt</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalWorkChipHunt</defName>
+		<label>remove animal work chip: hunting</label>
+		<description>Remove animal work chip: hunting.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipHunt</ThingDef>
+			<HediffDef>AI_AnimalWorkChipHunt</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal work chip: hunting.</jobString>
+		<removesHediff>AI_AnimalWorkChipHunt</removesHediff>
 	</RecipeDef>
 </Defs>

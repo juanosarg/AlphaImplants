@@ -10,7 +10,7 @@
 		<li IfModActive="Ludeon.RimWorld.Anomaly">1.5/Mods/Anomaly</li>
 		<li IfModActive="sarg.alphaanimals">1.5/Mods/AlphaAnimals</li>
 		<li IfModActive="sarg.magicalmenagerie">1.5/Mods/AlphaMythology</li>
-		
+		<li IfModActive="VanillaExpanded.VAEWaste">1.5/Mods/VanillaAnimalsExpandedWaste</li>
 	</v1.5>
 </loadFolders>
 

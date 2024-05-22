@@ -1,1360 +1,202 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
-<li Class="PatchOperationAdd">
-					<xpath>/Defs</xpath>
-					<value>
-						<HediffDef ParentName="ImplantHediffBase">
-							<defName>MM_PetrifyingGazeImplant</defName>
-							<label>petrifying gaze implant</label>
-							<labelNoun>a petrifying gaze implant</labelNoun>
-							<description>An installed petrifying gaze implant. This implant will allow this creature to use a very dangerous petrifying gaze that will slow down its target, and eventually kill it.\n\nNote that installing this on a creature that already has a petrifying attack will have no effect. And obviously a creature will need eyes to use this attack.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_PetrifyingGazeImplant</ThingDef>
-							</descriptionHyperlinks>
-							<spawnThingOnRemoved>MM_PetrifyingGazeImplant</spawnThingOnRemoved>
-							<comps>
-								<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
-									<verbs>
-										<li>
-											<verbClass>Verb_Shoot</verbClass>
-											<accuracyTouch>1</accuracyTouch>
-											<accuracyShort>1</accuracyShort>
-											<accuracyMedium>1</accuracyMedium>
-											<accuracyLong>1</accuracyLong>
-											<hasStandardCommand>true</hasStandardCommand>
-											<defaultProjectile>MM_CenteredGazeAttack</defaultProjectile>
-											<warmupTime>1</warmupTime>				
-											<burstShotCount>1</burstShotCount>
-											<minRange>1</minRange>
-											<range>20</range>
-											<label>petrifying gaze</label>	
-											<muzzleFlashScale>0</muzzleFlashScale>				
-											<commonality>1</commonality>
-										</li>
-									</verbs>
-									<verbProps>
-										<li>
-											<label>petrifying gaze</label>
-											<draw>false</draw>
-											<canBeToggled>true</canBeToggled>											
-											<canFireIndependently>false</canFireIndependently>
-										</li>
-									</verbProps>
-								</li>
-							</comps>
-							<addedPartProps>
-								<solid>true</solid>
-								<partEfficiency>0.75</partEfficiency>
-								<betterThanNatural>true</betterThanNatural>
-							</addedPartProps>
-						</HediffDef>
-
-						<ThingDef ParentName="VEF_AdvancedBaseADS">
-							<defName>MM_PetrifyingGazeImplant</defName>
-							<label>petrifying gaze implant</label>
-							<description>A petrifying gaze implant. This implant will allow this creature to use a very dangerous petrifying gaze that will slow down its target, and eventually kill it.\n\nNote that installing this on a creature that already has a petrifying attack will have no effect. And obviously a creature will need eyes to use this attack.</description>
-							<descriptionHyperlinks>
-								<RecipeDef>MM_InstallPetrifyingGazeImplant</RecipeDef>
-							</descriptionHyperlinks>
-							<statBases>
-								<MarketValue>800</MarketValue>
-								<Mass>2</Mass>
-							</statBases>
-
-						</ThingDef>
-
-						<RecipeDef ParentName="VEF_AdvancedSurgeryInstallImplantBase">
-							<defName>MM_InstallPetrifyingGazeImplant</defName>
-							<label>install petrifying gaze implant</label>
-							<description>Install a petrifying gaze implant. This implant will allow this creature to use a very dangerous petrifying gaze that will slow down its target, and eventually kill it.\n\nNote that installing this on a creature that already has a petrifying attack will have no effect. And obviously a creature will need eyes to use this attack.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_PetrifyingGazeImplant</ThingDef>
-								<HediffDef>MM_PetrifyingGazeImplant</HediffDef>
-							</descriptionHyperlinks>
-							<jobString>Installing petrifying gaze implant.</jobString>
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>MM_PetrifyingGazeImplant</li>
-										</thingDefs>
-									</filter>
-									<count>1</count>
-								</li>
-							</ingredients>
-							<fixedIngredientFilter>
-								<thingDefs>
-									<li>MM_PetrifyingGazeImplant</li>
-								</thingDefs>
-							</fixedIngredientFilter>
-							<appliedOnFixedBodyParts>
-								<li>Eye</li>								
-							</appliedOnFixedBodyParts>
-							<addsHediff>MM_PetrifyingGazeImplant</addsHediff>
-						</RecipeDef>
-
-						<RecipeDef>
-							<defName>MM_MakePetrifyingGazeImplant</defName>
-							<label>make a petrifying gaze implant</label>
-							<description>Make a petrifying gaze implant from a Catoblepas or a Basilisk corpse. This implant will allow this creature to use a very dangerous petrifying gaze that will slow down its target, and eventually kill it.\n\nNote that installing this on a creature that already has a petrifying attack will have no effect. And obviously a creature will need eyes to use this attack.</description>
-							<jobString>Making petrifying gaze implant</jobString>							
-							<workAmount>15000</workAmount>		
-							<recipeUsers>
-								<li>VEF_AdvancedAnimalImplantsTable</li>
-							</recipeUsers>		
-							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-							<workSkill>Crafting</workSkill>
-							<effectWorking>Smith</effectWorking>
-							<soundWorking>Recipe_Smith</soundWorking>
-							<skillRequirements>
-								<Crafting>10</Crafting>
-							</skillRequirements>
-							<unfinishedThingDef>UnfinishedAnimalPart</unfinishedThingDef>
-							<researchPrerequisite>VEF_AdvancedAnimalImplants</researchPrerequisite>							
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>Corpse_MM_Catoblepas</li>
-											<li>Corpse_MM_Basilisk</li>
-										</thingDefs>
-									</filter>
-									<count>1</count>
-								</li>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>Plasteel</li>											
-										</thingDefs>
-									</filter>
-									<count>50</count>
-								</li>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>ComponentSpacer</li>										
-										</thingDefs>
-									</filter>
-									<count>5</count>
-								</li>
-							</ingredients>
-							<fixedIngredientFilter>
-								<thingDefs>
-									<li>Corpse_MM_Catoblepas</li>
-									<li>Corpse_MM_Basilisk</li>
-									<li>Plasteel</li>
-									<li>ComponentSpacer</li>
-								</thingDefs>
-							</fixedIngredientFilter>
-							<defaultIngredientFilter>
-								<thingDefs>
-									<li>Corpse_MM_Catoblepas</li>
-									<li>Corpse_MM_Basilisk</li>
-									<li>Plasteel</li>
-									<li>ComponentSpacer</li>
-								</thingDefs>
-							</defaultIngredientFilter>
-							<products>
-								<MM_PetrifyingGazeImplant>1</MM_PetrifyingGazeImplant>
-							</products>
-						</RecipeDef>
-
-						<RecipeDef ParentName="SurgeryRemoveImplantBase">
-							<defName>MM_RemovePetrifyingGazeImplant</defName>
-							<label>remove petrifying gaze implant</label>
-							<description>Remove petrifying gaze implant. This will remove the petrifying gaze attack.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_PetrifyingGazeImplant</ThingDef>
-								<HediffDef>MM_PetrifyingGazeImplant</HediffDef>
-							</descriptionHyperlinks>
-							<jobString>Removing petrifying gaze implant.</jobString>
-							<removesHediff>MM_PetrifyingGazeImplant</removesHediff>
-						</RecipeDef>
-					</value>
-				</li>
-
-				<!-- Venomous Quill -->
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs</xpath>
-					<value>
-						<HediffDef ParentName="ImplantHediffBase">
-							<defName>MM_VenomousQuillImplant</defName>
-							<label>venomous quill implant</label>
-							<labelNoun>a venomous quill implant</labelNoun>
-							<description>An installed venomous quill implant. This implant will allow this creature to use a ranged venomous quill attack.\n\nNote that installing this on a creature that already has a venomous quill will have no effect. This implant can only be installed in creatures that have a tail.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_VenomousQuillImplant</ThingDef>
-							</descriptionHyperlinks>
-							<spawnThingOnRemoved>MM_VenomousQuillImplant</spawnThingOnRemoved>
-							<comps>
-								<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
-									<verbs>
-										<li>
-											<verbClass>Verb_Shoot</verbClass>
-											<accuracyTouch>1</accuracyTouch>
-											<accuracyShort>1</accuracyShort>
-											<accuracyMedium>0.9</accuracyMedium>
-											<accuracyLong>0.7</accuracyLong>
-											<hasStandardCommand>true</hasStandardCommand>
-											<defaultProjectile>MM_Quill</defaultProjectile>
-											<warmupTime>1.5</warmupTime>
-											<burstShotCount>1</burstShotCount>
-											<minRange>2</minRange>
-											<range>18</range>
-											<label>venomous quills</label>
-											<soundCast>MM_QuillSound</soundCast>
-											<muzzleFlashScale>0</muzzleFlashScale>
-											<commonality>1</commonality>
-										</li>
-									</verbs>
-									<verbProps>
-										<li>
-											<label>venomous quills</label>
-											<draw>false</draw>
-											<canBeToggled>true</canBeToggled>											
-											<canFireIndependently>false</canFireIndependently>
-										</li>
-									</verbProps>
-								</li>
-							</comps>
-							<addedPartProps>
-								<solid>true</solid>
-								<partEfficiency>0.75</partEfficiency>
-								<betterThanNatural>true</betterThanNatural>
-							</addedPartProps>
-						</HediffDef>
-
-						<ThingDef ParentName="VEF_AdvancedBaseADS">
-							<defName>MM_VenomousQuillImplant</defName>
-							<label>venomous quill implant</label>							
-							<description>An installed venomous quill implant. This implant will allow this creature to use a ranged venomous quill attack.\n\nNote that installing this on a creature that already has a venomous quill will have no effect. This implant can only be installed in creatures that have a tail.</description>
-							<descriptionHyperlinks>
-								<RecipeDef>MM_InstallVenomousQuillImplant</RecipeDef>
-							</descriptionHyperlinks>
-							<statBases>
-								<MarketValue>800</MarketValue>
-								<Mass>2</Mass>
-							</statBases>
-
-						</ThingDef>
-
-						<RecipeDef ParentName="VEF_AdvancedSurgeryInstallImplantBase">
-							<defName>MM_InstallVenomousQuillImplant</defName>
-							<label>install venomous quill implant</label>
-							<description>Install a venomous quill implant. This implant will allow this creature to use a ranged venomous quill attack.\n\nNote that installing this on a creature that already has a venomous quill will have no effect. This implant can only be installed in creatures that have a tail.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_VenomousQuillImplant</ThingDef>
-								<HediffDef>MM_VenomousQuillImplant</HediffDef>
-							</descriptionHyperlinks>
-							<jobString>Installing venomous quill implant.</jobString>
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>MM_VenomousQuillImplant</li>
-										</thingDefs>
-									</filter>
-									<count>1</count>
-								</li>
-							</ingredients>
-							<fixedIngredientFilter>
-								<thingDefs>
-									<li>MM_VenomousQuillImplant</li>
-								</thingDefs>
-							</fixedIngredientFilter>
-							<appliedOnFixedBodyParts>
-								<li>Tail</li>
-								<li>AA_InsectSting</li>
-								<!--	<li>Body</li>
-								<li>MM_PlasmaMembrane</li>
-								<li>SnakeBody</li>
-								<li>AA_JellyfishMainBody</li>
-								<li>AA_Protoplasm</li>
-								<li>AA_Thorax</li>
-								<li>AA_SentientPlantBody</li>
-								<li>AA_SlugBody</li>-->
-							</appliedOnFixedBodyParts>
-							<addsHediff>MM_VenomousQuillImplant</addsHediff>
-						</RecipeDef>
-
-						<RecipeDef>
-							<defName>MM_MakeVenomousQuillImplant</defName>
-							<label>make a venomous quill implant</label>
-							<description>Make a venomous quill implant from a Manticore corpse. This implant will allow this creature to use a ranged venomous quill attack.\n\nNote that installing this on a creature that already has a venomous quill will have no effect. This implant can only be installed in creatures that have a tail.</description>
-							<jobString>Making venomous quill implant</jobString>							
-							<workAmount>15000</workAmount>		
-							<recipeUsers>
-								<li>VEF_AdvancedAnimalImplantsTable</li>
-							</recipeUsers>		
-							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-							<workSkill>Crafting</workSkill>
-							<effectWorking>Smith</effectWorking>
-							<soundWorking>Recipe_Smith</soundWorking>
-							<skillRequirements>
-								<Crafting>10</Crafting>
-							</skillRequirements>
-							<unfinishedThingDef>UnfinishedAnimalPart</unfinishedThingDef>
-							<researchPrerequisite>VEF_AdvancedAnimalImplants</researchPrerequisite>							
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>Corpse_MM_Manticore</li>
-
-										</thingDefs>
-									</filter>
-									<count>1</count>
-								</li>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>Plasteel</li>											
-										</thingDefs>
-									</filter>
-									<count>50</count>
-								</li>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>ComponentSpacer</li>										
-										</thingDefs>
-									</filter>
-									<count>5</count>
-								</li>
-							</ingredients>
-							<fixedIngredientFilter>
-								<thingDefs>
-									<li>Corpse_MM_Manticore</li>									
-									<li>Plasteel</li>
-									<li>ComponentSpacer</li>
-								</thingDefs>
-							</fixedIngredientFilter>
-							<defaultIngredientFilter>
-								<thingDefs>
-									<li>Corpse_MM_Manticore</li>
-									<li>Plasteel</li>
-									<li>ComponentSpacer</li>
-								</thingDefs>
-							</defaultIngredientFilter>
-							<products>
-								<MM_VenomousQuillImplant>1</MM_VenomousQuillImplant>
-							</products>
-						</RecipeDef>
-
-						<RecipeDef ParentName="SurgeryRemoveImplantBase">
-							<defName>MM_RemoveVenomousQuillImplant</defName>
-							<label>remove venomous quill implant</label>
-							<description>Remove venomous quill implant.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_VenomousQuillImplant</ThingDef>
-								<HediffDef>MM_VenomousQuillImplant</HediffDef>
-							</descriptionHyperlinks>
-							<jobString>Removing venomous quill implant.</jobString>
-							<removesHediff>MM_VenomousQuillImplant</removesHediff>
-						</RecipeDef>
-					</value>
-				</li>
-
-				<!-- Wisp Fire -->
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs</xpath>
-					<value>
-						<HediffDef ParentName="ImplantHediffBase">
-							<defName>MM_WispFireImplant</defName>
-							<label>wisp fire implant</label>
-							<labelNoun>a wisp fire implant</labelNoun>
-							<description>An installed wisp fire implant. This implant will allow this creature to use a ranged fire attack.\n\nNote that installing this on a creature that already has a wisp fire will have no effect.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_WispFireImplant</ThingDef>
-							</descriptionHyperlinks>
-							<spawnThingOnRemoved>MM_WispFireImplant</spawnThingOnRemoved>
-							<comps>
-								<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
-									<verbs>
-										<li> 
-											<verbClass>Verb_Shoot</verbClass>
-											<accuracyTouch>0.15</accuracyTouch>
-											<accuracyShort>0.25</accuracyShort>
-											<accuracyMedium>0.15</accuracyMedium>
-											<accuracyLong>0.1</accuracyLong>
-											<hasStandardCommand>true</hasStandardCommand>
-											<defaultProjectile>MM_WispProjectile</defaultProjectile>
-											<warmupTime>2</warmupTime>
-											<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
-											<burstShotCount>50</burstShotCount>
-											<minRange>1</minRange>
-											<range>15</range>
-											<soundCast>MM_PoisonBreathSound</soundCast>
-											<muzzleFlashScale>0</muzzleFlashScale>
-											<label>wisp breath</label>
-											<commonality>1</commonality>
-										</li>
-									</verbs>
-									<verbProps>
-										<li>
-											<label>wisp breath</label>
-											<draw>false</draw>
-											<canBeToggled>true</canBeToggled>											
-											<canFireIndependently>false</canFireIndependently>
-										</li>
-									</verbProps>
-								</li>
-							</comps>
-							<addedPartProps>
-								<solid>true</solid>								
-								<betterThanNatural>true</betterThanNatural>
-							</addedPartProps>
-						</HediffDef>
-
-						<ThingDef ParentName="VEF_AdvancedBaseADS">
-							<defName>MM_WispFireImplant</defName>
-							<label>wisp fire implant</label>							
-							<description>An installed wisp fire implant. This implant will allow this creature to use a ranged fire attack.\n\nNote that installing this on a creature that already has a wisp fire will have no effect.</description>
-							<descriptionHyperlinks>
-								<RecipeDef>MM_InstallWispFireImplant</RecipeDef>
-							</descriptionHyperlinks>
-							<statBases>
-								<MarketValue>800</MarketValue>
-								<Mass>2</Mass>
-							</statBases>
-
-						</ThingDef>
-
-						<RecipeDef ParentName="VEF_AdvancedSurgeryInstallImplantBase">
-							<defName>MM_InstallWispFireImplant</defName>
-							<label>install wisp fire implant</label>
-							<description>Install a wisp fire implant. This implant will allow this creature to use a ranged fire attack.\n\nNote that installing this on a creature that already has a wisp fire will have no effect.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_WispFireImplant</ThingDef>
-								<HediffDef>MM_WispFireImplant</HediffDef>
-							</descriptionHyperlinks>
-							<jobString>Installing wisp fire implant.</jobString>
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>MM_WispFireImplant</li>
-										</thingDefs>
-									</filter>
-									<count>1</count>
-								</li>
-							</ingredients>
-							<fixedIngredientFilter>
-								<thingDefs>
-									<li>MM_WispFireImplant</li>
-								</thingDefs>
-							</fixedIngredientFilter>
-							<appliedOnFixedBodyParts>
-								<li>Body</li>								
-								<li>SnakeBody</li>
-								<li>AA_JellyfishMainBody</li>
-								<li>AA_Protoplasm</li>
-								<li>AA_Thorax</li>
-								<li>AA_SentientPlantBody</li>
-								<li>AA_SlugBody</li>
-							</appliedOnFixedBodyParts>
-							<addsHediff>MM_WispFireImplant</addsHediff>
-						</RecipeDef>
-
-						<RecipeDef>
-							<defName>MM_MakeWispFireImplant</defName>
-							<label>make a wisp fire implant</label>
-							<description>Make a wisp fire implant from a Will O' Wisp corpse. This implant will allow this creature to use a ranged fire attack.\n\nNote that installing this on a creature that already has a wisp fire will have no effect.</description>
-							<jobString>Making wisp fire implant</jobString>							
-							<workAmount>15000</workAmount>		
-							<recipeUsers>
-								<li>VEF_AdvancedAnimalImplantsTable</li>
-							</recipeUsers>		
-							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-							<workSkill>Crafting</workSkill>
-							<effectWorking>Smith</effectWorking>
-							<soundWorking>Recipe_Smith</soundWorking>
-							<skillRequirements>
-								<Crafting>10</Crafting>
-							</skillRequirements>
-							<unfinishedThingDef>UnfinishedAnimalPart</unfinishedThingDef>
-							<researchPrerequisite>VEF_AdvancedAnimalImplants</researchPrerequisite>							
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>Corpse_MM_WillOWisp</li>
-
-										</thingDefs>
-									</filter>
-									<count>1</count>
-								</li>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>Plasteel</li>											
-										</thingDefs>
-									</filter>
-									<count>50</count>
-								</li>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>ComponentSpacer</li>										
-										</thingDefs>
-									</filter>
-									<count>5</count>
-								</li>
-							</ingredients>
-							<fixedIngredientFilter>
-								<thingDefs>
-									<li>Corpse_MM_WillOWisp</li>									
-									<li>Plasteel</li>
-									<li>ComponentSpacer</li>
-								</thingDefs>
-							</fixedIngredientFilter>
-							<defaultIngredientFilter>
-								<thingDefs>
-									<li>Corpse_MM_WillOWisp</li>
-									<li>Plasteel</li>
-									<li>ComponentSpacer</li>
-								</thingDefs>
-							</defaultIngredientFilter>
-							<products>
-								<MM_WispFireImplant>1</MM_WispFireImplant>
-							</products>
-						</RecipeDef>
-
-						<RecipeDef ParentName="SurgeryRemoveImplantBase">
-							<defName>MM_RemoveWispFireImplant</defName>
-							<label>remove wisp fire implant</label>
-							<description>Remove wisp fire implant.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_WispFireImplant</ThingDef>
-								<HediffDef>MM_WispFireImplant</HediffDef>
-							</descriptionHyperlinks>
-							<jobString>Removing wisp fire implant.</jobString>
-							<removesHediff>MM_WispFireImplant</removesHediff>
-						</RecipeDef>
-					</value>
-				</li>
-
-				<!-- Acidic Breath -->
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs</xpath>
-					<value>
-						<HediffDef ParentName="ImplantHediffBase">
-							<defName>MM_AcidicBreathImplant</defName>
-							<label>acidic breath implant</label>
-							<labelNoun>an acidic breath implant</labelNoun>
-							<description>An installed acidic breath implant. This implant will allow this creature to use a ranged acidic breath attack that causes damage over time.\n\nNote that installing this on a creature that already has an acidic breath will have no effect.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_AcidicBreathImplant</ThingDef>
-							</descriptionHyperlinks>
-							<spawnThingOnRemoved>MM_AcidicBreathImplant</spawnThingOnRemoved>
-							<comps>
-								<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
-									<verbs>
-										<li>
-											<verbClass>Verb_Shoot</verbClass>
-											<accuracyTouch>0.15</accuracyTouch>
-											<accuracyShort>0.25</accuracyShort>
-											<accuracyMedium>0.15</accuracyMedium>
-											<accuracyLong>0.1</accuracyLong>
-											<hasStandardCommand>true</hasStandardCommand>
-											<defaultProjectile>MM_AcidicBreath</defaultProjectile>
-											<warmupTime>0.3</warmupTime>
-											<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
-											<label>acidic breath</label>
-											<burstShotCount>80</burstShotCount>
-											<minRange>1</minRange>
-											<range>15</range>
-											<soundCast>MM_PoisonBreathSound</soundCast>
-											<muzzleFlashScale>0</muzzleFlashScale>				
-											<commonality>0.8</commonality>
-										</li>
-									</verbs>
-									<verbProps>
-										<li>
-											<label>acidic breath</label>
-											<draw>false</draw>
-											<canBeToggled>true</canBeToggled>											
-											<canFireIndependently>false</canFireIndependently>
-										</li>
-									</verbProps>
-								</li>
-							</comps>
-							<addedPartProps>
-								<solid>true</solid>								
-								<betterThanNatural>true</betterThanNatural>
-							</addedPartProps>
-						</HediffDef>
-
-						<ThingDef ParentName="VEF_AdvancedBaseADS">
-							<defName>MM_AcidicBreathImplant</defName>
-							<label>acidic breath implant</label>							
-							<description>An installed acidic breath implant. This implant will allow this creature to use a ranged acidic breath attack that causes damage over time.\n\nNote that installing this on a creature that already has an acidic breath will have no effect.</description>
-							<descriptionHyperlinks>
-								<RecipeDef>MM_InstallAcidicBreathImplant</RecipeDef>
-							</descriptionHyperlinks>
-							<statBases>
-								<MarketValue>800</MarketValue>
-								<Mass>2</Mass>
-							</statBases>
-
-						</ThingDef>
-
-						<RecipeDef ParentName="VEF_AdvancedSurgeryInstallImplantBase">
-							<defName>MM_InstallAcidicBreathImplant</defName>
-							<label>install acidic breath implant</label>
-							<description>Install an acidic breath implant. This implant will allow this creature to use a ranged acidic breath attack that causes damage over time.\n\nNote that installing this on a creature that already has an acidic breath will have no effect.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_AcidicBreathImplant</ThingDef>
-								<HediffDef>MM_AcidicBreathImplant</HediffDef>
-							</descriptionHyperlinks>
-							<jobString>Installing acidic breath implant.</jobString>
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>MM_AcidicBreathImplant</li>
-										</thingDefs>
-									</filter>
-									<count>1</count>
-								</li>
-							</ingredients>
-							<fixedIngredientFilter>
-								<thingDefs>
-									<li>MM_AcidicBreathImplant</li>
-								</thingDefs>
-							</fixedIngredientFilter>
-							<appliedOnFixedBodyParts>
-								<li>Body</li>								
-								<li>SnakeBody</li>
-								<li>AA_JellyfishMainBody</li>
-								<li>AA_Protoplasm</li>
-								<li>AA_Thorax</li>
-								<li>AA_SentientPlantBody</li>
-								<li>AA_SlugBody</li>
-							</appliedOnFixedBodyParts>
-							<addsHediff>MM_AcidicBreathImplant</addsHediff>
-						</RecipeDef>
-
-						<RecipeDef>
-							<defName>MM_MakeAcidicBreathImplant</defName>
-							<label>make an acidic breath implant</label>
-							<description>Make an acidic breath implant from a Lernaean Hydra corpse. This implant will allow this creature to use a ranged acidic breath attack that causes damage over time.\n\nNote that installing this on a creature that already has an acidic breath will have no effect.</description>
-							<jobString>Making acidic breath implant</jobString>							
-							<workAmount>15000</workAmount>		
-							<recipeUsers>
-								<li>VEF_AdvancedAnimalImplantsTable</li>
-							</recipeUsers>		
-							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-							<workSkill>Crafting</workSkill>
-							<effectWorking>Smith</effectWorking>
-							<soundWorking>Recipe_Smith</soundWorking>
-							<skillRequirements>
-								<Crafting>10</Crafting>
-							</skillRequirements>
-							<unfinishedThingDef>UnfinishedAnimalPart</unfinishedThingDef>
-							<researchPrerequisite>VEF_AdvancedAnimalImplants</researchPrerequisite>							
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>Corpse_MM_LernaeanHydra</li>
-
-										</thingDefs>
-									</filter>
-									<count>1</count>
-								</li>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>Plasteel</li>											
-										</thingDefs>
-									</filter>
-									<count>50</count>
-								</li>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>ComponentSpacer</li>										
-										</thingDefs>
-									</filter>
-									<count>5</count>
-								</li>
-							</ingredients>
-							<fixedIngredientFilter>
-								<thingDefs>
-									<li>Corpse_MM_LernaeanHydra</li>									
-									<li>Plasteel</li>
-									<li>ComponentSpacer</li>
-								</thingDefs>
-							</fixedIngredientFilter>
-							<defaultIngredientFilter>
-								<thingDefs>
-									<li>Corpse_MM_LernaeanHydra</li>
-									<li>Plasteel</li>
-									<li>ComponentSpacer</li>
-								</thingDefs>
-							</defaultIngredientFilter>
-							<products>
-								<MM_AcidicBreathImplant>1</MM_AcidicBreathImplant>
-							</products>
-						</RecipeDef>
-
-						<RecipeDef ParentName="SurgeryRemoveImplantBase">
-							<defName>MM_RemoveAcidicBreathImplant</defName>
-							<label>remove acidic breath implant</label>
-							<description>Remove acidic breath implant.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_AcidicBreathImplant</ThingDef>
-								<HediffDef>MM_AcidicBreathImplant</HediffDef>
-							</descriptionHyperlinks>
-							<jobString>Removing acidic breath implant.</jobString>
-							<removesHediff>MM_AcidicBreathImplant</removesHediff>
-						</RecipeDef>
-					</value>
-				</li>
-
-				<!-- Fire Breath -->
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs</xpath>
-					<value>
-						<HediffDef ParentName="ImplantHediffBase">
-							<defName>MM_FireBreathImplant</defName>
-							<label>fire breath implant</label>
-							<labelNoun>a fire breath implant</labelNoun>
-							<description>An installed fire breath implant. This implant will allow this creature to use a ranged fire breath attack that lights enemies on fire.\n\nNote that installing this on a creature that already has a fire breath of this kind will have no effect.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_FireBreathImplant</ThingDef>
-							</descriptionHyperlinks>
-							<spawnThingOnRemoved>MM_FireBreathImplant</spawnThingOnRemoved>
-							<comps>
-								<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
-									<verbs>
-										<li>
-											<verbClass>Verb_Shoot</verbClass>
-											<accuracyTouch>1</accuracyTouch>
-											<accuracyShort>1</accuracyShort>
-											<accuracyMedium>1</accuracyMedium>
-											<accuracyLong>1</accuracyLong>
-											<hasStandardCommand>true</hasStandardCommand>
-											<defaultProjectile>MM_FlameBreathAnimated</defaultProjectile>
-											<warmupTime>1.5</warmupTime>
-											<burstShotCount>1</burstShotCount>
-											<minRange>1</minRange>
-											<range>8</range>	
-											<label>fire breath</label>	  				
-											<soundCast>MM_PoisonBreathSound</soundCast>
-											<muzzleFlashScale>0</muzzleFlashScale>
-											<commonality>1</commonality>
-										</li>
-									</verbs>
-									<verbProps>
-										<li>
-											<label>fire breath</label>
-											<draw>false</draw>
-											<canBeToggled>true</canBeToggled>											
-											<canFireIndependently>false</canFireIndependently>
-										</li>
-									</verbProps>
-								</li>
-							</comps>
-							<addedPartProps>
-								<solid>true</solid>								
-								<betterThanNatural>true</betterThanNatural>
-							</addedPartProps>
-						</HediffDef>
-
-						<ThingDef ParentName="VEF_AdvancedBaseADS">
-							<defName>MM_FireBreathImplant</defName>
-							<label>fire breath implant</label>							
-							<description>An installed fire breath implant. This implant will allow this creature to use a ranged fire breath attack that lights enemies on fire.\n\nNote that installing this on a creature that already has a fire breath of this kind will have no effect.</description>
-							<descriptionHyperlinks>
-								<RecipeDef>MM_InstallFireBreathImplant</RecipeDef>
-							</descriptionHyperlinks>
-							<statBases>
-								<MarketValue>800</MarketValue>
-								<Mass>2</Mass>
-							</statBases>
-
-						</ThingDef>
-
-						<RecipeDef ParentName="VEF_AdvancedSurgeryInstallImplantBase">
-							<defName>MM_InstallFireBreathImplant</defName>
-							<label>install fire breath implant</label>
-							<description>Install a fire breath implant. This implant will allow this creature to use a ranged fire breath attack that lights enemies on fire.\n\nNote that installing this on a creature that already has a fire breath of this kind will have no effect.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_FireBreathImplant</ThingDef>
-								<HediffDef>MM_FireBreathImplant</HediffDef>
-							</descriptionHyperlinks>
-							<jobString>Installing fire breath implant.</jobString>
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>MM_FireBreathImplant</li>
-										</thingDefs>
-									</filter>
-									<count>1</count>
-								</li>
-							</ingredients>
-							<fixedIngredientFilter>
-								<thingDefs>
-									<li>MM_FireBreathImplant</li>
-								</thingDefs>
-							</fixedIngredientFilter>
-							<appliedOnFixedBodyParts>
-								<li>Body</li>								
-								<li>SnakeBody</li>
-								<li>AA_JellyfishMainBody</li>
-								<li>AA_Protoplasm</li>
-								<li>AA_Thorax</li>
-								<li>AA_SentientPlantBody</li>
-								<li>AA_SlugBody</li>
-							</appliedOnFixedBodyParts>
-							<addsHediff>MM_FireBreathImplant</addsHediff>
-						</RecipeDef>
-
-						<RecipeDef>
-							<defName>MM_MakeFireBreathImplant</defName>
-							<label>make a fire breath implant</label>
-							<description>Make a fire breath implant from a Chimera or Ieltxu corpse. This implant will allow this creature to use a ranged fire breath attack that lights enemies on fire.\n\nNote that installing this on a creature that already has a fire breath of this kind will have no effect.</description>
-							<jobString>Making fire breath implant</jobString>							
-							<workAmount>15000</workAmount>		
-							<recipeUsers>
-								<li>VEF_AdvancedAnimalImplantsTable</li>
-							</recipeUsers>		
-							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-							<workSkill>Crafting</workSkill>
-							<effectWorking>Smith</effectWorking>
-							<soundWorking>Recipe_Smith</soundWorking>
-							<skillRequirements>
-								<Crafting>10</Crafting>
-							</skillRequirements>
-							<unfinishedThingDef>UnfinishedAnimalPart</unfinishedThingDef>
-							<researchPrerequisite>VEF_AdvancedAnimalImplants</researchPrerequisite>							
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>Corpse_MM_Ieltxu</li>
-											<li>Corpse_MM_Chimera</li>
-
-										</thingDefs>
-									</filter>
-									<count>1</count>
-								</li>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>Plasteel</li>											
-										</thingDefs>
-									</filter>
-									<count>50</count>
-								</li>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>ComponentSpacer</li>										
-										</thingDefs>
-									</filter>
-									<count>5</count>
-								</li>
-							</ingredients>
-							<fixedIngredientFilter>
-								<thingDefs>
-									<li>Corpse_MM_Ieltxu</li>
-									<li>Corpse_MM_Chimera</li>								
-									<li>Plasteel</li>
-									<li>ComponentSpacer</li>
-								</thingDefs>
-							</fixedIngredientFilter>
-							<defaultIngredientFilter>
-								<thingDefs>
-									<li>Corpse_MM_Ieltxu</li>
-									<li>Corpse_MM_Chimera</li>
-									<li>Plasteel</li>
-									<li>ComponentSpacer</li>
-								</thingDefs>
-							</defaultIngredientFilter>
-							<products>
-								<MM_FireBreathImplant>1</MM_FireBreathImplant>
-							</products>
-						</RecipeDef>
-
-						<RecipeDef ParentName="SurgeryRemoveImplantBase">
-							<defName>MM_RemoveFireBreathImplant</defName>
-							<label>remove fire breath implant</label>
-							<description>Remove fire breath implant.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_FireBreathImplant</ThingDef>
-								<HediffDef>MM_FireBreathImplant</HediffDef>
-							</descriptionHyperlinks>
-							<jobString>Removing fire breath implant.</jobString>
-							<removesHediff>MM_FireBreathImplant</removesHediff>
-						</RecipeDef>
-					</value>
-				</li>
-
-				<!-- Toxic Breath -->
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs</xpath>
-					<value>
-						<HediffDef ParentName="ImplantHediffBase">
-							<defName>MM_ToxicBreathImplant</defName>
-							<label>toxic breath implant</label>
-							<labelNoun>a toxic breath implant</labelNoun>
-							<description>An installed toxic breath implant. This implant will allow this creature to use a ranged toxic breath attack that causes toxic buildup in its targer.\n\nNote that installing this on a creature that already has a toxic breath of this kind will have no effect.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_ToxicBreathImplant</ThingDef>
-							</descriptionHyperlinks>
-							<spawnThingOnRemoved>MM_ToxicBreathImplant</spawnThingOnRemoved>
-							<comps>
-								<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
-									<verbs>
-										<li>
-											<verbClass>Verb_Shoot</verbClass>
-											<accuracyTouch>1</accuracyTouch>
-											<accuracyShort>1</accuracyShort>
-											<accuracyMedium>1</accuracyMedium>
-											<accuracyLong>1</accuracyLong>
-											<hasStandardCommand>true</hasStandardCommand>
-											<defaultProjectile>MM_GreenStreamBreath</defaultProjectile>
-											<warmupTime>1.5</warmupTime>
-											<burstShotCount>1</burstShotCount>
-											<minRange>1</minRange>
-											<range>8</range>				
-											<soundCast>MM_PoisonBreathSound</soundCast>
-											<muzzleFlashScale>0</muzzleFlashScale>
-											<label>toxic breath</label>
-											<commonality>1</commonality>
-										</li>
-									</verbs>
-									<verbProps>
-										<li>
-											<label>toxic breath</label>
-											<draw>false</draw>
-											<canBeToggled>true</canBeToggled>											
-											<canFireIndependently>false</canFireIndependently>
-										</li>
-									</verbProps>
-								</li>
-							</comps>
-							<addedPartProps>
-								<solid>true</solid>								
-								<betterThanNatural>true</betterThanNatural>
-							</addedPartProps>
-						</HediffDef>
-
-						<ThingDef ParentName="VEF_AdvancedBaseADS">
-							<defName>MM_ToxicBreathImplant</defName>
-							<label>toxic breath implant</label>							
-							<description>An installed toxic breath implant. This implant will allow this creature to use a ranged toxic breath attack that causes toxic buildup in its targer.\n\nNote that installing this on a creature that already has a toxic breath of this kind will have no effect.</description>
-							<descriptionHyperlinks>
-								<RecipeDef>MM_InstallToxicBreathImplant</RecipeDef>
-							</descriptionHyperlinks>
-							<statBases>
-								<MarketValue>800</MarketValue>
-								<Mass>2</Mass>
-							</statBases>
-
-						</ThingDef>
-
-						<RecipeDef ParentName="VEF_AdvancedSurgeryInstallImplantBase">
-							<defName>MM_InstallToxicBreathImplant</defName>
-							<label>install toxic breath implant</label>
-							<description>Install a toxic breath implant. This implant will allow this creature to use a ranged toxic breath attack that causes toxic buildup in its targer.\n\nNote that installing this on a creature that already has a toxic breath of this kind will have no effect.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_ToxicBreathImplant</ThingDef>
-								<HediffDef>MM_ToxicBreathImplant</HediffDef>
-							</descriptionHyperlinks>
-							<jobString>Installing toxic breath implant.</jobString>
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>MM_ToxicBreathImplant</li>
-										</thingDefs>
-									</filter>
-									<count>1</count>
-								</li>
-							</ingredients>
-							<fixedIngredientFilter>
-								<thingDefs>
-									<li>MM_ToxicBreathImplant</li>
-								</thingDefs>
-							</fixedIngredientFilter>
-							<appliedOnFixedBodyParts>
-								<li>Body</li>								
-								<li>SnakeBody</li>
-								<li>AA_JellyfishMainBody</li>
-								<li>AA_Protoplasm</li>
-								<li>AA_Thorax</li>
-								<li>AA_SentientPlantBody</li>
-								<li>AA_SlugBody</li>
-							</appliedOnFixedBodyParts>
-							<addsHediff>MM_ToxicBreathImplant</addsHediff>
-						</RecipeDef>
-
-						<RecipeDef>
-							<defName>MM_MakeToxicBreathImplant</defName>
-							<label>make a toxic breath implant</label>
-							<description>Make a toxic breath implant from a Tlilcoatl corpse. This implant will allow this creature to use a ranged toxic breath attack that causes toxic buildup in its targer.\n\nNote that installing this on a creature that already has a toxic breath of this kind will have no effect.</description>
-							<jobString>Making toxic breath implant</jobString>							
-							<workAmount>15000</workAmount>		
-							<recipeUsers>
-								<li>VEF_AdvancedAnimalImplantsTable</li>
-							</recipeUsers>		
-							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-							<workSkill>Crafting</workSkill>
-							<effectWorking>Smith</effectWorking>
-							<soundWorking>Recipe_Smith</soundWorking>
-							<skillRequirements>
-								<Crafting>10</Crafting>
-							</skillRequirements>
-							<unfinishedThingDef>UnfinishedAnimalPart</unfinishedThingDef>
-							<researchPrerequisite>VEF_AdvancedAnimalImplants</researchPrerequisite>							
-							<ingredients>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>Corpse_MM_Tlilcoatl</li>											
-										</thingDefs>
-									</filter>
-									<count>1</count>
-								</li>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>Plasteel</li>											
-										</thingDefs>
-									</filter>
-									<count>50</count>
-								</li>
-								<li>
-									<filter>
-										<thingDefs>
-											<li>ComponentSpacer</li>										
-										</thingDefs>
-									</filter>
-									<count>5</count>
-								</li>
-							</ingredients>
-							<fixedIngredientFilter>
-								<thingDefs>
-									<li>Corpse_MM_Tlilcoatl</li>								
-									<li>Plasteel</li>
-									<li>ComponentSpacer</li>
-								</thingDefs>
-							</fixedIngredientFilter>
-							<defaultIngredientFilter>
-								<thingDefs>
-									<li>Corpse_MM_Tlilcoatl</li>
-									<li>Plasteel</li>
-									<li>ComponentSpacer</li>
-								</thingDefs>
-							</defaultIngredientFilter>
-							<products>
-								<MM_ToxicBreathImplant>1</MM_ToxicBreathImplant>
-							</products>
-						</RecipeDef>
-
-						<RecipeDef ParentName="SurgeryRemoveImplantBase">
-							<defName>MM_RemoveToxicBreathImplant</defName>
-							<label>remove toxic breath implant</label>
-							<description>Remove toxic breath implant.</description>
-							<descriptionHyperlinks>
-								<ThingDef>MM_ToxicBreathImplant</ThingDef>
-								<HediffDef>MM_ToxicBreathImplant</HediffDef>
-							</descriptionHyperlinks>
-							<jobString>Removing toxic breath implant.</jobString>
-							<removesHediff>MM_ToxicBreathImplant</removesHediff>
-						</RecipeDef>
-					</value>
-				</li>
-
-<!-- Goo Acidifier -->
-
-	<HediffDef ParentName="AI_BionicBodyPartBase">
-		<defName>AI_GooAcidifier</defName>
-		<label>animal goo acidifier</label>
-		<labelNoun>an animal goo acidifier</labelNoun>
-		<description>A goo acidifier increases the acidity of a goo's internal organs, making it explode as soon as it is downed. Basically transforms goos into biological suicide bombers.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_GooAcidifier</ThingDef>
-		</descriptionHyperlinks>
-		<spawnThingOnRemoved>AI_GooAcidifier</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
-		<comps>
-			<li Class="AlphaBehavioursAndEvents.HediffCompProperties_ExplodeOnDowned">
-
-			</li>
-		</comps>
-	</HediffDef>
-	
-	
-	<!-- Ranged spinneret -->
-
+	<!-- Petrifying Gaze -->
 	<HediffDef ParentName="AI_ImplantHediffBase">
-		<defName>AI_AnimalRangedSpinneret</defName>
-		<label>animal ranged spinneret</label>
-		<labelNoun>an animal ranged spinneret</labelNoun>
-		<description>An installed ranged spinneret implant. This implant will allow this creature to use a ranged stunning web attack.\n\nNote that installing this on a creature that already has a ranged spinneret will have no effect.</description>
+		<defName>AI_AnimalPetrifyingGaze</defName>
+		<label>animal petrifying gaze</label>
+		<labelNoun>an animal petrifying gaze</labelNoun>
+		<description>An installed petrifying gaze implant. This implant will allow this creature to use a very dangerous petrifying gaze that will slow down its target, and eventually kill it.\n\nNote that installing this on a creature that already has a petrifying attack will have no effect. And obviously a creature will need eyes to use this attack.</description>
 		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalRangedSpinneret</ThingDef>
+			<ThingDef>AI_AnimalPetrifyingGaze</ThingDef>
 		</descriptionHyperlinks>
-		<spawnThingOnRemoved>AI_AnimalRangedSpinneret</spawnThingOnRemoved>
+		<spawnThingOnRemoved>AI_AnimalPetrifyingGaze</spawnThingOnRemoved>
 		<comps>
 			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
 				<verbs>
 					<li>
 						<verbClass>Verb_Shoot</verbClass>
 						<accuracyTouch>1</accuracyTouch>
-						<accuracyShort>0.9</accuracyShort>
-						<accuracyMedium>0.8</accuracyMedium>
-						<accuracyLong>0.3</accuracyLong>
+						<accuracyShort>1</accuracyShort>
+						<accuracyMedium>1</accuracyMedium>
+						<accuracyLong>1</accuracyLong>
 						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>AA_Web</defaultProjectile>
-						<warmupTime>3</warmupTime>
-						<burstShotCount>3</burstShotCount>
+						<defaultProjectile>MM_CenteredGazeAttack</defaultProjectile>
+						<warmupTime>1</warmupTime>
+						<burstShotCount>1</burstShotCount>
 						<minRange>1</minRange>
 						<range>20</range>
-						<soundCast>AA_Throw</soundCast>
+						<label>petrifying gaze</label>
 						<muzzleFlashScale>0</muzzleFlashScale>
-						<label>web</label>
-						<commonality>.8</commonality>
-					</li>
-				</verbs>
-				<verbProps>
-					<li>
-						<label>web</label>
-						<draw>false</draw>
-						<canBeToggled>true</canBeToggled>											
-						<canFireIndependently>false</canFireIndependently>
-					</li>
-				</verbProps>
-			</li>
-		</comps>
-		<addedPartProps>
-			<solid>true</solid>								
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
-	</HediffDef>
-
-	<!-- Venomous Spitter -->
-
-	<HediffDef ParentName="AI_ImplantHediffBase">
-		<defName>AI_AnimalVenomousSpitter</defName>
-		<label>animal venomous spitter</label>
-		<labelNoun>an animal venomous spitter</labelNoun>
-		<description>An installed venomous spitter implant. This implant will allow this creature to use a ranged venomous spit attack.\n\nNote that installing this on a creature that already has a venomous spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalVenomousSpitter</ThingDef>
-		</descriptionHyperlinks>
-		<spawnThingOnRemoved>AI_AnimalVenomousSpitter</spawnThingOnRemoved>
-		<comps>
-			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
-				<verbs>
-					<li>
-						<verbClass>Verb_Shoot</verbClass>
-						<accuracyTouch>1</accuracyTouch>
-						<accuracyShort>1</accuracyShort>
-						<accuracyMedium>1</accuracyMedium>
-						<accuracyLong>1</accuracyLong>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>AA_PoisonBolt</defaultProjectile>
-						<warmupTime>2</warmupTime>
-						<burstShotCount>1</burstShotCount>
-						<minRange>2</minRange>
-						<range>30</range>
-						<soundCast>AA_PoisonBolt</soundCast>
-						<muzzleFlashScale>0</muzzleFlashScale>
-						<label>venomous spit</label>
-						<commonality>.8</commonality>
-					</li>
-				</verbs>
-				<verbProps>
-					<li>
-						<label>venomous spit</label>
-						<draw>false</draw>
-						<canBeToggled>true</canBeToggled>											
-						<canFireIndependently>false</canFireIndependently>
-					</li>
-				</verbProps>
-			</li>
-		</comps>
-		<addedPartProps>
-			<solid>true</solid>		
-			<partEfficiency>0.75</partEfficiency>								
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
-	</HediffDef>
-
-	<!-- Acidic Spitter -->
-
-	<HediffDef ParentName="AI_ImplantHediffBase">
-		<defName>AI_AnimalAcidicSpitter</defName>
-		<label>animal acidic spitter</label>
-		<labelNoun>an animal acidic spitter</labelNoun>
-		<description>An installed acidic spitter implant. This implant will allow this creature to use a ranged acidic spit attack that causes additional damage over time.\n\nNote that installing this on a creature that already has an acidic spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalAcidicSpitter</ThingDef>
-		</descriptionHyperlinks>
-		<spawnThingOnRemoved>AI_AnimalAcidicSpitter</spawnThingOnRemoved>
-		<comps>
-			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
-				<verbs>
-					<li>
-						<verbClass>Verb_Shoot</verbClass>
-						<accuracyTouch>1</accuracyTouch>
-						<accuracyShort>1</accuracyShort>
-						<accuracyMedium>1</accuracyMedium>
-						<accuracyLong>1</accuracyLong>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>AA_AcidBolt</defaultProjectile>
-						<warmupTime>2</warmupTime>
-						<burstShotCount>1</burstShotCount>
-						<minRange>2</minRange>
-						<range>20</range>
-						<soundCast>AA_PoisonBolt</soundCast>
-						<muzzleFlashScale>0</muzzleFlashScale>
-						<label>acidic spit</label>
-						<commonality>.8</commonality>
-					</li>
-				</verbs>
-				<verbProps>
-					<li>
-						<label>acidic spit</label>
-						<draw>false</draw>
-						<canBeToggled>true</canBeToggled>											
-						<canFireIndependently>false</canFireIndependently>
-					</li>
-				</verbProps>
-			</li>
-		</comps>
-		<addedPartProps>
-			<solid>true</solid>		
-			<partEfficiency>0.75</partEfficiency>								
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
-	</HediffDef>
-
-	<!-- Barbed Quill Thrower -->
-
-	<HediffDef ParentName="AI_ImplantHediffBase">
-		<defName>AI_AnimalBarbedQuillThrower</defName>
-		<label>animal barbed quill thrower</label>
-		<labelNoun>an animal barbed quill thrower</labelNoun>
-		<description>An installed barbed quill thrower implant. This implant will allow this creature to use a ranged venomous quill attack that causes toxic buildup.\n\nNote that installing this on a creature that already has a barbed quill thrower will have no effect.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalBarbedQuillThrower</ThingDef>
-		</descriptionHyperlinks>
-		<spawnThingOnRemoved>AI_AnimalBarbedQuillThrower</spawnThingOnRemoved>
-		<comps>
-			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
-				<verbs>
-					<li>
-						<verbClass>Verb_Shoot</verbClass>
-						<accuracyTouch>1</accuracyTouch>
-						<accuracyShort>1</accuracyShort>
-						<accuracyMedium>1</accuracyMedium>
-						<accuracyLong>1</accuracyLong>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>AA_Quill</defaultProjectile>
-						<warmupTime>3</warmupTime>
-						<burstShotCount>1</burstShotCount>
-						<minRange>2</minRange>
-						<range>20</range>
-						<soundCast>AA_DartSound</soundCast>
-						<muzzleFlashScale>0</muzzleFlashScale>
-						<label>barbed quills</label> 
-						<commonality>.8</commonality>
-					</li>
-				</verbs>
-				<verbProps>
-					<li>
-						<label>barbed quills</label> 
-						<draw>false</draw>
-						<canBeToggled>true</canBeToggled>											
-						<canFireIndependently>false</canFireIndependently>
-					</li>
-				</verbProps>
-			</li>
-		</comps>
-		<addedPartProps>
-			<solid>true</solid>								
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
-	</HediffDef>
-
-	<!-- Quad Tesla Cannon -->
-
-	<HediffDef ParentName="AI_ImplantHediffBase">
-		<defName>AI_AnimalQuadTeslaCannon</defName>
-		<label>animal quad tesla cannon</label>
-		<labelNoun>an animal quad tesla cannon</labelNoun>
-		<description>An installed quad tesla cannon implant. This implant will allow this creature to use a powerful ranged plasma attack.\n\nNote that installing this on a creature that already has a quad tesla cannon will have no effect.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalQuadTeslaCannon</ThingDef>
-		</descriptionHyperlinks>
-		<spawnThingOnRemoved>AI_AnimalQuadTeslaCannon</spawnThingOnRemoved>
-		<comps>
-			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
-				<verbs>
-					<li>
-						<verbClass>Verb_Shoot</verbClass>
-						<accuracyTouch>1</accuracyTouch>
-						<accuracyShort>1</accuracyShort>
-						<accuracyMedium>1</accuracyMedium>
-						<accuracyLong>1</accuracyLong>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>AA_Plasma</defaultProjectile>
-						<warmupTime>7</warmupTime>
-						<burstShotCount>4</burstShotCount>
-						<minRange>2</minRange>
-						<range>20</range>
-						<soundCast>AA_Plasma</soundCast>
-						<muzzleFlashScale>0</muzzleFlashScale>
-						<label>quad tesla cannon</label>
 						<commonality>1</commonality>
 					</li>
 				</verbs>
 				<verbProps>
 					<li>
-						<label>quad tesla cannon</label> 
+						<label>petrifying gaze</label>
 						<draw>false</draw>
-						<canBeToggled>true</canBeToggled>											
+						<canBeToggled>true</canBeToggled>
 						<canFireIndependently>false</canFireIndependently>
 					</li>
 				</verbProps>
 			</li>
 		</comps>
 		<addedPartProps>
-			<solid>true</solid>								
+			<solid>true</solid>
+			<partEfficiency>0.75</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	<!-- Venomous Quills -->
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalVenomousQuills</defName>
+		<label>animal venomous quills</label>
+		<labelNoun>an animal venomous quills</labelNoun>
+		<description>An installed venomous quills implant. This implant will allow this creature to use a ranged venomous quill attack.\n\nNote that installing this on a creature that already has a venomous quill will have no effect. This implant can only be installed in creatures that have a tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalVenomousQuills</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalVenomousQuills</spawnThingOnRemoved>
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>1</accuracyTouch>
+						<accuracyShort>1</accuracyShort>
+						<accuracyMedium>0.9</accuracyMedium>
+						<accuracyLong>0.7</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>MM_Quill</defaultProjectile>
+						<warmupTime>1.5</warmupTime>
+						<burstShotCount>1</burstShotCount>
+						<minRange>2</minRange>
+						<range>18</range>
+						<label>venomous quills</label>
+						<soundCast>MM_QuillSound</soundCast>
+						<muzzleFlashScale>0</muzzleFlashScale>
+						<commonality>1</commonality>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>venomous quills</label>
+						<draw>false</draw>
+						<canBeToggled>true</canBeToggled>
+						<canFireIndependently>false</canFireIndependently>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.75</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
-
-	<!-- Bioelectric Organ -->
-
+	<!-- Wisp Fire -->
 	<HediffDef ParentName="AI_ImplantHediffBase">
-		<defName>AI_AnimalBioelectricOrgan</defName>
-		<label>animal bioelectric organ</label>
-		<labelNoun>an animal bioelectric organ</labelNoun>
-		<description>An installed bioelectric organ implant. This implant will allow this creature to use a powerful ranged electric attack that may paralyze and cause heart attacks.\n\nNote that installing this on a creature that already has a bioelectric organ will have no effect.</description>
+		<defName>AI_AnimalWispFire</defName>
+		<label>animal wisp fire</label>
+		<labelNoun>an animal wisp fire</labelNoun>
+		<description>An installed wisp fire implant. This implant will allow this creature to use a ranged fire attack.\n\nNote that installing this on a creature that already has a wisp fire will have no effect.</description>
 		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalBioelectricOrgan</ThingDef>
+			<ThingDef>AI_AnimalWispFire</ThingDef>
 		</descriptionHyperlinks>
-		<spawnThingOnRemoved>AI_AnimalBioelectricOrgan</spawnThingOnRemoved>
+		<spawnThingOnRemoved>AI_AnimalWispFire</spawnThingOnRemoved>
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>0.15</accuracyTouch>
+						<accuracyShort>0.25</accuracyShort>
+						<accuracyMedium>0.15</accuracyMedium>
+						<accuracyLong>0.1</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>MM_WispProjectile</defaultProjectile>
+						<warmupTime>2</warmupTime>
+						<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+						<burstShotCount>50</burstShotCount>
+						<minRange>1</minRange>
+						<range>15</range>
+						<soundCast>MM_PoisonBreathSound</soundCast>
+						<muzzleFlashScale>0</muzzleFlashScale>
+						<label>wisp breath</label>
+						<commonality>1</commonality>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>wisp breath</label>
+						<draw>false</draw>
+						<canBeToggled>true</canBeToggled>
+						<canFireIndependently>false</canFireIndependently>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	<!-- Acidic Breath -->
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalAcidicBreath</defName>
+		<label>animal acidic breath</label>
+		<labelNoun>an animal acidic breath</labelNoun>
+		<description>An installed acidic breath implant. This implant will allow this creature to use a ranged acidic breath attack that causes damage over time.\n\nNote that installing this on a creature that already has an acidic breath will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalAcidicBreath</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalAcidicBreath</spawnThingOnRemoved>
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>0.15</accuracyTouch>
+						<accuracyShort>0.25</accuracyShort>
+						<accuracyMedium>0.15</accuracyMedium>
+						<accuracyLong>0.1</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>MM_AcidicBreath</defaultProjectile>
+						<warmupTime>0.3</warmupTime>
+						<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+						<label>acidic breath</label>
+						<burstShotCount>80</burstShotCount>
+						<minRange>1</minRange>
+						<range>15</range>
+						<soundCast>MM_PoisonBreathSound</soundCast>
+						<muzzleFlashScale>0</muzzleFlashScale>
+						<commonality>0.8</commonality>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>acidic breath</label>
+						<draw>false</draw>
+						<canBeToggled>true</canBeToggled>
+						<canFireIndependently>false</canFireIndependently>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	<!-- Fire Breath -->
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalFireBreath</defName>
+		<label>animal fire breath</label>
+		<labelNoun>an animal fire breath</labelNoun>
+		<description>An installed fire breath implant. This implant will allow this creature to use a ranged fire breath attack that lights enemies on fire.\n\nNote that installing this on a creature that already has a fire breath of this kind will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalFireBreath</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalFireBreath</spawnThingOnRemoved>
 		<comps>
 			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
 				<verbs>
@@ -1365,44 +207,42 @@
 						<accuracyMedium>1</accuracyMedium>
 						<accuracyLong>1</accuracyLong>
 						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>AA_ElectricBolt</defaultProjectile>
-						<warmupTime>5</warmupTime>
+						<defaultProjectile>MM_FlameBreathAnimated</defaultProjectile>
+						<warmupTime>1.5</warmupTime>
 						<burstShotCount>1</burstShotCount>
-						<minRange>2</minRange>
-						<range>15</range>
-						<soundCast>AA_ElectricBolt</soundCast>
+						<minRange>1</minRange>
+						<range>8</range>
+						<label>fire breath</label>
+						<soundCast>MM_PoisonBreathSound</soundCast>
 						<muzzleFlashScale>0</muzzleFlashScale>
-						<label>electric bolt</label>
-						<commonality>.8</commonality>
+						<commonality>1</commonality>
 					</li>
 				</verbs>
 				<verbProps>
 					<li>
-						<label>electric bolt</label> 
+						<label>fire breath</label>
 						<draw>false</draw>
-						<canBeToggled>true</canBeToggled>											
+						<canBeToggled>true</canBeToggled>
 						<canFireIndependently>false</canFireIndependently>
 					</li>
 				</verbProps>
 			</li>
 		</comps>
 		<addedPartProps>
-			<solid>true</solid>								
+			<solid>true</solid>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
-
-	<!-- Light Focusing Lens -->
-
+	<!-- Toxic Breath -->
 	<HediffDef ParentName="AI_ImplantHediffBase">
-		<defName>AI_AnimalLightFocusingLens</defName>
-		<label>animal light focusing lens</label>
-		<labelNoun>an animal light focusing lens</labelNoun>
-		<description>An installed light focusing lens implant. This implant will allow this creature to use a powerful ranged laser attack that sets enemies on fire.\n\nNote that installing this on a creature that already has a light focusing lens will have no effect. This implant takes the space of one of the creature's eyes, so it can't be installed in eyeless animals.</description>
+		<defName>AI_AnimalToxicBreath</defName>
+		<label>animal toxic breath</label>
+		<labelNoun>an animal toxic breath</labelNoun>
+		<description>An installed toxic breath implant. This implant will allow this creature to use a ranged toxic breath attack that causes toxic buildup in its targer.\n\nNote that installing this on a creature that already has a toxic breath of this kind will have no effect.</description>
 		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalLightFocusingLens</ThingDef>
+			<ThingDef>AI_AnimalToxicBreath</ThingDef>
 		</descriptionHyperlinks>
-		<spawnThingOnRemoved>AI_AnimalLightFocusingLens</spawnThingOnRemoved>
+		<spawnThingOnRemoved>AI_AnimalToxicBreath</spawnThingOnRemoved>
 		<comps>
 			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
 				<verbs>
@@ -1411,83 +251,32 @@
 						<accuracyTouch>1</accuracyTouch>
 						<accuracyShort>1</accuracyShort>
 						<accuracyMedium>1</accuracyMedium>
-						<accuracyLong>.75</accuracyLong>
+						<accuracyLong>1</accuracyLong>
 						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>AA_LaserBullet</defaultProjectile>
-						<warmupTime>5</warmupTime>
+						<defaultProjectile>MM_GreenStreamBreath</defaultProjectile>
+						<warmupTime>1.5</warmupTime>
 						<burstShotCount>1</burstShotCount>
 						<minRange>1</minRange>
-						<range>10</range>
-						<soundCast>AA_LaserBullet</soundCast>
+						<range>8</range>
+						<soundCast>MM_PoisonBreathSound</soundCast>
 						<muzzleFlashScale>0</muzzleFlashScale>
-						<label>laser</label>
-						<commonality>.8</commonality>
+						<label>toxic breath</label>
+						<commonality>1</commonality>
 					</li>
 				</verbs>
 				<verbProps>
 					<li>
-						<label>laser</label> 
+						<label>toxic breath</label>
 						<draw>false</draw>
-						<canBeToggled>true</canBeToggled>											
+						<canBeToggled>true</canBeToggled>
 						<canFireIndependently>false</canFireIndependently>
 					</li>
 				</verbProps>
 			</li>
 		</comps>
 		<addedPartProps>
-			<solid>true</solid>		
-			<partEfficiency>0.75</partEfficiency>								
+			<solid>true</solid>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
-
-	<!-- Hyper Acidic Stomach -->
-
-	<HediffDef ParentName="AI_ImplantHediffBase">
-		<defName>AI_AnimalHyperAcidicStomach</defName>
-		<label>animal hyper acidic stomach</label>
-		<labelNoun>an animal hyper acidic stomach</labelNoun>
-		<description>An installed hyper acidic stomach implant. This implant will allow this creature to use a ranged acid attack that causes damage over time.\n\nNote that installing this on a creature that already has a hyper acidic stomach will have no effect. This implant takes the space of the creature's stomach, so it can't be installed in animals that lack one.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalHyperAcidicStomach</ThingDef>
-		</descriptionHyperlinks>
-		<spawnThingOnRemoved>AI_AnimalHyperAcidicStomach</spawnThingOnRemoved>
-		<comps>
-			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
-				<verbs>
-					<li>
-						<verbClass>Verb_Shoot</verbClass>
-						<accuracyTouch>1</accuracyTouch>
-						<accuracyShort>1</accuracyShort>
-						<accuracyMedium>0.8</accuracyMedium>
-						<accuracyLong>0.75</accuracyLong>
-						<hasStandardCommand>true</hasStandardCommand>
-						<defaultProjectile>AA_AcidicVomit</defaultProjectile>
-						<warmupTime>5</warmupTime>
-						<burstShotCount>1</burstShotCount>
-						<minRange>1</minRange>
-						<range>7</range>
-						<soundCast>AA_PoisonBolt</soundCast>
-						<muzzleFlashScale>0</muzzleFlashScale>
-						<label>acidic vomit</label>
-						<commonality>.8</commonality>
-					</li>
-				</verbs>
-				<verbProps>
-					<li>
-						<label>acidic vomit</label> 
-						<draw>false</draw>
-						<canBeToggled>true</canBeToggled>											
-						<canFireIndependently>false</canFireIndependently>
-					</li>
-				</verbProps>
-			</li>
-		</comps>
-		<addedPartProps>
-			<solid>true</solid>		
-			<partEfficiency>0.75</partEfficiency>								
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
-	</HediffDef>
-	
 </Defs>

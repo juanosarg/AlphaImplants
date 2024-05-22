@@ -35,6 +35,11 @@
 			<researchPrerequisite>Bionics</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
+	<ThingDef Name="AI_AdvancedAnimalBionicPartBase" ParentName="AI_AnimalBionicPartBase" Abstract="true">
+		<recipeMaker>
+			<researchPrerequisite>AI_AdvancedAnimalBionics</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
 	<ThingDef ParentName="AI_AnimalBionicPartBase">
 		<defName>AI_AnimalBionicLeg</defName>
 		<label>animal bionic leg</label>
@@ -187,6 +192,42 @@
 		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicNose</defName>
+		<label>animal bionic nose</label>		
+		<description>An animal bionic nose equipped with advanced olfactory sensors and targeting systems, enhancing the animal's ability to detect and precisely locate targets.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicNose</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>4</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>0.5</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalBionicEar</defName>
+		<label>animal bionic ear</label>		
+		<description>An animal bionic ear featuring advanced auditory sensors and real-time threat detection, enhancing the animal's ability to hear and pinpoint approaching dangers.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalBionicEar</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>4</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>0.5</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
 		<defName>AI_AnimalBionicBeak</defName>
 		<label>animal bionic beak</label>
 		
@@ -322,6 +363,151 @@
 		<costList>
 			<Plasteel>5</Plasteel>
 			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AnimalStealthskinImplant</defName>
+		<label>animal stealthskin implant</label>
+		
+		<description>An animal stealthskin implant that renders the animal invisible by reflecting light around its body, allowing it to seamlessly blend with the environment.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalStealthskinImplant</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AnimalWorkChipFlick</defName>
+		<label>animal work chip: flick</label>		
+		<description>An animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Flick jobs.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalWorkChipFlick</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AnimalWorkChipClean</defName>
+		<label>animal work chip: clean</label>		
+		<description>An animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Clean jobs.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalWorkChipClean</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AnimalWorkChipSlaughter</defName>
+		<label>animal work chip: slaughter</label>		
+		<description>An animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Slaughter animal jobs.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalWorkChipSlaughter</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>5</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AnimalWorkChipMine</defName>
+		<label>animal work chip: mine</label>		
+		<description>An animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Mine jobs.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalWorkChipMine</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>7</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AnimalWorkChipFeedPatient</defName>
+		<label>animal work chip: feed patient</label>		
+		<description>An animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Feed Patient jobs.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalWorkChipFeedPatient</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>7</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AnimalWorkChipHarvest</defName>
+		<label>animal work chip: harvest</label>		
+		<description>An animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Harvest jobs.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalWorkChipHarvest</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>7</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AnimalWorkChipHunt</defName>
+		<label>animal work chip: hunting</label>		
+		<description>An animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Hunting jobs.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalWorkChipHunt</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<statBases>
 			<Mass>1</Mass>

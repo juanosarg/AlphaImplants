@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<ThingDef Name="AI_AdvancedAnimalBionicPartBase" ParentName="AI_AnimalBionicPartBase" Abstract="true">
-		<recipeMaker>
-			<researchPrerequisite>AI_AdvancedAnimalBionics</researchPrerequisite>
-		</recipeMaker>
-	</ThingDef>
+	
 	<!-- Goo acidifier -->
 	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
 		<defName>AI_GooAcidifier</defName>

@@ -1,284 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<RecipeDef Name="AI_SurgeryInstallBionic_Nucleus" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
-		<appliedOnFixedBodyParts>
-			<li>AA_Nucleus</li>
-		</appliedOnFixedBodyParts>
-	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallBionic_Nucleus">
-		<defName>AI_GooAcidifier</defName>
-		<label>install animal goo acidifier</label>
-		<description>Install animal goo acidifier.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_GooAcidifier</ThingDef>
-			<HediffDef>AI_GooAcidifier</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing animal goo acidifier.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AI_GooAcidifier</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>AI_GooAcidifier</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<addsHediff>AI_GooAcidifier</addsHediff>
-	</RecipeDef>
 	
-	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
-		<defName>AI_AnimalRangedSpinneret</defName>
-		<label>install animal ranged spinneret</label>
-		<description>Install an animal ranged spinneret.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalRangedSpinneret</ThingDef>
-			<HediffDef>AI_AnimalRangedSpinneret</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing animal ranged spinneret.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AI_AnimalRangedSpinneret</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>AI_AnimalRangedSpinneret</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		
-		<addsHediff>AI_AnimalRangedSpinneret</addsHediff>
-	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
-		<defName>AI_RemoveAnimalRangedSpinneret</defName>
-		<label>remove animal ranged spinneret</label>
-		<description>Remove the animal ranged spinneret.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalRangedSpinneret</ThingDef>
-			<HediffDef>AI_AnimalRangedSpinneret</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing animal ranged spinneret.</jobString>
-		<removesHediff>AI_AnimalRangedSpinneret</removesHediff>
-	</RecipeDef>
 	
-	<RecipeDef ParentName="AI_SurgeryInstallBionic_Mouth">
-		<defName>AI_AnimalVenomousSpitter</defName>
-		<label>install animal venomous spitter</label>
-		<description>Install an animal venomous spitter.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalVenomousSpitter</ThingDef>
-			<HediffDef>AI_AnimalVenomousSpitter</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing animal venomous spitter.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AI_AnimalVenomousSpitter</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>AI_AnimalVenomousSpitter</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		
-		<addsHediff>AI_AnimalVenomousSpitter</addsHediff>
-	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
-		<defName>AI_RemoveAnimalVenomousSpitter</defName>
-		<label>remove animal venomous spitter</label>
-		<description>Remove the animal venomous spitter.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalVenomousSpitter</ThingDef>
-			<HediffDef>AI_AnimalVenomousSpitter</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing animal venomous spitter.</jobString>
-		<removesHediff>AI_AnimalVenomousSpitter</removesHediff>
-	</RecipeDef>
-	
-	<RecipeDef ParentName="AI_SurgeryInstallBionic_Mouth">
-		<defName>AI_AnimalAcidicSpitter</defName>
-		<label>install animal acidic spitter</label>
-		<description>Install an animal acidic spitter.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalAcidicSpitter</ThingDef>
-			<HediffDef>AI_AnimalAcidicSpitter</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing animal acidic spitter.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AI_AnimalAcidicSpitter</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>AI_AnimalAcidicSpitter</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		
-		<addsHediff>AI_AnimalAcidicSpitter</addsHediff>
-	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
-		<defName>AI_RemoveAnimalAcidicSpitter</defName>
-		<label>remove animal acidic spitter</label>
-		<description>Remove the animal acidic spitter.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalAcidicSpitter</ThingDef>
-			<HediffDef>AI_AnimalAcidicSpitter</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing animal acidic spitter.</jobString>
-		<removesHediff>AI_AnimalAcidicSpitter</removesHediff>
-	</RecipeDef>
-	
-	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
-		<defName>AI_AnimalBarbedQuillThrower</defName>
-		<label>install animal barbed quill thrower</label>
-		<description>Install an animal barbed quill thrower.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalBarbedQuillThrower</ThingDef>
-			<HediffDef>AI_AnimalBarbedQuillThrower</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing animal barbed quill thrower.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AI_AnimalBarbedQuillThrower</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>AI_AnimalBarbedQuillThrower</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		
-		<addsHediff>AI_AnimalBarbedQuillThrower</addsHediff>
-	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
-		<defName>AI_RemoveAnimalBarbedQuillThrower</defName>
-		<label>remove animal barbed quill thrower</label>
-		<description>Remove the animal barbed quill thrower.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalBarbedQuillThrower</ThingDef>
-			<HediffDef>AI_AnimalBarbedQuillThrower</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing animal barbed quill thrower.</jobString>
-		<removesHediff>AI_AnimalBarbedQuillThrower</removesHediff>
-	</RecipeDef>
-	
-	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
-		<defName>AI_AnimalQuadTeslaCannon</defName>
-		<label>install animal quad tesla cannon</label>
-		<description>Install an animal quad tesla cannon.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalQuadTeslaCannon</ThingDef>
-			<HediffDef>AI_AnimalQuadTeslaCannon</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing animal quad tesla cannon.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AI_AnimalQuadTeslaCannon</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>AI_AnimalQuadTeslaCannon</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		
-		<addsHediff>AI_AnimalQuadTeslaCannon</addsHediff>
-	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
-		<defName>AI_RemoveAnimalQuadTeslaCannon</defName>
-		<label>remove animal quad tesla cannon</label>
-		<description>Remove the animal quad tesla cannon.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalQuadTeslaCannon</ThingDef>
-			<HediffDef>AI_AnimalQuadTeslaCannon</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing animal quad tesla cannon.</jobString>
-		<removesHediff>AI_AnimalQuadTeslaCannon</removesHediff>
-	</RecipeDef>
-	
-	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
-		<defName>AI_AnimalBioelectricOrgan</defName>
-		<label>install animal bioelectric organ</label>
-		<description>Install an animal bioelectric organ.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalBioelectricOrgan</ThingDef>
-			<HediffDef>AI_AnimalBioelectricOrgan</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Installing animal bioelectric organ.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>AI_AnimalBioelectricOrgan</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>AI_AnimalBioelectricOrgan</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		
-		<addsHediff>AI_AnimalBioelectricOrgan</addsHediff>
-	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
-		<defName>AI_RemoveAnimalBioelectricOrgan</defName>
-		<label>remove animal bioelectric organ</label>
-		<description>Remove the animal bioelectric organ.</description>
-		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalBioelectricOrgan</ThingDef>
-			<HediffDef>AI_AnimalBioelectricOrgan</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing animal bioelectric organ.</jobString>
-		<removesHediff>AI_AnimalBioelectricOrgan</removesHediff>
-	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Eye">
-		<defName>AI_AnimalLightFocusingLens</defName>
-		<label>install animal light focusing lens</label>
-		<description>Install an animal light focusing lens.</description>
+		<defName>AI_AnimalPetrifyingGaze</defName>
+		<label>install animal petrifying gaze</label>
+		<description>Install an animal petrifying gaze.</description>
 		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalLightFocusingLens</ThingDef>
-			<HediffDef>AI_AnimalLightFocusingLens</HediffDef>
+			<ThingDef>AI_AnimalPetrifyingGaze</ThingDef>
+			<HediffDef>AI_AnimalPetrifyingGaze</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Installing animal light focusing lens.</jobString>
+		<jobString>Installing animal petrifying gaze.</jobString>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>AI_AnimalLightFocusingLens</li>
+						<li>AI_AnimalPetrifyingGaze</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -286,37 +23,38 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>AI_AnimalLightFocusingLens</li>
+				<li>AI_AnimalPetrifyingGaze</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		
-		<addsHediff>AI_AnimalLightFocusingLens</addsHediff>
+		<addsHediff>AI_AnimalPetrifyingGaze</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
-		<defName>AI_RemoveAnimalLightFocusingLens</defName>
-		<label>remove animal light focusing lens</label>
-		<description>Remove the animal light focusing lens.</description>
+		<defName>AI_RemoveAnimalPetrifyingGaze</defName>
+		<label>remove animal petrifying gaze</label>
+		<description>Remove the animal petrifying gaze.</description>
 		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalLightFocusingLens</ThingDef>
-			<HediffDef>AI_AnimalLightFocusingLens</HediffDef>
+			<ThingDef>AI_AnimalPetrifyingGaze</ThingDef>
+			<HediffDef>AI_AnimalPetrifyingGaze</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Removing animal light focusing lens.</jobString>
-		<removesHediff>AI_AnimalLightFocusingLens</removesHediff>
+		<jobString>Removing animal petrifying gaze.</jobString>
+		<removesHediff>AI_AnimalPetrifyingGaze</removesHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="AI_SurgeryInstallBionic_Stomach">
-		<defName>AI_AnimalHyperAcidicStomach</defName>
-		<label>install animal hyper acidic stomach</label>
-		<description>Install an animal hyper acidic stomach.</description>
+	
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Tail">
+		<defName>AI_AnimalVenomousQuills</defName>
+		<label>install animal venomous quills</label>
+		<description>Install an animal venomous quills.</description>
 		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalHyperAcidicStomach</ThingDef>
-			<HediffDef>AI_AnimalHyperAcidicStomach</HediffDef>
+			<ThingDef>AI_AnimalVenomousQuills</ThingDef>
+			<HediffDef>AI_AnimalVenomousQuills</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Installing animal hyper acidic stomach.</jobString>
+		<jobString>Installing animal venomous quills.</jobString>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>AI_AnimalHyperAcidicStomach</li>
+						<li>AI_AnimalVenomousQuills</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -324,21 +62,178 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>AI_AnimalHyperAcidicStomach</li>
+				<li>AI_AnimalVenomousQuills</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		
-		<addsHediff>AI_AnimalHyperAcidicStomach</addsHediff>
+		<addsHediff>AI_AnimalVenomousQuills</addsHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
-		<defName>AI_RemoveAnimalHyperAcidicStomach</defName>
-		<label>remove animal hyper acidic stomach</label>
-		<description>Remove the animal hyper acidic stomach.</description>
+		<defName>AI_RemoveAnimalVenomousQuills</defName>
+		<label>remove animal venomous quills</label>
+		<description>Remove the animal venomous quills.</description>
 		<descriptionHyperlinks>
-			<ThingDef>AI_AnimalHyperAcidicStomach</ThingDef>
-			<HediffDef>AI_AnimalHyperAcidicStomach</HediffDef>
+			<ThingDef>AI_AnimalVenomousQuills</ThingDef>
+			<HediffDef>AI_AnimalVenomousQuills</HediffDef>
 		</descriptionHyperlinks>
-		<jobString>Removing animal hyper acidic stomach.</jobString>
-		<removesHediff>AI_AnimalHyperAcidicStomach</removesHediff>
+		<jobString>Removing animal venomous quills.</jobString>
+		<removesHediff>AI_AnimalVenomousQuills</removesHediff>
 	</RecipeDef>
+	
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalWispFire</defName>
+		<label>install animal wisp fire</label>
+		<description>Install an animal wisp fire.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWispFire</ThingDef>
+			<HediffDef>AI_AnimalWispFire</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal wisp fire.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalWispFire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalWispFire</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalWispFire</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalWispFire</defName>
+		<label>remove animal wisp fire</label>
+		<description>Remove the animal wisp fire.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWispFire</ThingDef>
+			<HediffDef>AI_AnimalWispFire</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal wisp fire.</jobString>
+		<removesHediff>AI_AnimalWispFire</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalAcidicBreath</defName>
+		<label>install animal acidic breath</label>
+		<description>Install an animal acidic breath.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalAcidicBreath</ThingDef>
+			<HediffDef>AI_AnimalAcidicBreath</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal acidic breath.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalAcidicBreath</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalAcidicBreath</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalAcidicBreath</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalAcidicBreath</defName>
+		<label>remove animal acidic breath</label>
+		<description>Remove the animal acidic breath.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalAcidicBreath</ThingDef>
+			<HediffDef>AI_AnimalAcidicBreath</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal acidic breath.</jobString>
+		<removesHediff>AI_AnimalAcidicBreath</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalFireBreath</defName>
+		<label>install animal fire breath</label>
+		<description>Install an animal fire breath.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalFireBreath</ThingDef>
+			<HediffDef>AI_AnimalFireBreath</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal fire breath.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalFireBreath</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalFireBreath</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalFireBreath</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalFireBreath</defName>
+		<label>remove animal fire breath</label>
+		<description>Remove the animal fire breath.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalFireBreath</ThingDef>
+			<HediffDef>AI_AnimalFireBreath</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal fire breath.</jobString>
+		<removesHediff>AI_AnimalFireBreath</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalToxicBreath</defName>
+		<label>install animal toxic breath</label>
+		<description>Install an animal toxic breath.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalToxicBreath</ThingDef>
+			<HediffDef>AI_AnimalToxicBreath</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal toxic breath.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalToxicBreath</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalToxicBreath</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalToxicBreath</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalToxicBreath</defName>
+		<label>remove animal toxic breath</label>
+		<description>Remove the animal toxic breath.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalToxicBreath</ThingDef>
+			<HediffDef>AI_AnimalToxicBreath</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal toxic breath.</jobString>
+		<removesHediff>AI_AnimalToxicBreath</removesHediff>
+	</RecipeDef>
+	
 </Defs>

@@ -291,10 +291,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbilityComps\CompGiveHediff.cs" />
+    <Compile Include="AbilityComps\Properties\CompProperties_GiveHediff.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_Flick.cs" />
+    <Compile Include="DefExtensions\HealthModifierExtension.cs" />
     <Compile Include="DefExtensions\HediffImplantExtension.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
+    <Compile Include="Harmony\BodyPartDef_GetMaxHealth.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\Pawn_MeleeVerbs_GetUpdatedAvailableVerbsList.cs" />
+    <Compile Include="HediffComps\HediffComp_AddJob.cs" />
+    <Compile Include="HediffComps\Properties\HediffCompProperties_AddJob.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecipeWorkers\Recipe_InstallArtificialBodyPart_Archotech.cs" />
     <Compile Include="RecipeWorkers\Recipe_InstallArtificialBodyPart_Bionic.cs" />
@@ -303,6 +310,9 @@
     <Compile Include="Settings\AlphaImplants_Settings.cs" />
     <Compile Include="Settings\AlphaImplants_SettingsController.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
+    <Compile Include="StaticCollections\StaticCollectionsClass.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_FlickJob.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_WorkingAnimal.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Lib.Harmony">
