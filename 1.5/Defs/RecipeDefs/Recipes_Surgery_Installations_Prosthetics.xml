@@ -92,6 +92,7 @@
 		<appliedOnFixedBodyParts>
 			<li>Body</li>
 			<li>SnakeBody</li>
+			<li>Torso</li>
 		</appliedOnFixedBodyParts>
 	</RecipeDef>
 	<RecipeDef Name="AI_SurgeryInstallProsthetic_Beak" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
