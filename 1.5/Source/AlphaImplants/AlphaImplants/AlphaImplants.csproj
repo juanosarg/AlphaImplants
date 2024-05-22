@@ -293,7 +293,15 @@
   <ItemGroup>
     <Compile Include="AbilityComps\CompGiveHediff.cs" />
     <Compile Include="AbilityComps\Properties\CompProperties_GiveHediff.cs" />
+    <Compile Include="AI\JobDrivers\JobDriver_AnimalHuntJob.cs" />
+    <Compile Include="AI\JobDrivers\JobDriver_PlantCut.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_Clean.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_FeedPatient.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Flick.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_Harvest.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_Hunt.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_Mine.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_Slaughter.cs" />
     <Compile Include="DefExtensions\HealthModifierExtension.cs" />
     <Compile Include="DefExtensions\HediffImplantExtension.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
@@ -311,7 +319,7 @@
     <Compile Include="Settings\AlphaImplants_SettingsController.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
     <Compile Include="StaticCollections\StaticCollectionsClass.cs" />
-    <Compile Include="ThinkNodes\ThinkNode_FlickJob.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_Job.cs" />
     <Compile Include="ThinkNodes\ThinkNode_WorkingAnimal.cs" />
   </ItemGroup>
   <ItemGroup>

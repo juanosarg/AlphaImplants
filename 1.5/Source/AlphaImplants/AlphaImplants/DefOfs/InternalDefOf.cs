@@ -13,7 +13,7 @@ namespace AlphaImplants
             DefOfHelper.EnsureInitializedInCtor(typeof(InternalDefOf));
         }
 
-
-
+        public static JobDef AI_AnimalHuntJob;
+        public static JobDef AI_AnimalHarvestJob;
     }
 }

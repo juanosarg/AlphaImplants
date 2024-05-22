@@ -6,7 +6,7 @@ using Verse.AI;
 
 namespace AlphaImplants
 {
-    public class ThinkNode_FlickJob : ThinkNode_Conditional
+    public class ThinkNode_Job : ThinkNode_Conditional
     {
         public string jobToCheck;
 
