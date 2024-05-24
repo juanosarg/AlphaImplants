@@ -81,4 +81,150 @@
 		
 		<addsHediff>AI_AnimalBionicLiver</addsHediff>
 	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Spine">
+		<defName>AI_AnimalPiercingSpine</defName>
+		<label>install animal piercing spine</label>
+		<description>Install an animal piercing spine.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPiercingSpine</ThingDef>
+			<HediffDef>AI_AnimalPiercingSpine</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal piercing spine.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalPiercingSpine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalPiercingSpine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalPiercingSpine</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Mouth">
+		<defName>AI_AnimalAcidSpray</defName>
+		<label>install animal acid spray</label>
+		<description>Install an animal acid spray.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalAcidSpray</ThingDef>
+			<HediffDef>AI_AnimalAcidSpray</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal acid spray.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalAcidSpray</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalAcidSpray</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalAcidSpray</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Mouth">
+		<defName>AI_AnimalFoamSpray</defName>
+		<label>install animal foam spray</label>
+		<description>Install an animal foam spray.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalFoamSpray</ThingDef>
+			<HediffDef>AI_AnimalFoamSpray</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal foam spray.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalFoamSpray</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalFoamSpray</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalFoamSpray</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Mouth">
+		<defName>AI_AnimalFireSpew</defName>
+		<label>install animal fire spray</label>
+		<description>Install an animal fire spray.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalFireSpew</ThingDef>
+			<HediffDef>AI_AnimalFireSpew</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal fire spray.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalFireSpew</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalFireSpew</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalFireSpew</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalUpsyDaisyVampireyHealyPower</defName>
+		<label>install animal Upsy Daisy vampirey healy power</label>
+		<description>Install an animal Upsy Daisy vampirey healy power.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalUpsyDaisyVampireyHealyPower</ThingDef>
+			<HediffDef>AI_AnimalUpsyDaisyVampireyHealyPower</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal Upsy Daisy vampirey healy power.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalUpsyDaisyVampireyHealyPower</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalUpsyDaisyVampireyHealyPower</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalUpsyDaisyVampireyHealyPower</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalUpsyDaisyVampireyHealyPower</defName>
+		<label>remove animal Upsy Daisy vampirey healy power</label>
+		<description>Remove the animal Upsy Daisy vampirey healy power.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalUpsyDaisyVampireyHealyPower</ThingDef>
+			<HediffDef>AI_AnimalUpsyDaisyVampireyHealyPower</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal Upsy Daisy vampirey healy power.</jobString>
+		<removesHediff>AI_AnimalUpsyDaisyVampireyHealyPower</removesHediff>
+	</RecipeDef>
 </Defs>

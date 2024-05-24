@@ -763,4 +763,45 @@
 		<addsHediff>AI_AnimalJump</addsHediff>
 		
 	</RecipeDef>
+	
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Body">
+		<defName>AI_AnimalThermoregulator</defName>
+		<label>install animal thermoregulator</label>
+		<description>Install an animal thermoregulator.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalThermoregulator</ThingDef>
+			<HediffDef>AI_AnimalThermoregulator</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal thermoregulator.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalThermoregulator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalThermoregulator</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalThermoregulator</addsHediff>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalThermoregulator</defName>
+		<label>remove animal thermoregulator</label>
+		<description>Remove the animal thermoregulator.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalThermoregulator</ThingDef>
+			<HediffDef>AI_AnimalThermoregulator</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal thermoregulator.</jobString>
+		<removesHediff>AI_AnimalThermoregulator</removesHediff>
+	</RecipeDef>
 </Defs>

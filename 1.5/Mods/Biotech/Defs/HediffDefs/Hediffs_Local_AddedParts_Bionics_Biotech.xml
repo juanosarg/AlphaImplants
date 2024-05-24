@@ -68,4 +68,104 @@
 			</li>
 		</stages>
 	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalPiercingSpine</defName>
+		<label>animal piercing spine</label>
+		<labelNoun>an animal piercing spine</labelNoun>
+		<description>An installed animal piercing spine that enables the animal to launch a bony spine at targets using a powerful chemical reaction. The spine is propelled through a specialized opening between the collarbones, ensuring precise and effortless aiming.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPiercingSpine</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalPiercingSpine</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>0.9</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_Ability">
+				<ability>AI_AnimalPiercingSpine</ability>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalAcidSpray</defName>
+		<label>animal acid spray</label>
+		<labelNoun>an animal acid spray</labelNoun>
+		<description>An installed animal acid spray that enables the animal to spray a sticky acid substance from glands in the neck up through the mouth and all over the target area. The acid will stick to targets and burn them.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalAcidSpray</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalAcidSpray</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>0.9</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_Ability">
+				<ability>AI_AnimalAcidSpray</ability>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalFoamSpray</defName>
+		<label>animal foam spray</label>
+		<labelNoun>an animal foam spray</labelNoun>
+		<description>An installed animal foam spray that enables the animal to spray thick fire-retardant foam from glands in the neck up through the mouth. The foam will cover a small area and extinguish any fire it touches.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalFoamSpray</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalFoamSpray</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>0.9</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_Ability">
+				<ability>AI_AnimalFoamSpray</ability>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalFireSpew</defName>
+		<label>animal fire spray</label>
+		<labelNoun>an animal fire spray</labelNoun>
+		<description>An installed animal fire spray that enables the animal to spit a stream of sticky, flammable bile from the mouth. The bile can ignite anything or anyone it hits, and also form flaming pools on the ground.\n\nThe bile is generated and stored by an organ in the neck, along with a separate pouch of hypergolic reactant for ignition.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalFireSpew</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalFireSpew</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>0.9</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_Ability">
+				<ability>AI_AnimalFireSpew</ability>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalUpsyDaisyVampireyHealyPower</defName>
+		<label>animal Upsy Daisy vampirey healy power</label>
+		<labelNoun>an animal Upsy Daisy vampirey healy power</labelNoun>
+		<description>An installed animal implant that enables the animal to use the coagulate abil... I mean, Upsy Daisy vampirey healy power ability, of course.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalUpsyDaisyVampireyHealyPower</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalUpsyDaisyVampireyHealyPower</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>		
+		</addedPartProps>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_Ability">
+				<ability>AI_AnimalUpsyDaisyVampireyHealyPower</ability>
+			</li>
+			
+		</comps>
+	</HediffDef>
 </Defs>

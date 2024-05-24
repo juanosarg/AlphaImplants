@@ -64,4 +64,22 @@
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase_Mutation">
+		<defName>AI_AnimalPseudoDeadlifeShaper</defName>
+		<label>animal pseudo deadlife shaper</label>
+		<description>An animal implant that produces a cloud of microscopic archites that induce a state of pseudo deadlife, granting great resilience to an animal without outright killing it. Removing the implant will deactivate the archites and return the animal to normalcy.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalPseudoDeadlifeShaper</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Bioferrite>35</Bioferrite>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
 </Defs>

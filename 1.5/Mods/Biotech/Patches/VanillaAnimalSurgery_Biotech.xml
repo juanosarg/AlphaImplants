@@ -10,6 +10,13 @@
 					<li>AI_AnimalBionicLung</li>
 					<li>AI_AnimalBionicKidney</li>
 					<li>AI_AnimalBionicLiver</li>
+					
+					<li>AI_AnimalPiercingSpine</li>
+					<li>AI_AnimalAcidSpray</li>
+					<li>AI_AnimalFoamSpray</li>
+					<li>AI_AnimalFireSpew</li>
+					<li>AI_AnimalUpsyDaisyVampireyHealyPower</li>
+					<li>AI_RemoveAnimalUpsyDaisyVampireyHealyPower</li>
 				</value>
 			</li>
 		</operations>

@@ -12,6 +12,8 @@
 					<li>AI_RemoveAnimalToughspikes</li>
 					<li>AI_AnimalRangedTrispikes</li>
 					<li>AI_RemoveAnimalRangedTrispikes</li>
+					<li>AI_AnimalPseudoDeadlifeShaper</li>
+					<li>AI_RemoveAnimalPseudoDeadlifeShaper</li>
 					
 				</value>
 			</li>

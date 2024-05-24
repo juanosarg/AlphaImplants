@@ -298,4 +298,57 @@
 			</li>
 		</comps>
 	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalPseudoDeadlifeShaper</defName>
+		<label>animal pseudo deadlife shaper</label>
+		<labelNoun>an animal pseudo deadlife shaper</labelNoun>
+		<description>An installed animal implant that produces a cloud of microscopic archites that induce a state of pseudo deadlife, granting great resilience to an animal without outright killing it. Removing the implant will deactivate the archites and return the animal to normalcy.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPseudoDeadlifeShaper</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalPseudoDeadlifeShaper</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<hungerRateFactor>0.7</hungerRateFactor>
+				<restFallFactor>0.7</restFallFactor>
+				<naturalHealingFactor>0.5</naturalHealingFactor>
+				<painFactor>0</painFactor>
+				<statFactors>
+					<MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+					<PsychicSensitivity>0</PsychicSensitivity>
+				</statFactors>
+				<statOffsets>
+					<ComfyTemperatureMin>-60</ComfyTemperatureMin>
+					<ComfyTemperatureMax>30</ComfyTemperatureMax>
+					<ToxicResistance>1</ToxicResistance>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="AlphaImplants.HediffCompProperties_PseudoShambler">
+				<animation>ShamblerSway</animation>
+			</li>
+		</comps>
+		<renderNodeProperties>
+			<li>
+				
+				<nodeClass>AlphaImplants.PawnRenderNode_AnimalPartRotten</nodeClass>
+				<overlayLayer>Body</overlayLayer>
+				<baseLayer>20</baseLayer>
+				<pawnType>NonHumanlikeOnly</pawnType>
+			</li>
+			<li>
+				<debugLabel>Shambler wounds</debugLabel>
+				<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+				<workerClass>AlphaImplants.PawnRenderNodeWorker_OverlayFalseShambler</workerClass>
+				<overlayLayer>Body</overlayLayer>
+				<baseLayer>21</baseLayer>
+				<pawnType>NonHumanlikeOnly</pawnType>
+			</li>
+		</renderNodeProperties>
+	</HediffDef>
 </Defs>

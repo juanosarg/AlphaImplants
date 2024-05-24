@@ -467,4 +467,23 @@
 		</statBases>
 		
 	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalThermoregulator</defName>
+		<label>animal thermoregulator</label>
+		<description>An animal thermoregulator implant using sensors and adaptive materials to maintain optimal body temperature in varying environmental conditions, enhancing the animal's ability to thrive in extreme heat or cold.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalThermoregulator</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		
+	</ThingDef>
 </Defs>

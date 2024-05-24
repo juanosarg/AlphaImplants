@@ -163,6 +163,7 @@
 		<addedPartProps>
 			<solid>true</solid>
 			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1</partEfficiency>
 		</addedPartProps>
 	</HediffDef>
 	<HediffDef ParentName="AI_BionicBodyPartBase">

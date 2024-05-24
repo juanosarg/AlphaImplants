@@ -104,5 +104,42 @@
 		<jobString>Removing animal ranged trispikes.</jobString>
 		<removesHediff>AI_AnimalRangedTrispikes</removesHediff>
 	</RecipeDef>
-	
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalPseudoDeadlifeShaper</defName>
+		<label>install animal pseudo deadlife shaper</label>
+		<description>Install an animal pseudo deadlife shaper.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPseudoDeadlifeShaper</ThingDef>
+			<HediffDef>AI_AnimalPseudoDeadlifeShaper</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal pseudo deadlife shaper.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalPseudoDeadlifeShaper</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalPseudoDeadlifeShaper</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalPseudoDeadlifeShaper</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalPseudoDeadlifeShaper</defName>
+		<label>remove animal pseudo deadlife shaper</label>
+		<description>Remove animal pseudo deadlife shaper.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPseudoDeadlifeShaper</ThingDef>
+			<HediffDef>AI_AnimalPseudoDeadlifeShaper</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal pseudo deadlife shaper.</jobString>
+		<removesHediff>AI_AnimalPseudoDeadlifeShaper</removesHediff>
+	</RecipeDef>
 </Defs>

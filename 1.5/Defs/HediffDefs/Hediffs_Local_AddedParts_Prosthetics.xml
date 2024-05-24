@@ -530,4 +530,24 @@
 		
 	</HediffDef>
 	
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalThermoregulator</defName>
+		<label>animal thermoregulator</label>
+		<labelNoun>an animal thermoregulator</labelNoun>
+		<description>An installed animal thermoregulator implant using sensors and adaptive materials to maintain optimal body temperature in varying environmental conditions, enhancing the animal's ability to thrive in extreme heat or cold.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalThermoregulator</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+					<ComfyTemperatureMax>15</ComfyTemperatureMax>
+					
+				</statOffsets>
+			</li>			
+		</stages>
+		<spawnThingOnRemoved>AI_AnimalThermoregulator</spawnThingOnRemoved>
+	</HediffDef>
+	
 </Defs>
