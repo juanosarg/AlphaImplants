@@ -312,7 +312,9 @@
     <Compile Include="HediffComps\HediffComp_PseudoShambler.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_AddJob.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_PseudoShambler.cs" />
+    <Compile Include="PawnOverlayDrawers\PawnBoomNodulesDrawer.cs" />
     <Compile Include="PawnRenderNodes\PawnRenderNode_AnimalPartRotten.cs" />
+    <Compile Include="PawnRenderNodeWorkers\PawnRenderNodeWorker_OverlayBoomNodules.cs" />
     <Compile Include="PawnRenderNodeWorkers\PawnRenderNodeWorker_OverlayFalseShambler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecipeWorkers\Recipe_InstallArtificialBodyPart_Archotech.cs" />
