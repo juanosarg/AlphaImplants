@@ -9,9 +9,8 @@
 		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 	</HediffDef>
 	<HediffDef Name="AI_ProstheticBodyPartBase" ParentName="AI_ImplantHediffBase" Abstract="True">
-		<hediffClass>Hediff_AddedPart</hediffClass>		
+		<hediffClass>Hediff_AddedPart</hediffClass>
 	</HediffDef>
-	
 	<HediffDef ParentName="AI_ProstheticBodyPartBase">
 		<defName>AI_AnimalProstheticLeg</defName>
 		<label>animal prosthetic leg</label>
@@ -269,7 +268,6 @@
 			</li>
 		</modExtensions>
 	</HediffDef>
-	
 	<HediffDef ParentName="AI_ProstheticBodyPartBase">
 		<defName>AI_AnimalProstheticBeak</defName>
 		<label>animal prosthetic beak</label>
@@ -284,7 +282,7 @@
 		</addedPartProps>
 		<spawnThingOnRemoved>AI_AnimalProstheticBeak</spawnThingOnRemoved>
 	</HediffDef>
-<HediffDef ParentName="AI_ProstheticBodyPartBase">
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
 		<defName>AI_AnimalProstheticTentacle</defName>
 		<label>animal prosthetic tentacle</label>
 		<labelNoun>an animal prosthetic tentacle</labelNoun>
@@ -331,7 +329,7 @@
 					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 					<ArmorRating_Heat>0.05</ArmorRating_Heat>
 				</statOffsets>
-			</li>			
+			</li>
 		</stages>
 		<spawnThingOnRemoved>AI_AnimalProstheticShell</spawnThingOnRemoved>
 	</HediffDef>
@@ -354,7 +352,7 @@
 					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
 					<ArmorRating_Heat>0.02</ArmorRating_Heat>
 				</statOffsets>
-			</li>			
+			</li>
 		</stages>
 		<spawnThingOnRemoved>AI_AnimalProstheticWing</spawnThingOnRemoved>
 	</HediffDef>
@@ -398,7 +396,6 @@
 		</modExtensions>
 		<spawnThingOnRemoved>AI_AnimalProstheticBlade</spawnThingOnRemoved>
 	</HediffDef>
-	
 	<HediffDef ParentName="AI_ProstheticBodyPartBase">
 		<defName>AI_AnimalProstheticStinger</defName>
 		<label>animal prosthetic stinger</label>
@@ -430,7 +427,6 @@
 			<li Class="AlphaImplants.HediffImplantExtension">
 				<bodyPartGroupsToMultiplyDamage>
 					<li>HeadClaw</li>
-				
 				</bodyPartGroupsToMultiplyDamage>
 				<powerMultiplier>1.5</powerMultiplier>
 				<cooldownTimeMultiplier>1</cooldownTimeMultiplier>
@@ -438,7 +434,6 @@
 		</modExtensions>
 		<spawnThingOnRemoved>AI_AnimalProstheticStinger</spawnThingOnRemoved>
 	</HediffDef>
-	
 	<HediffDef ParentName="AI_ProstheticBodyPartBase">
 		<defName>AI_AnimalProstheticHorn</defName>
 		<label>animal prosthetic horn</label>
@@ -470,7 +465,6 @@
 			<li Class="AlphaImplants.HediffImplantExtension">
 				<bodyPartGroupsToMultiplyDamage>
 					<li>HornAttackTool</li>
-				
 				</bodyPartGroupsToMultiplyDamage>
 				<powerMultiplier>1.5</powerMultiplier>
 				<cooldownTimeMultiplier>1</cooldownTimeMultiplier>
@@ -478,7 +472,6 @@
 		</modExtensions>
 		<spawnThingOnRemoved>AI_AnimalProstheticHorn</spawnThingOnRemoved>
 	</HediffDef>
-	
 	<HediffDef ParentName="AI_ImplantHediffBase">
 		<defName>AI_AnimalPainstopper</defName>
 		<label>animal painstopper</label>
@@ -517,7 +510,7 @@
 		<descriptionHyperlinks>
 			<ThingDef>AI_AnimalJump</ThingDef>
 		</descriptionHyperlinks>
-		 <comps>
+		<comps>
 			<li Class="AnimalBehaviours.HediffCompProperties_Ability">
 				<ability>AI_AnimalJump</ability>
 			</li>
@@ -527,9 +520,7 @@
 			<solid>true</solid>
 			<partEfficiency>0.9</partEfficiency>
 		</addedPartProps>
-		
 	</HediffDef>
-	
 	<HediffDef ParentName="AI_ImplantHediffBase">
 		<defName>AI_AnimalThermoregulator</defName>
 		<label>animal thermoregulator</label>
@@ -543,11 +534,38 @@
 				<statOffsets>
 					<ComfyTemperatureMin>-15</ComfyTemperatureMin>
 					<ComfyTemperatureMax>15</ComfyTemperatureMax>
-					
 				</statOffsets>
-			</li>			
+				
+				
+			
+			</li>
 		</stages>
 		<spawnThingOnRemoved>AI_AnimalThermoregulator</spawnThingOnRemoved>
 	</HediffDef>
-	
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalChemfuelNodules</defName>
+		<label>animal chemfuel nodules</label>
+		<labelNoun>an animal chemfuel nodules implant</labelNoun>
+		<description>An installed animal implant that adds several chemfuel nodules to the animal's skin. These nodules contain unstable chemfuel and will explode upon the animal's death.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalChemfuelNodules</ThingDef>
+		</descriptionHyperlinks>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+				<workerClass>AlphaImplants.PawnRenderNodeWorker_OverlayBoomNodules</workerClass>
+				<overlayLayer>Body</overlayLayer>
+				<baseLayer>21</baseLayer>
+				<pawnType>NonHumanlikeOnly</pawnType>
+			</li>
+		</renderNodeProperties>
+		<spawnThingOnRemoved>AI_AnimalChemfuelNodules</spawnThingOnRemoved>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_Exploder">
+				<explosionForce>3</explosionForce>
+				<damageDef>Flame</damageDef>
+			</li>
+		</comps>
+		
+	</HediffDef>
 </Defs>

@@ -17,6 +17,7 @@
 	<AI_ArchotechBodyLimit>Archotech implant body limit</AI_ArchotechBodyLimit>
 	<AI_ArchotechBodyLimitTooltip>Minimum body size allowed for archotech body implants. Any animal below this body size can't receive these implants.</AI_ArchotechBodyLimitTooltip>
 
+<AI_NeedToTargetCaster>This ability needs to target its caster</AI_NeedToTargetCaster>
 
 
 

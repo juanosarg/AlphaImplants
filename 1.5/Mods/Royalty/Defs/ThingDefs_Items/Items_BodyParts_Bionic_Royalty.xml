@@ -105,4 +105,25 @@
 			<researchPrerequisite>ArtificialMetabolism</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalUnstableSkipSynapsis</defName>
+		<label>animal unstable skip synapsis</label>
+		<description>An animal unstable skip synapsis implant that enables the animal to teleport short distances instantly. By creating controlled neural disruptions and linking them with micro-skipgates, it allows for rapid, unpredictable movement, enhancing the animal's ability to evade threats and reposition quickly in its environment.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalUnstableSkipSynapsis</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>BrainWiring</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
 </Defs>

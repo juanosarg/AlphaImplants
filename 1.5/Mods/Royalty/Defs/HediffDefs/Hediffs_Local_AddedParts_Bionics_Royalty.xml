@@ -121,4 +121,20 @@
 			</li>
 		</comps>
 	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalUnstableSkipSynapsis</defName>
+		<label>animal unstable skip synapsis</label>
+		<labelNoun>an animal unstable skip synapsis implant</labelNoun>
+		<description>An unstable skip synapsis implant that enables the animal to teleport short distances instantly. By creating controlled neural disruptions and linking them with micro-skipgates, it allows for rapid, unpredictable movement, enhancing the animal's ability to evade threats and reposition quickly in its environment.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalUnstableSkipSynapsis</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalUnstableSkipSynapsis</spawnThingOnRemoved>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_Ability">
+				<ability>AI_AnimalSkip</ability>
+			</li>
+		</comps>
+	</HediffDef>
+	
 </Defs>

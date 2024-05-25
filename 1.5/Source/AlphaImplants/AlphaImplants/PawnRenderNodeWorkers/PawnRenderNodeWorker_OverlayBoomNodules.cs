@@ -3,8 +3,10 @@ using RimWorld;
 using Verse;
 namespace AlphaImplants
 {
-    public class PawnRenderNodeWorker_OverlayWounds : PawnRenderNodeWorker_Overlay
+    public class PawnRenderNodeWorker_OverlayBoomNodules : PawnRenderNodeWorker_Overlay
     {
+
+     
         protected override PawnOverlayDrawer OverlayDrawer(Pawn pawn)
         {
             return new PawnBoomNodulesDrawer(pawn);

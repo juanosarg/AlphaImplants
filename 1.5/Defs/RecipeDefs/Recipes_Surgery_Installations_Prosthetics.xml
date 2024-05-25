@@ -804,4 +804,44 @@
 		<jobString>Removing animal thermoregulator.</jobString>
 		<removesHediff>AI_AnimalThermoregulator</removesHediff>
 	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Body">
+		<defName>AI_AnimalChemfuelNodules</defName>
+		<label>install animal chemfuel nodules</label>
+		<description>Install an animal chemfuel nodules.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalChemfuelNodules</ThingDef>
+			<HediffDef>AI_AnimalChemfuelNodules</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal chemfuel nodules.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalChemfuelNodules</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalChemfuelNodules</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalChemfuelNodules</addsHediff>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalChemfuelNodules</defName>
+		<label>remove animal chemfuel nodules</label>
+		<description>Remove the animal chemfuel nodules.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalChemfuelNodules</ThingDef>
+			<HediffDef>AI_AnimalChemfuelNodules</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal chemfuel nodules.</jobString>
+		<removesHediff>AI_AnimalChemfuelNodules</removesHediff>
+	</RecipeDef>
 </Defs>

@@ -486,4 +486,19 @@
 		</statBases>
 		
 	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalChemfuelNodules</defName>
+		<label>animal chemfuel nodules</label>
+		<description>An animal implant that adds several chemfuel nodules to the animal's skin. These nodules contain unstable chemfuel and will explode upon the animal's death.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalChemfuelNodules</RecipeDef>
+		</descriptionHyperlinks>		
+		<costList>			
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		
+	</ThingDef>
 </Defs>

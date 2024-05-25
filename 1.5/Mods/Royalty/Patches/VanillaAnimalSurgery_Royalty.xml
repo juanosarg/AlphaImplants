@@ -19,6 +19,8 @@
 					<li>AI_RemoveAnimalDermalArmorGland</li>
 					<li>AI_AnimalNuclearStomach</li>
 					<li>AI_AnimalVenomFangs</li>
+					<li>AI_AnimalUnstableSkipSynapsis</li>
+					<li>AI_RemoveAnimalUnstableSkipSynapsis</li>
 				</value>
 			</li>
 		</operations>

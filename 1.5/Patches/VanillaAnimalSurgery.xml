@@ -36,6 +36,8 @@
 					<li>AI_AnimalJump</li>
 					<li>AI_AnimalThermoregulator</li>
 					<li>AI_RemoveAnimalThermoregulator</li>
+					<li>AI_AnimalChemfuelNodules</li>
+					<li>AI_RemoveAnimalChemfuelNodules</li>
 					
 					<li>AI_AnimalBionicLeg</li>
 					<li>AI_AnimalBionicArm</li>

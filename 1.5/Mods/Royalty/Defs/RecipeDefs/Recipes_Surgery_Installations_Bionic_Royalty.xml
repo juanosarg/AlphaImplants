@@ -183,4 +183,44 @@
 		
 		<addsHediff>AI_AnimalNuclearStomach</addsHediff>
 	</RecipeDef>
+	
+		<RecipeDef ParentName="AI_SurgeryInstallBionic_Brain">
+		<defName>AI_AnimalUnstableSkipSynapsis</defName>
+		<label>install animal unstable skip synapsis</label>
+		<description>Install an animal unstable skip synapsis.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalUnstableSkipSynapsis</ThingDef>
+			<HediffDef>AI_AnimalUnstableSkipSynapsis</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal unstable skip synapsis.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalUnstableSkipSynapsis</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalUnstableSkipSynapsis</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalUnstableSkipSynapsis</addsHediff>
+		
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalUnstableSkipSynapsis</defName>
+		<label>remove animal unstable skip synapsis</label>
+		<description>Remove animal unstable skip synapsis.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalUnstableSkipSynapsis</ThingDef>
+			<HediffDef>AI_AnimalUnstableSkipSynapsis</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal unstable skip synapsis.</jobString>
+		<removesHediff>AI_AnimalUnstableSkipSynapsis</removesHediff>
+	</RecipeDef>
 </Defs>

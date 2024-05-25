@@ -291,6 +291,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbilityComps\CompAbilityEffect_SelfSkip.cs" />
     <Compile Include="AbilityComps\CompGiveHediff.cs" />
     <Compile Include="AbilityComps\Properties\CompProperties_GiveHediff.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_AnimalHuntJob.cs" />
