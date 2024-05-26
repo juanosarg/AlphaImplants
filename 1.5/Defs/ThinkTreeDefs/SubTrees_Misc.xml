@@ -12,7 +12,7 @@
 							<jobToCheck>Flick</jobToCheck>
 							<subNodes>
 								<li Class="ThinkNode_ChancePerHour_Constant">
-									<mtbHours>0.2</mtbHours>
+									<mtbHours>0.1</mtbHours>
 									<subNodes>
 										<li Class="ThinkNode_Tagger">
 											<tagToGive>Misc</tagToGive>
@@ -28,7 +28,7 @@
 							<jobToCheck>Clean</jobToCheck>
 							<subNodes>
 								<li Class="ThinkNode_ChancePerHour_Constant">
-									<mtbHours>0.5</mtbHours>
+									<mtbHours>0.1</mtbHours>
 									<subNodes>
 										<li Class="ThinkNode_Tagger">
 											<tagToGive>Misc</tagToGive>
@@ -44,7 +44,7 @@
 							<jobToCheck>Slaughter</jobToCheck>
 							<subNodes>
 								<li Class="ThinkNode_ChancePerHour_Constant">
-									<mtbHours>2</mtbHours>
+									<mtbHours>0.1</mtbHours>
 									<subNodes>
 										<li Class="ThinkNode_Tagger">
 											<tagToGive>Misc</tagToGive>
@@ -60,7 +60,7 @@
 							<jobToCheck>Mine</jobToCheck>
 							<subNodes>
 								<li Class="ThinkNode_ChancePerHour_Constant">
-									<mtbHours>1</mtbHours>
+									<mtbHours>0.1</mtbHours>
 									<subNodes>
 										<li Class="ThinkNode_Tagger">
 											<tagToGive>Misc</tagToGive>
@@ -92,7 +92,7 @@
 							<jobToCheck>Harvest</jobToCheck>
 							<subNodes>
 								<li Class="ThinkNode_ChancePerHour_Constant">
-									<mtbHours>0.2</mtbHours>
+									<mtbHours>0.01</mtbHours>
 									<subNodes>
 										<li Class="ThinkNode_Tagger">
 											<tagToGive>Misc</tagToGive>
@@ -114,6 +114,22 @@
 											<tagToGive>Misc</tagToGive>
 											<subNodes>
 												<li Class="AlphaImplants.JobGiver_Hunt"/>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+						<li Class="AlphaImplants.ThinkNode_Job">
+							<jobToCheck>Sow</jobToCheck>
+							<subNodes>
+								<li Class="ThinkNode_Priority">
+									
+									<subNodes>
+										<li Class="ThinkNode_Tagger">
+											<tagToGive>Misc</tagToGive>
+											<subNodes>
+												<li Class="AlphaImplants.JobGiver_Sow"/>
 											</subNodes>
 										</li>
 									</subNodes>

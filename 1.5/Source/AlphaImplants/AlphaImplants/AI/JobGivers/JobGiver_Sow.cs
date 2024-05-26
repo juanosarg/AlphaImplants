@@ -6,13 +6,13 @@ using RimWorld;
 
 namespace AlphaImplants
 {
-    public class JobGiver_Mine : ThinkNode
+    public class JobGiver_Sow : ThinkNode
     {
         public bool emergency;
 
         public override ThinkNode DeepCopy(bool resolve = true)
         {
-            JobGiver_Mine jobGiver_Work = (JobGiver_Mine)base.DeepCopy(resolve);
+            JobGiver_Sow jobGiver_Work = (JobGiver_Sow)base.DeepCopy(resolve);
             return jobGiver_Work;
         }
 
@@ -28,7 +28,7 @@ namespace AlphaImplants
             TargetInfo targetInfo = TargetInfo.Invalid;
             WorkGiver_Scanner workGiver_Scanner = null;
 
-            WorkGiver workGiver = InternalDefOf.Mine.Worker;
+            WorkGiver_GrowerSow workGiver = (WorkGiver_GrowerSow)InternalDefOf.GrowerSow.Worker;
             if (workGiver.def.priorityInType != num && targetInfo.IsValid)
             {
                 // break;
@@ -116,39 +116,44 @@ namespace AlphaImplants
                                 Danger maxDanger = scanner.MaxPathDanger(pawn);
                                 foreach (IntVec3 current in scanner.PotentialWorkCellsGlobal(pawn))
                                 {
-                                    bool flag = false;
-                                    float num4 = (float)(current - position2).LengthHorizontalSquared;
-                                    float num5 = 0f;
-                                    if (prioritized)
+
+                                    if (CalculateWantedPlantDef(current, pawn.Map)?.plant.sowMinSkill == 0)
                                     {
-                                        if (!current.IsForbidden(pawn) && scanner.HasJobOnCell(pawn, current, false))
+                                        bool flag = false;
+                                        float num4 = (float)(current - position2).LengthHorizontalSquared;
+                                        float num5 = 0f;
+                                        if (prioritized)
+                                        {
+                                            if (!current.IsForbidden(pawn) && scanner.HasJobOnCell(pawn, current, false))
+                                            {
+                                                if (!allowUnreachable && !pawn.CanReach(current, scanner.PathEndMode, maxDanger, false, false, TraverseMode.ByPawn))
+                                                {
+                                                    continue;
+                                                }
+                                                num5 = scanner.GetPriority(pawn, current);
+                                                if (num5 > num3 || (num5 == num3 && num4 < num2))
+                                                {
+                                                    flag = true;
+                                                }
+                                            }
+                                        }
+                                        else if (num4 < num2 && !current.IsForbidden(pawn) && scanner.HasJobOnCell(pawn, current, false))
                                         {
                                             if (!allowUnreachable && !pawn.CanReach(current, scanner.PathEndMode, maxDanger, false, false, TraverseMode.ByPawn))
                                             {
                                                 continue;
                                             }
-                                            num5 = scanner.GetPriority(pawn, current);
-                                            if (num5 > num3 || (num5 == num3 && num4 < num2))
-                                            {
-                                                flag = true;
-                                            }
+                                            flag = true;
                                         }
-                                    }
-                                    else if (num4 < num2 && !current.IsForbidden(pawn) && scanner.HasJobOnCell(pawn, current, false))
-                                    {
-                                        if (!allowUnreachable && !pawn.CanReach(current, scanner.PathEndMode, maxDanger, false, false, TraverseMode.ByPawn))
+                                        if (flag)
                                         {
-                                            continue;
+                                            targetInfo = new TargetInfo(current, pawn.Map, false);
+                                            workGiver_Scanner = scanner;
+                                            num2 = num4;
+                                            num3 = num5;
                                         }
-                                        flag = true;
                                     }
-                                    if (flag)
-                                    {
-                                        targetInfo = new TargetInfo(current, pawn.Map, false);
-                                        workGiver_Scanner = scanner;
-                                        num2 = num4;
-                                        num3 = num5;
-                                    }
+                                   
                                 }
                             }
                         }
@@ -202,10 +207,70 @@ namespace AlphaImplants
 
         private bool PawnCanUseWorkGiver(Pawn pawn, WorkGiver giver)
         {
+            
+
             return giver.MissingRequiredCapacity(pawn) == null && !giver.ShouldSkip(pawn);
         }
 
-      
+        public static ThingDef CalculateWantedPlantDef(IntVec3 c, Map map)
+        {
+            return c.GetPlantToGrowSettable(map)?.GetPlantDefToGrow();
+        }
+
+
+        private Job GiverTryGiveJobPrioritized(Pawn pawn, WorkGiver giver, IntVec3 cell)
+        {
+            if (!this.PawnCanUseWorkGiver(pawn, giver))
+            {
+                return null;
+            }
+            try
+            {
+                Job job = giver.NonScanJob(pawn);
+                if (job != null)
+                {
+                    Job result = job;
+                    return result;
+                }
+                WorkGiver_Scanner scanner = giver as WorkGiver_Scanner;
+                if (scanner != null)
+                {
+                    if (giver.def.scanThings)
+                    {
+                        Predicate<Thing> predicate = (Thing t) => !t.IsForbidden(pawn) && scanner.HasJobOnThing(pawn, t, false);
+                        List<Thing> thingList = cell.GetThingList(pawn.Map);
+                        for (int i = 0; i < thingList.Count; i++)
+                        {
+                            Thing thing = thingList[i];
+                            if (scanner.PotentialWorkThingRequest.Accepts(thing) && predicate(thing))
+                            {
+
+                                Job result = scanner.JobOnThing(pawn, thing, false);
+                                return result;
+                            }
+                        }
+                    }
+                    if (giver.def.scanCells && !cell.IsForbidden(pawn) && scanner.HasJobOnCell(pawn, cell, false))
+                    {
+
+                        Job result = scanner.JobOnCell(pawn, cell, false);
+                        return result;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Error(string.Concat(new object[]
+                {
+                    pawn,
+                    " threw exception in GiverTryGiveJobTargeted on WorkGiver ",
+                    giver.def.defName,
+                    ": ",
+                    ex.ToString()
+                }));
+            }
+            return null;
+        }
     }
 }
 

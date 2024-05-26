@@ -883,6 +883,43 @@
 		<removesHediff>AI_AnimalWorkChipHarvest</removesHediff>
 	</RecipeDef>
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Brain">
+		<defName>AI_AnimalWorkChipSow</defName>
+		<label>install animal work chip: sow</label>
+		<description>Install an animal work chip: sow.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipSow</ThingDef>
+			<HediffDef>AI_AnimalWorkChipSow</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal work chip: sow.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalWorkChipSow</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalWorkChipSow</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalWorkChipSow</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalWorkChipSow</defName>
+		<label>remove animal work chip: sow</label>
+		<description>Remove animal work chip: sow.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipSow</ThingDef>
+			<HediffDef>AI_AnimalWorkChipSow</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal work chip: sow.</jobString>
+		<removesHediff>AI_AnimalWorkChipSow</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Brain">
 		<defName>AI_AnimalWorkChipHunt</defName>
 		<label>install animal work chip: hunting</label>
 		<description>Install an animal work chip: hunting.</description>

@@ -71,6 +71,8 @@
 					<li>AI_RemoveAnimalWorkChipFeedPatient</li>
 					<li>AI_AnimalWorkChipHarvest</li>
 					<li>AI_RemoveAnimalWorkChipHarvest</li>
+					<li>AI_AnimalWorkChipSow</li>
+					<li>AI_RemoveAnimalWorkChipSow</li>
 					<li>AI_AnimalWorkChipHunt</li>
 					<li>AI_RemoveAnimalWorkChipHunt</li>
 				</value>

@@ -301,6 +301,7 @@
     <Compile Include="AI\JobGivers\JobGiver_Flick.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Harvest.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Hunt.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_Sow.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Mine.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Slaughter.cs" />
     <Compile Include="DefExtensions\HealthModifierExtension.cs" />

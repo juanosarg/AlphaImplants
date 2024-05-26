@@ -499,6 +499,24 @@
 		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AnimalWorkChipSow</defName>
+		<label>animal work chip: sow</label>		
+		<description>An animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables plant Sowing jobs.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalWorkChipSow</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
 		<defName>AI_AnimalWorkChipHunt</defName>
 		<label>animal work chip: hunting</label>		
 		<description>An animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Hunting jobs.</description>
