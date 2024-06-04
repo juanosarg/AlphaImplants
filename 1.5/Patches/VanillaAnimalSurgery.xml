@@ -75,6 +75,14 @@
 					<li>AI_RemoveAnimalWorkChipSow</li>
 					<li>AI_AnimalWorkChipHunt</li>
 					<li>AI_RemoveAnimalWorkChipHunt</li>
+					<li>AI_AnimalShrinker</li>
+					<li>AI_RemoveAnimalShrinker</li>
+					<li>AI_AnimalEnlarger</li>
+					<li>AI_RemoveAnimalEnlarger</li>
+					<li>AI_AdditionalBuoyancyVacuoles</li>
+					<li>AI_RemoveAdditionalBuoyancyVacuoles</li>
+					
+					
 				</value>
 			</li>
 		</operations>

@@ -534,4 +534,58 @@
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 	</ThingDef>
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AnimalShrinker</defName>
+		<label>animal shrinker implant</label>		
+		<description>An animal shrinker implant that will reduce the body size of the animal, making it more nimble and hard to hit. Bear in mind that the new body size might make it impossible to install certain prosthetics and bionics!\n\nNOTE: This implant itself is capable of being installed on any animal, regardless of their body size.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalShrinker</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AnimalEnlarger</defName>
+		<label>animal enlarger implant</label>		
+		<description>An animal enlarger implant that will increase the body size of the animal, making it more resistant and dangerous. The new body size of the animal will be considered when calculating which implants can be installed on it!\n\nNOTE: This implant itself is capable of being installed on any animal, regardless of their body size.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalEnlarger</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AdditionalBuoyancyVacuoles</defName>
+		<label>animal additional buoyancy vacuoles</label>		
+		<description>An animal animal additional buoyancy vacuoles implant that inserts several hydrogen filled structures inside the animals' body, allowing it to gently glide a few feet in the air. This will negate all terrain movement costs.\n\nNOTE: This implant will have no effect on animals that possess this ability innately, such as Aerofleet.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AdditionalBuoyancyVacuoles</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
 </Defs>

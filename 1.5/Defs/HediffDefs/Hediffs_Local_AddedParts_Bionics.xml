@@ -613,4 +613,85 @@
 			</li>
 		</comps>
 	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalShrinker</defName>
+		<label>animal shrinker implant</label>
+		<labelNoun>an animal shrinker implant</labelNoun>
+		<description>An installed animal shrinker implant that will reduce the body size of the animal, making it more nimble and hard to hit. Bear in mind that the new body size might make it impossible to install certain prosthetics and bionics!\n\nNOTE: This implant itself is capable of being installed on any animal, regardless of their body size.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalShrinker</ThingDef>
+		</descriptionHyperlinks>
+		<tags>
+			<li>SizeModifier</li>
+		</tags>
+		<spawnThingOnRemoved>AI_AnimalShrinker</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<hungerRateFactor>0.5</hungerRateFactor>
+				<statFactors>
+					<VEF_BodySize_Multiplier>0.5</VEF_BodySize_Multiplier>
+					<VEF_CosmeticBodySize_Multiplier>0.5</VEF_CosmeticBodySize_Multiplier>
+					<MoveSpeed>1.2</MoveSpeed>
+					<Mass>0.75</Mass>
+					<MeatAmount>0.5</MeatAmount>
+					<LeatherAmount>0.5</LeatherAmount>
+					<WorkSpeedGlobal>1.1</WorkSpeedGlobal>
+					<HuntingStealth>1.2</HuntingStealth>
+					<MeleeHitChance>0.6</MeleeHitChance>
+					<MeleeDodgeChance>1.1</MeleeDodgeChance>
+					<CarryingCapacity>0.75</CarryingCapacity>
+					<VEF_MassCarryCapacity>0.75</VEF_MassCarryCapacity>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalEnlarger</defName>
+		<label>animal enlarger implant</label>
+		<labelNoun>an animal enlarger implant</labelNoun>
+		<description>An installed animal enlarger implant that will increase the body size of the animal, making it more resistant and dangerous. The new body size of the animal will be considered when calculating which implants can be installed on it!\n\nNOTE: This implant itself is capable of being installed on any animal, regardless of their body size.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalEnlarger</ThingDef>
+		</descriptionHyperlinks>
+		<tags>
+			<li>SizeModifier</li>
+		</tags>
+		<spawnThingOnRemoved>AI_AnimalEnlarger</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<hungerRateFactor>1.5</hungerRateFactor>
+				<statFactors>
+					<VEF_BodySize_Multiplier>2</VEF_BodySize_Multiplier>
+					<VEF_CosmeticBodySize_Multiplier>2</VEF_CosmeticBodySize_Multiplier>
+					<MoveSpeed>0.8</MoveSpeed>
+					<Mass>1.5</Mass>
+					<MeatAmount>1.5</MeatAmount>
+					<LeatherAmount>1.5</LeatherAmount>
+					<MeleeDamageFactor>1.2</MeleeDamageFactor>
+					<MeleeDodgeChance>0.7</MeleeDodgeChance>
+					<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+					<HuntingStealth>0.8</HuntingStealth>
+					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+					<CarryingCapacity>1.5</CarryingCapacity>
+					<VEF_MassCarryCapacity>1.5</VEF_MassCarryCapacity>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AdditionalBuoyancyVacuoles</defName>
+		<label>animal additional buoyancy vacuoles</label>
+		<labelNoun>an animal additional buoyancy vacuoles</labelNoun>
+		<description>An installed animal additional buoyancy vacuoles implant that inserts several hydrogen filled structures inside the animals' body, allowing it to gently glide a few feet in the air. This will negate all terrain movement costs.\n\nNOTE: This implant will have no effect on animals that possess this ability innately, such as Aerofleet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AdditionalBuoyancyVacuoles</ThingDef>
+		</descriptionHyperlinks>
+		
+		<spawnThingOnRemoved>AI_AdditionalBuoyancyVacuoles</spawnThingOnRemoved>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_Floating">
+
+			</li>
+		</comps>
+	</HediffDef>
 </Defs>

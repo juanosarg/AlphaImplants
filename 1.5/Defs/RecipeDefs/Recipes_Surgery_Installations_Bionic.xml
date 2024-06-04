@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
 	<RecipeDef Name="AI_SurgeryInstallBionicPartBase" Abstract="True">
 		<workAmount>2500</workAmount>
 		<workerClass>AlphaImplants.Recipe_InstallArtificialBodyPart_Bionic</workerClass>
@@ -955,5 +956,124 @@
 		</descriptionHyperlinks>
 		<jobString>Removing animal work chip: hunting.</jobString>
 		<removesHediff>AI_AnimalWorkChipHunt</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalShrinker</defName>
+		<label>install animal shrinker implant</label>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<description>Install an animal shrinker implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalShrinker</ThingDef>
+			<HediffDef>AI_AnimalShrinker</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal shrinker implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalShrinker</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalShrinker</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalShrinker</addsHediff>
+		<incompatibleWithHediffTags>
+			<li>SizeModifier</li>
+		</incompatibleWithHediffTags>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalShrinker</defName>
+		<label>remove animal shrinker implant</label>
+		<description>Remove animal shrinker implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalShrinker</ThingDef>
+			<HediffDef>AI_AnimalShrinker</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal shrinker implant.</jobString>
+		<removesHediff>AI_AnimalShrinker</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalEnlarger</defName>
+		<label>install animal enlarger implant</label>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<description>Install an animal enlarger implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalEnlarger</ThingDef>
+			<HediffDef>AI_AnimalEnlarger</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal enlarger implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalEnlarger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalEnlarger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalEnlarger</addsHediff>
+		<incompatibleWithHediffTags>
+			<li>SizeModifier</li>
+		</incompatibleWithHediffTags>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalEnlarger</defName>
+		<label>remove animal enlarger implant</label>
+		<description>Remove animal enlarger implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalEnlarger</ThingDef>
+			<HediffDef>AI_AnimalEnlarger</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal enlarger implant.</jobString>
+		<removesHediff>AI_AnimalEnlarger</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Brain">
+		<defName>AI_AdditionalBuoyancyVacuoles</defName>
+		<label>install animal additional buoyancy vacuoles</label>
+		<description>Install an animal additional buoyancy vacuoles.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AdditionalBuoyancyVacuoles</ThingDef>
+			<HediffDef>AI_AdditionalBuoyancyVacuoles</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal additional buoyancy vacuoles.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AdditionalBuoyancyVacuoles</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AdditionalBuoyancyVacuoles</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AdditionalBuoyancyVacuoles</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAdditionalBuoyancyVacuoles</defName>
+		<label>remove animal additional buoyancy vacuoles</label>
+		<description>Remove animal additional buoyancy vacuoles.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AdditionalBuoyancyVacuoles</ThingDef>
+			<HediffDef>AI_AdditionalBuoyancyVacuoles</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal additional buoyancy vacuoles.</jobString>
+		<removesHediff>AI_AdditionalBuoyancyVacuoles</removesHediff>
 	</RecipeDef>
 </Defs>
