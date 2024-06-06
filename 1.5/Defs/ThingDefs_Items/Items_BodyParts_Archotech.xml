@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="AI_AnimalArchotechPartBase" ParentName="BodyPartBase" Abstract="True">
+		<techLevel>Archotech</techLevel>
+		<graphicData>
+			<texPath>Things/Item/AI_Implant_Archotech</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<thingCategories>
+			<li>AI_ImplantCategory</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalArchotechPartBase">
+		<defName>AI_AnimalArchotechLeg</defName>
+		<label>animal archotech leg</label>
+		<description>An animal archotech leg. It looks and feels like natural flesh, but it can make the animal move lightning fast, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalArchotechLeg</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>7</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardCore</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalArchotechPartBase">
+		<defName>AI_AnimalArchotechArm</defName>
+		<label>animal archotech arm</label>
+		<description>An animal archotech arm. Strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalArchotechArm</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>7</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardCore</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalArchotechPartBase">
+		<defName>AI_AnimalArchotechTail</defName>
+		<label>animal archotech tail</label>
+		<description>An animal archotech tail. Indistinguishable from a natural tail, while at the same time providing the animal with a surge of speed and agility.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalArchotechTail</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>7</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardCore</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalArchotechPartBase">
+		<defName>AI_AnimalSynapticReinforcer</defName>
+		<label>animal synaptic reinforcer</label>
+		<description>An animal archotech implant that enhances neural connections, improving cognitive functions such as memory, learning, and response times, basically healing the brain and allowing the animal improved function.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalSynapticReinforcer</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<Mass>7</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardCore</li>
+		</thingSetMakerTags>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef Name="AI_SurgeryInstallArchotechPartBase" Abstract="True">
+		<workAmount>2500</workAmount>
+		<workerClass>AlphaImplants.Recipe_InstallArtificialBodyPart_Archotech</workerClass>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	
+	<RecipeDef Name="AI_SurgeryInstallArchotech_Leg" ParentName="AI_SurgeryInstallArchotechPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+			<li>InsectLeg</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallArchotech_Arm" ParentName="AI_SurgeryInstallArchotechPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallArchotech_Tail" ParentName="AI_SurgeryInstallArchotechPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Tail</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
+	<RecipeDef Name="AI_SurgeryInstallArchotech_Brain" ParentName="AI_SurgeryInstallArchotechPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AI_SurgeryInstallArchotech_Leg">
+		<defName>AI_AnimalArchotechLeg</defName>
+		<label>install animal archotech leg</label>
+		<description>Install an animal archotech leg.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalArchotechLeg</ThingDef>
+			<HediffDef>AI_AnimalArchotechLeg</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal archotech leg.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalArchotechLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalArchotechLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalArchotechLeg</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallArchotech_Arm">
+		<defName>AI_AnimalArchotechArm</defName>
+		<label>install animal archotech arm</label>
+		<description>Install an animal archotech arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalArchotechArm</ThingDef>
+			<HediffDef>AI_AnimalArchotechArm</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal archotech arm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalArchotechArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalArchotechArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalArchotechArm</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallArchotech_Tail">
+		<defName>AI_AnimalArchotechTail</defName>
+		<label>install animal archotech tail</label>
+		<description>Install an animal archotech tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalArchotechTail</ThingDef>
+			<HediffDef>AI_AnimalArchotechTail</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal archotech tail.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalArchotechTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalArchotechTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalArchotechTail</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallArchotech_Brain">
+		<defName>AI_AnimalSynapticReinforcer</defName>
+		<label>install animal synaptic reinforcer</label>
+		<description>Install an animal synaptic reinforcer.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalSynapticReinforcer</ThingDef>
+			<HediffDef>AI_AnimalSynapticReinforcer</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal synaptic reinforcer.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalSynapticReinforcer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalSynapticReinforcer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalSynapticReinforcer</addsHediff>
+	</RecipeDef>
+	
+</Defs>

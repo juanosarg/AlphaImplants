@@ -82,6 +82,11 @@
 					<li>AI_AdditionalBuoyancyVacuoles</li>
 					<li>AI_RemoveAdditionalBuoyancyVacuoles</li>
 					
+					<li>AI_AnimalArchotechLeg</li>
+					<li>AI_AnimalArchotechArm</li>
+					<li>AI_AnimalArchotechTail</li>
+					<li>AI_AnimalSynapticReinforcer</li>
+					
 					
 				</value>
 			</li>

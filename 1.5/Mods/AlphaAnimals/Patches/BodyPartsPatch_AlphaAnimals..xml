@@ -61,21 +61,33 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallCrude_Tail"]/appliedOnFixedBodyParts</xpath>
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallArchotech_Leg"]/appliedOnFixedBodyParts</xpath>
 					<value>
 						<li>AA_SmallInsectLeg</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallCrude_Tail"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_InsectTail</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Tail"]/appliedOnFixedBodyParts</xpath>
 					<value>
-						<li>AA_SmallInsectLeg</li>
+						<li>AA_InsectTail</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Tail"]/appliedOnFixedBodyParts</xpath>
 					<value>
-						<li>AA_SmallInsectLeg</li>
+						<li>AA_InsectTail</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallArchotech_Tail"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_InsectTail</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">

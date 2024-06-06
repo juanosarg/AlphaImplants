@@ -5,7 +5,7 @@
 		<li>1.5</li>
 	
 	</supportedVersions>
-	<modIconPath IgnoreIfNoMatchingField="True">UI/AlphaAnimalsLogo</modIconPath>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/AlphaImplants</modIconPath>
 	<modDependencies>
 		<li>
 			<packageId>brrainz.harmony</packageId>
@@ -31,9 +31,5 @@
 	</loadAfter>
 	<author>Sarg Bjornson</author>
 	<packageId>sarg.alphaimplants</packageId>
-	<description>
-
-
-
-	</description>
+	<description>A mod adding a plethora of prosthetic and bionic options for animals, from the mundane to the extremely wacky.</description>
 </ModMetaData>

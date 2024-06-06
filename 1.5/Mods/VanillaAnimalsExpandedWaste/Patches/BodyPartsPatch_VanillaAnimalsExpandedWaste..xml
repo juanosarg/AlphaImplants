@@ -43,7 +43,13 @@
 						
 					</value>
 				</li>
-				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallCrude_Tail"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>VAEWaste_InsectTail</li>
+						
+					</value>
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Tail"]/appliedOnFixedBodyParts</xpath>
 					<value>
@@ -58,7 +64,13 @@
 						
 					</value>
 				</li>
-				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallArchotech_Tail"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>VAEWaste_InsectTail</li>
+						
+					</value>
+				</li>
 			
 			
 				<li Class="PatchOperationAdd">
