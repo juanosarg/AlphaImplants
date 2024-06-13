@@ -354,7 +354,7 @@
 	</ThingDef>
 	<ThingDef ParentName="AI_AnimalBionicPartBase">
 		<defName>AI_AnimalBionicHorn</defName>
-		<label>animal bionic hotn</label>
+		<label>animal bionic horn</label>
 		
 		<description>An animal bionic horn integrating advanced materials and engineering. It offers superior strength, durability, and potential enhancements such as sensory capabilities.</description>
 		<descriptionHyperlinks>
