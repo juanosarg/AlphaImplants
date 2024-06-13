@@ -38,6 +38,9 @@
 	<ThingDef Name="AI_AdvancedAnimalBionicPartBase" ParentName="AI_AnimalBionicPartBase" Abstract="true">
 		<recipeMaker>
 			<researchPrerequisite>AI_AdvancedAnimalBionics</researchPrerequisite>
+			<recipeUsers Inherit="false">
+				<li>AI_AdvancedAnimalProstheticsTable</li>
+			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
 	<ThingDef ParentName="AI_AnimalBionicPartBase">
