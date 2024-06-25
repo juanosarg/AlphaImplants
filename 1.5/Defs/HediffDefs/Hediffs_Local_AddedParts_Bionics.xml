@@ -630,7 +630,7 @@
 				<hungerRateFactor>0.5</hungerRateFactor>
 				<statFactors>
 					<VEF_BodySize_Multiplier>0.5</VEF_BodySize_Multiplier>
-					<VEF_CosmeticBodySize_Multiplier>0.5</VEF_CosmeticBodySize_Multiplier>
+				
 					<MoveSpeed>1.2</MoveSpeed>
 					<Mass>0.75</Mass>
 					<MeatAmount>0.5</MeatAmount>
@@ -662,7 +662,7 @@
 				<hungerRateFactor>1.5</hungerRateFactor>
 				<statFactors>
 					<VEF_BodySize_Multiplier>2</VEF_BodySize_Multiplier>
-					<VEF_CosmeticBodySize_Multiplier>2</VEF_CosmeticBodySize_Multiplier>
+					
 					<MoveSpeed>0.8</MoveSpeed>
 					<Mass>1.5</Mass>
 					<MeatAmount>1.5</MeatAmount>
