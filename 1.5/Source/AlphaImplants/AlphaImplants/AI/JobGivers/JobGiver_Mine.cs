@@ -29,7 +29,7 @@ namespace AlphaImplants
             WorkGiver_Scanner workGiver_Scanner = null;
 
             WorkGiver workGiver = InternalDefOf.Mine.Worker;
-            if (workGiver.def.priorityInType != num && targetInfo.IsValid)
+            if (workGiver.def.priorityInType != num && targetInfo.IsValid || pawn.Map == null)
             {
                 // break;
             }
