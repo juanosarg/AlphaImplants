@@ -90,6 +90,7 @@
 		<appliedOnFixedBodyParts>
 			<li>Brain</li>
 		</appliedOnFixedBodyParts>
+		<workerClass>AlphaImplants.Recipe_InstallImplant_Bionic</workerClass>
 	</RecipeDef>
 	<RecipeDef Name="AI_SurgeryInstallBionic_Eye" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
 		<appliedOnFixedBodyParts>
@@ -102,6 +103,7 @@
 			<li>SnakeBody</li>
 			<li>Torso</li>
 		</appliedOnFixedBodyParts>
+		<workerClass>AlphaImplants.Recipe_InstallImplant_Bionic</workerClass>
 	</RecipeDef>
 	<RecipeDef Name="AI_SurgeryInstallBionic_Beak" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
 		<appliedOnFixedBodyParts>

@@ -45,6 +45,7 @@
 		<appliedOnFixedBodyParts>
 			<li>Brain</li>
 		</appliedOnFixedBodyParts>
+		<workerClass>AlphaImplants.Recipe_InstallImplant_Archotech</workerClass>
 	</RecipeDef>
 	
 	<RecipeDef ParentName="AI_SurgeryInstallArchotech_Leg">
