@@ -16,6 +16,7 @@ namespace AlphaImplants
         public static JobDef AI_AnimalHuntJob;
         public static JobDef AI_AnimalHarvestJob;
 
+        [MayRequireAnomaly]
         public static AnimationDef ShamblerSway;
 
         public static WorkGiverDef GrowerSow;
