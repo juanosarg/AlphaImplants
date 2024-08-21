@@ -314,6 +314,7 @@
     <Compile Include="HediffComps\HediffComp_PseudoShambler.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_AddJob.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_PseudoShambler.cs" />
+    <Compile Include="Hediffs\Hediff_CureScars.cs" />
     <Compile Include="PawnOverlayDrawers\PawnBoomNodulesDrawer.cs" />
     <Compile Include="PawnRenderNodes\PawnRenderNode_AnimalPartRotten.cs" />
     <Compile Include="PawnRenderNodeWorkers\PawnRenderNodeWorker_OverlayBoomNodules.cs" />
@@ -332,6 +333,7 @@
     <Compile Include="StaticCollections\StaticCollectionsClass.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Job.cs" />
     <Compile Include="ThinkNodes\ThinkNode_WorkingAnimal.cs" />
+    <Compile Include="Util\Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Lib.Harmony">

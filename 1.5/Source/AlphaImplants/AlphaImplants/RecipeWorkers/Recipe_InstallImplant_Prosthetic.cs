@@ -14,7 +14,7 @@ namespace AlphaImplants
             {
                 return false;
             }
-            Log.Message(pawn.RaceProps.baseBodySize);
+            //Log.Message(pawn.RaceProps.baseBodySize);
             if (pawn.RaceProps.baseBodySize < AlphaImplants_Settings.prostheticBodyLimit)
             {
                 return false;

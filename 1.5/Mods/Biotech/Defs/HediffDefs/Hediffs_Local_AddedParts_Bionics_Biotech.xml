@@ -157,10 +157,7 @@
 			<ThingDef>AI_AnimalUpsyDaisyVampireyHealyPower</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>AI_AnimalUpsyDaisyVampireyHealyPower</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<betterThanNatural>true</betterThanNatural>		
-		</addedPartProps>
+		
 		<comps>
 			<li Class="AnimalBehaviours.HediffCompProperties_Ability">
 				<ability>AI_AnimalUpsyDaisyVampireyHealyPower</ability>

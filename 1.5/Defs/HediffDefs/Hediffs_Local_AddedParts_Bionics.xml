@@ -300,7 +300,7 @@
 			</li>
 		</stages>
 	</HediffDef>
-	<HediffDef ParentName="AI_BionicBodyPartBase">
+	<HediffDef ParentName="AI_ImplantHediffBase">
 		<defName>AI_AnimalBionicShell</defName>
 		<label>animal bionic shell</label>
 		<labelNoun>an animal bionic shell</labelNoun>
@@ -309,17 +309,13 @@
 			<ThingDef>AI_AnimalBionicShell</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>AI_AnimalBionicShell</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<betterThanNatural>true</betterThanNatural>
-			<partEfficiency>1.25</partEfficiency>
-		</addedPartProps>
+		<hediffClass>AlphaImplants.Hediff_CureScars</hediffClass>
 		<stages>
 			<li>
 				<statOffsets>
-					<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
-					<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.15</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.25</ArmorRating_Heat>
 				</statOffsets>
 			</li>
 		</stages>
@@ -488,10 +484,7 @@
 				<ability>AI_Stealthskin</ability>
 			</li>
 		</comps>
-		<addedPartProps>
-			<solid>true</solid>
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
+
 	</HediffDef>
 	<HediffDef ParentName="AI_ImplantHediffBase">
 		<defName>AI_AnimalWorkChipFlick</defName>

@@ -102,6 +102,7 @@
 			<li>Body</li>
 			<li>SnakeBody</li>
 			<li>Torso</li>
+			<li>Shell</li>
 		</appliedOnFixedBodyParts>
 		<workerClass>AlphaImplants.Recipe_InstallImplant_Bionic</workerClass>
 	</RecipeDef>
@@ -126,10 +127,11 @@
 			<li>TurtleShell</li>
 			<li>Shell</li>
 		</appliedOnFixedBodyParts>
+		<workerClass>AlphaImplants.Recipe_InstallImplant_Bionic</workerClass>
 	</RecipeDef>
 	<RecipeDef Name="AI_SurgeryInstallBionic_Wing" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
 		<appliedOnFixedBodyParts>
-			
+			<li>Elytra</li>
 		</appliedOnFixedBodyParts>
 	</RecipeDef>
 	<RecipeDef Name="AI_SurgeryInstallBionic_Blade" ParentName="AI_SurgeryInstallBionicPartBase" Abstract="True">
@@ -962,7 +964,7 @@
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
 		<defName>AI_AnimalShrinker</defName>
 		<label>install animal shrinker implant</label>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		
 		<description>Install an animal shrinker implant.</description>
 		<descriptionHyperlinks>
 			<ThingDef>AI_AnimalShrinker</ThingDef>
@@ -1003,7 +1005,7 @@
 	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
 		<defName>AI_AnimalEnlarger</defName>
 		<label>install animal enlarger implant</label>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		
 		<description>Install an animal enlarger implant.</description>
 		<descriptionHyperlinks>
 			<ThingDef>AI_AnimalEnlarger</ThingDef>

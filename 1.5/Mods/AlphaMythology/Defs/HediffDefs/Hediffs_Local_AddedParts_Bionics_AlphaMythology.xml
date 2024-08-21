@@ -135,10 +135,7 @@
 				</verbProps>
 			</li>
 		</comps>
-		<addedPartProps>
-			<solid>true</solid>
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
+		
 	</HediffDef>
 	<!-- Acidic Breath -->
 	<HediffDef ParentName="AI_ImplantHediffBase">
@@ -182,10 +179,7 @@
 				</verbProps>
 			</li>
 		</comps>
-		<addedPartProps>
-			<solid>true</solid>
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
+		
 	</HediffDef>
 	<!-- Fire Breath -->
 	<HediffDef ParentName="AI_ImplantHediffBase">
@@ -228,10 +222,7 @@
 				</verbProps>
 			</li>
 		</comps>
-		<addedPartProps>
-			<solid>true</solid>
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
+		
 	</HediffDef>
 	<!-- Toxic Breath -->
 	<HediffDef ParentName="AI_ImplantHediffBase">
@@ -274,9 +265,6 @@
 				</verbProps>
 			</li>
 		</comps>
-		<addedPartProps>
-			<solid>true</solid>
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
+		
 	</HediffDef>
 </Defs>

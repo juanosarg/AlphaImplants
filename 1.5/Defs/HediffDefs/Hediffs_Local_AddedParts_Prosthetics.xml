@@ -310,24 +310,22 @@
 		</addedPartProps>
 		<spawnThingOnRemoved>AI_AnimalProstheticBuoyancy</spawnThingOnRemoved>
 	</HediffDef>
-	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+	<HediffDef ParentName="AI_ImplantHediffBase">
 		<defName>AI_AnimalProstheticShell</defName>
 		<label>animal prosthetic shell</label>
 		<labelNoun>an animal prosthetic shell</labelNoun>
 		<description>An installed animal prosthetic shell constructed from basic, durable materials, providing essential protection and structural support. Though simple in design, it offers a practical solution for shielding the animal from harm.</description>
+		<hediffClass>AlphaImplants.Hediff_CureScars</hediffClass>
 		<descriptionHyperlinks>
 			<ThingDef>AI_AnimalProstheticShell</ThingDef>
 		</descriptionHyperlinks>
-		<addedPartProps>
-			<solid>true</solid>
-			<partEfficiency>0.85</partEfficiency>
-		</addedPartProps>
+		
 		<stages>
 			<li>
 				<statOffsets>
-					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
-					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.05</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.15</ArmorRating_Heat>
 				</statOffsets>
 			</li>
 		</stages>

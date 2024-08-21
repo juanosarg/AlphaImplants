@@ -307,10 +307,7 @@
 			<ThingDef>AI_AnimalPseudoDeadlifeShaper</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>AI_AnimalPseudoDeadlifeShaper</spawnThingOnRemoved>
-		<addedPartProps>
-			<solid>true</solid>
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
+	
 		<stages>
 			<li>
 				<hungerRateFactor>0.7</hungerRateFactor>

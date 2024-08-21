@@ -66,10 +66,7 @@
 				</verbProps>
 			</li>
 		</comps>
-		<addedPartProps>
-			<solid>true</solid>								
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
+		
 	</HediffDef>
 
 	<!-- Venomous Spitter -->
@@ -212,10 +209,7 @@
 				</verbProps>
 			</li>
 		</comps>
-		<addedPartProps>
-			<solid>true</solid>								
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
+		
 	</HediffDef>
 
 	<!-- Quad Tesla Cannon -->
@@ -260,10 +254,7 @@
 				</verbProps>
 			</li>
 		</comps>
-		<addedPartProps>
-			<solid>true</solid>								
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
+		
 	</HediffDef>
 
 	<!-- Bioelectric Organ -->
@@ -308,10 +299,7 @@
 				</verbProps>
 			</li>
 		</comps>
-		<addedPartProps>
-			<solid>true</solid>								
-			<betterThanNatural>true</betterThanNatural>
-		</addedPartProps>
+		
 	</HediffDef>
 
 	<!-- Light Focusing Lens -->

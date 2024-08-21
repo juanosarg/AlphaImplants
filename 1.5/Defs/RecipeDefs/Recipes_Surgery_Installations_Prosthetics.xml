@@ -87,15 +87,16 @@
 		<appliedOnFixedBodyParts>
 			<li>Brain</li>
 		</appliedOnFixedBodyParts>
-		<workerClass>AlphaImplants.Recipe_InstallImplant_Bionic</workerClass>
+		<workerClass>AlphaImplants.Recipe_InstallImplant_Prosthetic</workerClass>
 	</RecipeDef>
 	<RecipeDef Name="AI_SurgeryInstallProsthetic_Body" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
 		<appliedOnFixedBodyParts>
 			<li>Body</li>
 			<li>SnakeBody</li>
 			<li>Torso</li>
+			<li>Shell</li>
 		</appliedOnFixedBodyParts>
-		<workerClass>AlphaImplants.Recipe_InstallImplant_Bionic</workerClass>
+		<workerClass>AlphaImplants.Recipe_InstallImplant_Prosthetic</workerClass>
 	</RecipeDef>
 	<RecipeDef Name="AI_SurgeryInstallProsthetic_Beak" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
 		<appliedOnFixedBodyParts>
@@ -118,10 +119,11 @@
 			<li>TurtleShell</li>
 			<li>Shell</li>
 		</appliedOnFixedBodyParts>
+		<workerClass>AlphaImplants.Recipe_InstallImplant_Prosthetic</workerClass>
 	</RecipeDef>
 	<RecipeDef Name="AI_SurgeryInstallProsthetic_Wing" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
 		<appliedOnFixedBodyParts>
-			
+			<li>Elytra</li>
 		</appliedOnFixedBodyParts>
 	</RecipeDef>
 	<RecipeDef Name="AI_SurgeryInstallProsthetic_Blade" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
