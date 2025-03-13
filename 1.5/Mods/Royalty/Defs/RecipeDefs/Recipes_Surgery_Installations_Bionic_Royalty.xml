@@ -184,6 +184,34 @@
 		<addsHediff>AI_AnimalNuclearStomach</addsHediff>
 	</RecipeDef>
 	
+    <RecipeDef ParentName="AI_SurgeryInstallBionic_Stomach">
+		<defName>AI_AnimalReprocessorStomach</defName>
+		<label>install animal reprocessor stomach</label>
+		<description>Install an animal reprocessor stomach.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalReprocessorStomach</ThingDef>
+			<HediffDef>AI_AnimalReprocessorStomach</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal reprocessor stomach.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalReprocessorStomach</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalReprocessorStomach</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalReprocessorStomach</addsHediff>
+	</RecipeDef>
+
 		<RecipeDef ParentName="AI_SurgeryInstallBionic_Brain">
 		<defName>AI_AnimalUnstableSkipSynapsis</defName>
 		<label>install animal unstable skip synapsis</label>

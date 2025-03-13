@@ -106,6 +106,27 @@
 		</recipeMaker>
 	</ThingDef>
 	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalReprocessorStomach</defName>
+		<label>animal reprocessor stomach</label>
+		<description>An animal reprocessor stomach implant. An advanced chemical processing system breaks down nutrients the body could normally never use, leading to increased efficiency.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalReprocessorStomach</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>ArtificialMetabolism</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
 		<defName>AI_AnimalUnstableSkipSynapsis</defName>
 		<label>animal unstable skip synapsis</label>
 		<description>An animal unstable skip synapsis implant that enables the animal to teleport short distances instantly. By creating controlled neural disruptions and linking them with micro-skipgates, it allows for rapid, unpredictable movement, enhancing the animal's ability to evade threats and reposition quickly in its environment.</description>
