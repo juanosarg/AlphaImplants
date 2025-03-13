@@ -121,6 +121,32 @@
 			</li>
 		</comps>
 	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalReprocessorStomach</defName>
+		<label>animal reprocessor stomach</label>
+		<labelNoun>an animal reprocessor stomach</labelNoun>
+		<description>An installed animal reprocessor stomach implant. An advanced chemical processing system breaks down nutrients the body could normally never use, leading to increased efficiency.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalReprocessorStomach</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalReprocessorStomach</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<hungerRateFactor>0.75</hungerRateFactor>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_ReactOnDamage">
+				<damageDefIncoming>EMP</damageDefIncoming>
+				<vomit>true</vomit>
+			</li>
+		</comps>
+	</HediffDef>
 	<HediffDef ParentName="AI_ImplantHediffBase">
 		<defName>AI_AnimalUnstableSkipSynapsis</defName>
 		<label>animal unstable skip synapsis</label>
