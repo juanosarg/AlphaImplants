@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="AI_SurgeryInstallCrudePartBase" Abstract="True">
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>3</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef Name="AI_SurgeryInstallCrude_AllLimbs" ParentName="AI_SurgeryInstallCrudePartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+			<li>Arm</li>
+			<li>InsectLeg</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
+	<RecipeDef Name="AI_SurgeryInstallCrude_Mouth" ParentName="AI_SurgeryInstallCrudePartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Jaw</li>
+			<li>AnimalJaw</li>
+			<li>InsectMouth</li>
+			<li>TurtleBeak</li>
+			<li>SnakeMouth</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
+	<RecipeDef Name="AI_SurgeryInstallCrude_Tail" ParentName="AI_SurgeryInstallCrudePartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Tail</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AI_SurgeryInstallCrude_AllLimbs">
+		<defName>AI_Crude_InstallWoodenLimb</defName>
+		<label>install wooden limb</label>
+		<description>Install wooden limb.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing wooden limb.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>WoodLog</ThingDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>WoodLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_WoodenLimb</addsHediff>
+		<uiIconThing>WoodLog</uiIconThing>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallCrude_Mouth">
+		<defName>AI_Crude_InstallAnimalDenture</defName>
+		<label>install animal denture</label>
+		<description>Install animal denture.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing animal denture.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalDenture</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallCrude_Tail">
+		<defName>AI_Crude_InstallClothTail</defName>
+		<label>install cloth tail</label>
+		<description>Install cloth tail.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing cloth tail.</jobString>
+		<descriptionHyperlinks>
+			<ThingDef>Cloth</ThingDef>
+		</descriptionHyperlinks>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_ClothTail</addsHediff>
+		<uiIconThing>Cloth</uiIconThing>
+	</RecipeDef>
+	
+</Defs>

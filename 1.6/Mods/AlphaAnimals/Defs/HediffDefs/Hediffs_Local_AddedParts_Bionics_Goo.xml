@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Goo Acidifier -->
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_GooAcidifier</defName>
+		<label>animal goo acidifier</label>
+		<labelNoun>an animal goo acidifier</labelNoun>
+		<description>A goo acidifier increases the acidity of a goo's internal organs, making it explode as soon as it is downed. Basically transforms goos into biological suicide bombers.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_GooAcidifier</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_GooAcidifier</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_ExplodeOnDowned">
+
+			</li>
+		</comps>
+	</HediffDef>
+	
+</Defs>

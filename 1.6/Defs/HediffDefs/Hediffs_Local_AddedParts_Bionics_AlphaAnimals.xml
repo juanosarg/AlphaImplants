@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Ranged spinneret -->
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalRangedSpinneret</defName>
+		<label>animal ranged spinneret</label>
+		<labelNoun>an animal ranged spinneret</labelNoun>
+		<description>An installed ranged spinneret implant. This implant will allow this creature to use a ranged stunning web attack.\n\nNote that installing this on a creature that already has a ranged spinneret will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalRangedSpinneret</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalRangedSpinneret</spawnThingOnRemoved>
+		<abilities>
+			<li>AI_Web</li>
+		</abilities>
+	</HediffDef>
+	<!-- Venomous Spitter -->
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalVenomousSpitter</defName>
+		<label>animal venomous spitter</label>
+		<labelNoun>an animal venomous spitter</labelNoun>
+		<description>An installed venomous spitter implant. This implant will allow this creature to use a ranged venomous spit attack.\n\nNote that installing this on a creature that already has a venomous spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalVenomousSpitter</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalVenomousSpitter</spawnThingOnRemoved>
+		<abilities>
+			<li>AI_PoisonBolt</li>
+		</abilities>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.75</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	<!-- Acidic Spitter -->
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalAcidicSpitter</defName>
+		<label>animal acidic spitter</label>
+		<labelNoun>an animal acidic spitter</labelNoun>
+		<description>An installed acidic spitter implant. This implant will allow this creature to use a ranged acidic spit attack that causes additional damage over time.\n\nNote that installing this on a creature that already has an acidic spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalAcidicSpitter</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalAcidicSpitter</spawnThingOnRemoved>
+		<abilities>
+			<li>AI_AcidBolt</li>
+		</abilities>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.75</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	<!-- Barbed Quill Thrower -->
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalBarbedQuillThrower</defName>
+		<label>animal barbed quill thrower</label>
+		<labelNoun>an animal barbed quill thrower</labelNoun>
+		<description>An installed barbed quill thrower implant. This implant will allow this creature to use a ranged venomous quill attack that causes toxic buildup.\n\nNote that installing this on a creature that already has a barbed quill thrower will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBarbedQuillThrower</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBarbedQuillThrower</spawnThingOnRemoved>
+		<abilities>
+			<li>AI_Quill</li>
+		</abilities>
+	</HediffDef>
+	<!-- Quad Tesla Cannon -->
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalQuadTeslaCannon</defName>
+		<label>animal quad tesla cannon</label>
+		<labelNoun>an animal quad tesla cannon</labelNoun>
+		<description>An installed quad tesla cannon implant. This implant will allow this creature to use a powerful ranged plasma attack.\n\nNote that installing this on a creature that already has a quad tesla cannon will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalQuadTeslaCannon</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalQuadTeslaCannon</spawnThingOnRemoved>
+		<abilities>
+			<li>AI_Plasma</li>
+		</abilities>
+	</HediffDef>
+	<!-- Bioelectric Organ -->
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalBioelectricOrgan</defName>
+		<label>animal bioelectric organ</label>
+		<labelNoun>an animal bioelectric organ</labelNoun>
+		<description>An installed bioelectric organ implant. This implant will allow this creature to use a powerful ranged electric attack that may paralyze and cause heart attacks.\n\nNote that installing this on a creature that already has a bioelectric organ will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBioelectricOrgan</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBioelectricOrgan</spawnThingOnRemoved>
+		<abilities>
+			<li>AI_ElectricBolt</li>
+		</abilities>
+	</HediffDef>
+	<!-- Light Focusing Lens -->
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalLightFocusingLens</defName>
+		<label>animal light focusing lens</label>
+		<labelNoun>an animal light focusing lens</labelNoun>
+		<description>An installed light focusing lens implant. This implant will allow this creature to use a powerful ranged laser attack that sets enemies on fire.\n\nNote that installing this on a creature that already has a light focusing lens will have no effect. This implant takes the space of one of the creature's eyes, so it can't be installed in eyeless animals.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalLightFocusingLens</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalLightFocusingLens</spawnThingOnRemoved>
+		<abilities>
+			<li>AI_LaserBullet</li>
+		</abilities>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.75</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	<!-- Hyper Acidic Stomach -->
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalHyperAcidicStomach</defName>
+		<label>animal hyper acidic stomach</label>
+		<labelNoun>an animal hyper acidic stomach</labelNoun>
+		<description>An installed hyper acidic stomach implant. This implant will allow this creature to use a ranged acid attack that causes damage over time.\n\nNote that installing this on a creature that already has a hyper acidic stomach will have no effect. This implant takes the space of the creature's stomach, so it can't be installed in animals that lack one.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalHyperAcidicStomach</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalHyperAcidicStomach</spawnThingOnRemoved>
+		<abilities>
+			<li>AI_AcidicVomit</li>
+		</abilities>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.75</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+</Defs>

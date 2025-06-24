@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Added body parts -->
+	<HediffDef Name="AI_BionicBodyPartBase" ParentName="AI_ImplantHediffBase" Abstract="True">
+		<hediffClass>Hediff_AddedPart</hediffClass>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicLeg</defName>
+		<label>animal bionic leg</label>
+		<labelNoun>an animal bionic leg</labelNoun>
+		<description>An installed animal bionic leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
+		<extraTooltip>Provides a Scratch attack with a strength 50% higher than the animal's original leg / paws / claws attack, plus 80% of its cooldown.</extraTooltip>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicLeg</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicLeg</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>bionic leg</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>1</power>
+						<cooldownTime>1</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>FrontLeftLeg</li>
+					<li>FrontRightLeg</li>
+					<li>FrontLeftPaw</li>
+					<li>FrontRightPaw</li>
+					<li>FrontLeftClaws</li>
+					<li>FrontRightClaws</li>
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>1.5</powerMultiplier>
+				<cooldownTimeMultiplier>0.8</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicArm</defName>
+		<label>animal bionic arm</label>
+		<labelNoun>an animal bionic arm</labelNoun>
+		<description>An installed animal bionic arm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
+		<extraTooltip>Provides a Blunt attack with a strength 50% higher than the animal's original fist attack, plus 80% of its cooldown.</extraTooltip>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicArm</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicArm</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>bionic arm</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>1</power>
+						<cooldownTime>1</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>LeftHand</li>
+					<li>RightHand</li>
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>1.5</powerMultiplier>
+				<cooldownTimeMultiplier>0.8</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicTail</defName>
+		<label>animal bionic tail</label>
+		<labelNoun>an animal bionic tail</labelNoun>
+		<description>An installed animal bionic tail. It integrates silent mini-servos for strength and a biogel nerve-link for precise control, enhancing agility and speed. This surpasses biological tails, enabling faster and more agile movement.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicTail</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicJaw</defName>
+		<label>animal bionic jaw</label>
+		<labelNoun>an animal bionic jaw</labelNoun>
+		<description>An installed animal bionic jaw. Enhanced with quantum-synchronized actuators, cutting-edge nanomaterials and neural interface technology to optimize bite strength and control.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicJaw</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicJaw</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicHeart</defName>
+		<label>animal bionic heart</label>
+		<labelNoun>an animal bionic heart</labelNoun>
+		<description>An installed animal bionic heart. Equipped with neural-networked sensors, it offers real-time performance monitoring and adaptive response and will outperform any biological counterparts.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicHeart</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicHeart</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicSpine</defName>
+		<label>animal bionic spine</label>
+		<labelNoun>an animal bionic spine</labelNoun>
+		<description>An installed animal bionic spine. Enhanced with bio-feedback algorithms, it offers real-time biomechanical adaptation and proprioceptive feedback. It matches the performance of a biological spine.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicSpine</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicSpine</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicStomach</defName>
+		<label>animal bionic stomach</label>
+		<labelNoun>an animal bionic stomach</labelNoun>
+		<description>An installed animal bionic stomach. It incorporates nano-gastric chambers and hyper-digestive enzymes, synchronized with gastric processors for optimal nutrient absorption and metabolic efficiency. It is better than a biological stomach in almost every way.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicStomach</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicStomach</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicEye</defName>
+		<label>animal bionic eye</label>
+		<labelNoun>an animal bionic eye</labelNoun>
+		<description>An installed animal bionic eye. With its biogel nerve-link, internal signal pre-processor, and wide-spectrum sensors, it is better than a biological eye in almost every way.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicEye</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicEye</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicNose</defName>
+		<label>animal bionic nose</label>
+		<labelNoun>an animal bionic nose</labelNoun>
+		<description>An installed animal bionic nose equipped with advanced olfactory sensors and targeting systems, enhancing the animal's ability to detect and precisely locate targets.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicNose</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicNose</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeHitChance>0.25</MeleeHitChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicEar</defName>
+		<label>animal bionic ear</label>
+		<labelNoun>an animal bionic ear</labelNoun>
+		<description>An installed animal bionic ear featuring advanced auditory sensors and real-time threat detection, enhancing the animal's ability to hear and pinpoint approaching dangers.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicEar</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicEar</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>0.125</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicBeak</defName>
+		<label>animal bionic beak</label>
+		<labelNoun>an animal bionic beak</labelNoun>
+		<description>An installed animal bionic beak engineered from advanced, durable materials to restore biting and pecking functions. Should be able to replace almost any avian-like beak.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicBeak</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicBeak</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicTentacle</defName>
+		<label>animal bionic tentacle</label>
+		<labelNoun>an animal bionic tentacle</labelNoun>
+		<description>An installed animal bionic tentacle that replicates natural tentacle movements, offering superior grasping and manipulation capabilities for the animal.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicTentacle</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicTentacle</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicBuoyancy</defName>
+		<label>animal bionic buoyancy mechanism</label>
+		<labelNoun>an animal bionic buoyancy mechanism</labelNoun>
+		<description>An installed animal bionic buoyancy mechanism. Should be able to replace hydrogen sacs and other exotic organs keeping hovering creatures in the air.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicBuoyancy</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicBuoyancy</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalBionicShell</defName>
+		<label>animal bionic shell</label>
+		<labelNoun>an animal bionic shell</labelNoun>
+		<description>An installed animal bionic shell built with advanced, resilient materials, offering superior protection and structural support and designed to perfectly mimic natural shells.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicShell</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicShell</spawnThingOnRemoved>
+		<hediffClass>AlphaImplants.Hediff_CureScars</hediffClass>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.25</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicWing</defName>
+		<label>animal bionic wing</label>
+		<labelNoun>an animal bionic wing</labelNoun>
+		<description>An installed animal bionic wing engineered from lightweight, durable materials and providing enhanced maneuverability. Designed to replicate natural wing movements.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicWing</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicWing</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicBlade</defName>
+		<label>animal bionic blade</label>
+		<labelNoun>an animal bionic blade</labelNoun>
+		<description>An installed animal bionic blade built with advanced, resilient materials. Will replace a range of biological structures such as single claws (not claws that are part of a paw, for example) and an insect's headclaw.</description>
+		<extraTooltip>Provides a Cut attack with a strength 100% higher than the animal's original claw attack, and 80% cooldown.</extraTooltip>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicBlade</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicBlade</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>bionic blade</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>1</power>
+						<cooldownTime>1</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>HeadClaw</li>
+					<li>FrontLeftClaws</li>
+					<li>FrontRightClaws</li>
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>2</powerMultiplier>
+				<cooldownTimeMultiplier>0.8</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicStinger</defName>
+		<label>animal bionic stinger</label>
+		<labelNoun>an animal bionic stinger</labelNoun>
+		<description>An installed animal bionic stinger incorporating cutting-edge technology to enhance natural stinging capabilities. Engineered for precision and potency.</description>
+		<extraTooltip>Provides a Toxic Buildup attack with a strength 100% higher than the animal's original claw attack, and 80% cooldown.</extraTooltip>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicStinger</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicStinger</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>bionic stinger</label>
+						<capacities>
+							<li>ToxicBite</li>
+						</capacities>
+						<power>1</power>
+						<cooldownTime>1</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>HeadClaw</li>
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>2</powerMultiplier>
+				<cooldownTimeMultiplier>0.8</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicHorn</defName>
+		<label>animal bionic blade</label>
+		<labelNoun>an animal bionic blade</labelNoun>
+		<description>An installed animal bionic blade built with advanced, resilient materials. Will replace a range of biological structures such as single claws (not claws that are part of a paw, for example) and an insect's headclaw.</description>
+		<extraTooltip>Provides a Cut attack with a strength 100% higher than the animal's original claw attack, and 80% cooldown.</extraTooltip>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicHorn</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicHorn</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>bionic horn</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>1</power>
+						<cooldownTime>1</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>HornAttackTool</li>
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>2</powerMultiplier>
+				<cooldownTimeMultiplier>0.8</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalStealthskinImplant</defName>
+		<label>animal stealthskin implant</label>
+		<labelNoun>an animal stealthskin implant</labelNoun>
+		<description>An installed animal stealthskin implant that renders the animal invisible by reflecting light around its body, allowing it to seamlessly blend with the environment.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalStealthskinImplant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalStealthskinImplant</spawnThingOnRemoved>
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+				<ability>AI_Stealthskin</ability>
+			</li>
+		</comps>
+
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalWorkChipFlick</defName>
+		<label>animal work chip: flick</label>
+		<labelNoun>an animal work chip: flick</labelNoun>
+		<description>An installed animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Flick jobs.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipFlick</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalWorkChipFlick</spawnThingOnRemoved>
+		<comps>
+			<li Class="AlphaImplants.HediffCompProperties_AddJob">
+				<jobToAdd>Flick</jobToAdd>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalWorkChipClean</defName>
+		<label>animal work chip: clean</label>
+		<labelNoun>an animal work chip: clean</labelNoun>
+		<description>An installed animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Clean jobs.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipClean</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalWorkChipClean</spawnThingOnRemoved>
+		<comps>
+			<li Class="AlphaImplants.HediffCompProperties_AddJob">
+				<jobToAdd>Clean</jobToAdd>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalWorkChipSlaughter</defName>
+		<label>animal work chip: slaughter</label>
+		<labelNoun>an animal work chip: slaughter</labelNoun>
+		<description>An installed animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Slaughter animal jobs.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipSlaughter</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalWorkChipSlaughter</spawnThingOnRemoved>
+		<comps>
+			<li Class="AlphaImplants.HediffCompProperties_AddJob">
+				<jobToAdd>Slaughter</jobToAdd>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalWorkChipMine</defName>
+		<label>animal work chip: mine</label>
+		<labelNoun>an animal work chip: mine</labelNoun>
+		<description>An installed animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Mine jobs.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipMine</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalWorkChipMine</spawnThingOnRemoved>
+		<comps>
+			<li Class="AlphaImplants.HediffCompProperties_AddJob">
+				<jobToAdd>Mine</jobToAdd>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalWorkChipFeedPatient</defName>
+		<label>animal work chip: feed patient</label>
+		<labelNoun>an animal work chip: feed patient</labelNoun>
+		<description>An installed animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Feed Patient jobs.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipFeedPatient</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalWorkChipFeedPatient</spawnThingOnRemoved>
+		<comps>
+			<li Class="AlphaImplants.HediffCompProperties_AddJob">
+				<jobToAdd>FeedPatient</jobToAdd>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalWorkChipHarvest</defName>
+		<label>animal work chip: harvest</label>
+		<labelNoun>an animal work chip: harvest</labelNoun>
+		<description>An installed animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Harvest jobs.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipHarvest</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalWorkChipHarvest</spawnThingOnRemoved>
+		<comps>
+			<li Class="AlphaImplants.HediffCompProperties_AddJob">
+				<jobToAdd>Harvest</jobToAdd>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalWorkChipHunt</defName>
+		<label>animal work chip: hunting</label>
+		<labelNoun>an animal work chip: hunting</labelNoun>
+		<description>An installed animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables Hunting jobs.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipHunt</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalWorkChipHunt</spawnThingOnRemoved>
+		<comps>
+			<li Class="AlphaImplants.HediffCompProperties_AddJob">
+				<jobToAdd>Hunt</jobToAdd>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalWorkChipSow</defName>
+		<label>animal work chip: sow</label>
+		<labelNoun>an animal work chip: sow</labelNoun>
+		<description>An installed animal brain implant that empowers its brain function, allowing it to do complex jobs. This chip enables plant Sowing jobs.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWorkChipSow</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalWorkChipSow</spawnThingOnRemoved>
+		<comps>
+			<li Class="AlphaImplants.HediffCompProperties_AddJob">
+				<jobToAdd>Sow</jobToAdd>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalShrinker</defName>
+		<label>animal shrinker implant</label>
+		<labelNoun>an animal shrinker implant</labelNoun>
+		<description>An installed animal shrinker implant that will reduce the body size of the animal, making it more nimble and hard to hit. Bear in mind that the new body size might make it impossible to install certain prosthetics and bionics!\n\nNOTE: This implant itself is capable of being installed on any animal, regardless of their body size.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalShrinker</ThingDef>
+		</descriptionHyperlinks>
+		<tags>
+			<li>SizeModifier</li>
+		</tags>
+		<spawnThingOnRemoved>AI_AnimalShrinker</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<hungerRateFactor>0.5</hungerRateFactor>
+				<statFactors>
+					<VEF_BodySize_Multiplier>0.5</VEF_BodySize_Multiplier>
+				
+					<MoveSpeed>1.2</MoveSpeed>
+					<Mass>0.75</Mass>
+					<MeatAmount>0.5</MeatAmount>
+					<LeatherAmount>0.5</LeatherAmount>
+					<WorkSpeedGlobal>1.1</WorkSpeedGlobal>
+					<HuntingStealth>1.2</HuntingStealth>
+					<MeleeHitChance>0.6</MeleeHitChance>
+					<MeleeDodgeChance>1.1</MeleeDodgeChance>
+					<CarryingCapacity>0.75</CarryingCapacity>
+					<VEF_MassCarryCapacity>0.75</VEF_MassCarryCapacity>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalEnlarger</defName>
+		<label>animal enlarger implant</label>
+		<labelNoun>an animal enlarger implant</labelNoun>
+		<description>An installed animal enlarger implant that will increase the body size of the animal, making it more resistant and dangerous. The new body size of the animal will be considered when calculating which implants can be installed on it!\n\nNOTE: This implant itself is capable of being installed on any animal, regardless of their body size.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalEnlarger</ThingDef>
+		</descriptionHyperlinks>
+		<tags>
+			<li>SizeModifier</li>
+		</tags>
+		<spawnThingOnRemoved>AI_AnimalEnlarger</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<hungerRateFactor>1.5</hungerRateFactor>
+				<statFactors>
+					<VEF_BodySize_Multiplier>2</VEF_BodySize_Multiplier>
+					
+					<MoveSpeed>0.8</MoveSpeed>
+					<Mass>1.5</Mass>
+					<MeatAmount>1.5</MeatAmount>
+					<LeatherAmount>1.5</LeatherAmount>
+					<MeleeDamageFactor>1.2</MeleeDamageFactor>
+					<MeleeDodgeChance>0.7</MeleeDodgeChance>
+					<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+					<HuntingStealth>0.8</HuntingStealth>
+					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+					<CarryingCapacity>1.5</CarryingCapacity>
+					<VEF_MassCarryCapacity>1.5</VEF_MassCarryCapacity>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AdditionalBuoyancyVacuoles</defName>
+		<label>animal additional buoyancy vacuoles</label>
+		<labelNoun>an animal additional buoyancy vacuoles</labelNoun>
+		<description>An installed animal additional buoyancy vacuoles implant that inserts several hydrogen filled structures inside the animals' body, allowing it to gently glide a few feet in the air. This will negate all terrain movement costs.\n\nNOTE: This implant will have no effect on animals that possess this ability innately, such as Aerofleet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AdditionalBuoyancyVacuoles</ThingDef>
+		</descriptionHyperlinks>
+		
+		<spawnThingOnRemoved>AI_AdditionalBuoyancyVacuoles</spawnThingOnRemoved>
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Floating">
+
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

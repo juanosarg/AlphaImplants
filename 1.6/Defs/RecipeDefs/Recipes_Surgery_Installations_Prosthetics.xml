@@ -1,0 +1,851 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<workAmount>2500</workAmount>
+		<workerClass>AlphaImplants.Recipe_InstallArtificialBodyPart_Prosthetic</workerClass>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Leg" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Leg</li>
+			<li>InsectLeg</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Arm" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Tail" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Tail</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Mouth" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Jaw</li>
+			<li>AnimalJaw</li>
+			<li>InsectMouth</li>
+			<li>TurtleBeak</li>
+			<li>SnakeMouth</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Heart" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Heart</li>
+			<li>InsectHeart</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Spine" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Spine</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Stomach" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Stomach</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Lung" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Lung</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Kidney" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Kidney</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Liver" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Liver</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Paw" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Paw</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Brain" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<workerClass>AlphaImplants.Recipe_InstallImplant_Prosthetic</workerClass>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Body" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Body</li>
+			<li>SnakeBody</li>
+			<li>Torso</li>
+			<li>Shell</li>
+		</appliedOnFixedBodyParts>
+		<workerClass>AlphaImplants.Recipe_InstallImplant_Prosthetic</workerClass>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Beak" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Beak</li>
+			<li>TurtleBeak</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Tentacle" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Buoyancy" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Shell" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>TurtleShell</li>
+			<li>Shell</li>
+		</appliedOnFixedBodyParts>
+		<workerClass>AlphaImplants.Recipe_InstallImplant_Prosthetic</workerClass>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Wing" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Elytra</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Blade" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>HeadClaw</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Stinger" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryInstallProsthetic_Horn" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<appliedOnFixedBodyParts>
+			<li>Horn</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	<RecipeDef Name="AI_SurgeryRemoveImplantBase" ParentName="AI_SurgeryInstallProstheticPartBase" Abstract="True">
+		<workerClass>Recipe_RemoveImplant</workerClass>
+		<isViolation>true</isViolation>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Leg">
+		<defName>AI_AnimalProstheticLeg</defName>
+		<label>install animal prosthetic leg</label>
+		<description>Install an animal prosthetic leg.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticLeg</ThingDef>
+			<HediffDef>AI_AnimalProstheticLeg</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic leg.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticLeg</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticLeg</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticLeg</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Arm">
+		<defName>AI_AnimalProstheticArm</defName>
+		<label>install animal prosthetic arm</label>
+		<description>Install an animal prosthetic arm.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticArm</ThingDef>
+			<HediffDef>AI_AnimalProstheticArm</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic arm.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AI_AnimalProstheticArm</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Tail">
+		<defName>AI_AnimalProstheticTail</defName>
+		<label>install animal prosthetic tail</label>
+		<description>Install an animal prosthetic tail.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticTail</ThingDef>
+			<HediffDef>AI_AnimalProstheticTail</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic tail.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticTail</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Mouth">
+		<defName>AI_AnimalProstheticJaw</defName>
+		<label>install animal prosthetic jaw</label>
+		<description>Install an animal prosthetic jaw.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticJaw</ThingDef>
+			<HediffDef>AI_AnimalProstheticJaw</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic jaw.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticJaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticJaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticJaw</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Heart">
+		<defName>AI_AnimalProstheticHeart</defName>
+		<label>install animal prosthetic heart</label>
+		<description>Install an animal prosthetic heart.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticHeart</ThingDef>
+			<HediffDef>AI_AnimalProstheticHeart</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic heart.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticHeart</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticHeart</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticHeart</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Spine">
+		<defName>AI_AnimalProstheticSpine</defName>
+		<label>install animal prosthetic spine</label>
+		<description>Install an animal prosthetic spine.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticSpine</ThingDef>
+			<HediffDef>AI_AnimalProstheticSpine</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic spine.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticSpine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticSpine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticSpine</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Stomach">
+		<defName>AI_AnimalProstheticStomach</defName>
+		<label>install animal prosthetic stomach</label>
+		<description>Install an animal prosthetic stomach.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticStomach</ThingDef>
+			<HediffDef>AI_AnimalProstheticStomach</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic stomach.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticStomach</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticStomach</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticStomach</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Lung">
+		<defName>AI_AnimalProstheticLung</defName>
+		<label>install animal prosthetic lung</label>
+		<description>Install an animal prosthetic lung.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticLung</ThingDef>
+			<HediffDef>AI_AnimalProstheticLung</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic lung.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticLung</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticLung</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticLung</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Kidney">
+		<defName>AI_AnimalProstheticKidney</defName>
+		<label>install animal prosthetic kidney</label>
+		<description>Install an animal prosthetic kidney.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticKidney</ThingDef>
+			<HediffDef>AI_AnimalProstheticKidney</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic kidney.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticKidney</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticKidney</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticKidney</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Liver">
+		<defName>AI_AnimalProstheticLiver</defName>
+		<label>install animal prosthetic liver</label>
+		<description>Install an animal prosthetic liver.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticLiver</ThingDef>
+			<HediffDef>AI_AnimalProstheticLiver</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic liver.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticLiver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticLiver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticLiver</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Beak">
+		<defName>AI_AnimalProstheticBeak</defName>
+		<label>install animal prosthetic beak</label>
+		<description>Install an animal prosthetic beak.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticBeak</ThingDef>
+			<HediffDef>AI_AnimalProstheticBeak</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic beak.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticBeak</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticBeak</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticBeak</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Tentacle">
+		<defName>AI_AnimalProstheticTentacle</defName>
+		<label>install animal prosthetic tentacle</label>
+		<description>Install an animal prosthetic tentacle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticTentacle</ThingDef>
+			<HediffDef>AI_AnimalProstheticTentacle</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic tentacle.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticTentacle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticTentacle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticTentacle</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Buoyancy">
+		<defName>AI_AnimalProstheticBuoyancy</defName>
+		<label>install animal prosthetic buoyancy mechanism</label>
+		<description>Install an animal prosthetic buoyancy mechanism.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticBuoyancy</ThingDef>
+			<HediffDef>AI_AnimalProstheticBuoyancy</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic buoyancy mechanism.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticBuoyancy</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticBuoyancy</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticBuoyancy</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Shell">
+		<defName>AI_AnimalProstheticShell</defName>
+		<label>install animal prosthetic shell</label>
+		<description>Install an animal prosthetic shell.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticShell</ThingDef>
+			<HediffDef>AI_AnimalProstheticShell</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic shell.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticShell</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticShell</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticShell</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Wing">
+		<defName>AI_AnimalProstheticWing</defName>
+		<label>install animal prosthetic wing</label>
+		<description>Install an animal prosthetic wing.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticWing</ThingDef>
+			<HediffDef>AI_AnimalProstheticWing</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic wing.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticWing</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticWing</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticWing</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Blade">
+		<defName>AI_AnimalProstheticBlade</defName>
+		<label>install animal prosthetic blade</label>
+		<description>Install an animal prosthetic blade.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticBlade</ThingDef>
+			<HediffDef>AI_AnimalProstheticBlade</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic blade.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticBlade</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticBlade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticBlade</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Horn">
+		<defName>AI_AnimalProstheticHorn</defName>
+		<label>install animal prosthetic horn</label>
+		<description>Install an animal prosthetic horn.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticHorn</ThingDef>
+			<HediffDef>AI_AnimalProstheticHorn</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic horn.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticHorn</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticHorn</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticHorn</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Stinger">
+		<defName>AI_AnimalProstheticStinger</defName>
+		<label>install animal prosthetic stinger</label>
+		<description>Install an animal prosthetic stinger.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalProstheticStinger</ThingDef>
+			<HediffDef>AI_AnimalProstheticStinger</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal prosthetic stinger.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalProstheticStinger</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalProstheticStinger</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalProstheticStinger</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Paw">
+		<defName>AI_AnimalPowerClaw</defName>
+		<label>install animal power claw</label>
+		<description>Install an animal power claw.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPowerClaw</ThingDef>
+			<HediffDef>AI_AnimalPowerClaw</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal power claw.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalPowerClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalPowerClaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalPowerClaw</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Brain">
+		<defName>AI_AnimalPainstopper</defName>
+		<label>install animal painstopper</label>
+		<description>Install an animal painstopper.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPainstopper</ThingDef>
+			<HediffDef>AI_AnimalPainstopper</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal painstopper.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalPainstopper</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalPainstopper</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalPainstopper</addsHediff>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemovePainstopper</defName>
+		<label>remove animal painstopper</label>
+		<description>Remove the animal painstopper.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPainstopper</ThingDef>
+			<HediffDef>AI_AnimalPainstopper</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal painstopper.</jobString>
+		<removesHediff>AI_AnimalPainstopper</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Brain">
+		<defName>AI_AnimalController</defName>
+		<label>install animal controller</label>
+		<description>Install an animal controller.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalController</ThingDef>
+			<HediffDef>AI_AnimalController</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal controller.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalController</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalController</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalController</addsHediff>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalController</defName>
+		<label>remove animal controller</label>
+		<description>Remove the animal controller.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalController</ThingDef>
+			<HediffDef>AI_AnimalController</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal controller.</jobString>
+		<removesHediff>AI_AnimalController</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Leg">
+		<defName>AI_AnimalJump</defName>
+		<label>install animal pouncing leg</label>
+		<description>Install an animal pouncing leg.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalJump</ThingDef>
+			<HediffDef>AI_AnimalJump</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal pouncing leg.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalJump</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalJump</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalJump</addsHediff>
+		
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Body">
+		<defName>AI_AnimalThermoregulator</defName>
+		<label>install animal thermoregulator</label>
+		<description>Install an animal thermoregulator.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalThermoregulator</ThingDef>
+			<HediffDef>AI_AnimalThermoregulator</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal thermoregulator.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalThermoregulator</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalThermoregulator</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalThermoregulator</addsHediff>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalThermoregulator</defName>
+		<label>remove animal thermoregulator</label>
+		<description>Remove the animal thermoregulator.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalThermoregulator</ThingDef>
+			<HediffDef>AI_AnimalThermoregulator</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal thermoregulator.</jobString>
+		<removesHediff>AI_AnimalThermoregulator</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Body">
+		<defName>AI_AnimalChemfuelNodules</defName>
+		<label>install animal chemfuel nodules</label>
+		<description>Install an animal chemfuel nodules.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalChemfuelNodules</ThingDef>
+			<HediffDef>AI_AnimalChemfuelNodules</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal chemfuel nodules.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalChemfuelNodules</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalChemfuelNodules</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AI_AnimalChemfuelNodules</addsHediff>
+		<skillRequirements>
+			<Medicine>5</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalChemfuelNodules</defName>
+		<label>remove animal chemfuel nodules</label>
+		<description>Remove the animal chemfuel nodules.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalChemfuelNodules</ThingDef>
+			<HediffDef>AI_AnimalChemfuelNodules</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal chemfuel nodules.</jobString>
+		<removesHediff>AI_AnimalChemfuelNodules</removesHediff>
+	</RecipeDef>
+</Defs>

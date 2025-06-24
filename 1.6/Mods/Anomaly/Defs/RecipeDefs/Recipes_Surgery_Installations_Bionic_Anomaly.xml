@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_AllLimbs">
+		<defName>AI_AnimalTentacle</defName>
+		<label>install animal eldritch flesh tentacle</label>
+		<description>Install an animal eldritch flesh tentacle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalTentacle</ThingDef>
+			<HediffDef>AI_AnimalTentacle</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal eldritch flesh tentacle.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalTentacle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalTentacle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalTentacle</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalToughspikes</defName>
+		<label>install animal toughspikes</label>
+		<description>Install an animal toughspikes.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalToughspikes</ThingDef>
+			<HediffDef>AI_AnimalToughspikes</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal toughspikes.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalToughspikes</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalToughspikes</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalToughspikes</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalToughspikes</defName>
+		<label>remove animal toughspikes</label>
+		<description>Remove animal toughspikes.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalToughspikes</ThingDef>
+			<HediffDef>AI_AnimalToughspikes</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal toughspikes.</jobString>
+		<removesHediff>AI_AnimalToughspikes</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalRangedTrispikes</defName>
+		<label>install animal ranged trispikes</label>
+		<description>Install an animal ranged trispikes.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalRangedTrispikes</ThingDef>
+			<HediffDef>AI_AnimalRangedTrispikes</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal ranged trispikes.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalRangedTrispikes</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalRangedTrispikes</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalRangedTrispikes</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalRangedTrispikes</defName>
+		<label>remove animal ranged trispikes</label>
+		<description>Remove animal ranged trispikes.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalRangedTrispikes</ThingDef>
+			<HediffDef>AI_AnimalRangedTrispikes</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal ranged trispikes.</jobString>
+		<removesHediff>AI_AnimalRangedTrispikes</removesHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalPseudoDeadlifeShaper</defName>
+		<label>install animal pseudo deadlife shaper</label>
+		<description>Install an animal pseudo deadlife shaper.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPseudoDeadlifeShaper</ThingDef>
+			<HediffDef>AI_AnimalPseudoDeadlifeShaper</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal pseudo deadlife shaper.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalPseudoDeadlifeShaper</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalPseudoDeadlifeShaper</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalPseudoDeadlifeShaper</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalPseudoDeadlifeShaper</defName>
+		<label>remove animal pseudo deadlife shaper</label>
+		<description>Remove animal pseudo deadlife shaper.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPseudoDeadlifeShaper</ThingDef>
+			<HediffDef>AI_AnimalPseudoDeadlifeShaper</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal pseudo deadlife shaper.</jobString>
+		<removesHediff>AI_AnimalPseudoDeadlifeShaper</removesHediff>
+	</RecipeDef>
+</Defs>

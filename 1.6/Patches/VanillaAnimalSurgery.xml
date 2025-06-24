@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+				<value>
+					<li>AI_Crude_InstallWoodenLimb</li>
+					<li>AI_Crude_InstallAnimalDenture</li>
+					<li>AI_Crude_InstallClothTail</li>
+					
+					<li>AI_AnimalProstheticLeg</li>
+					<li>AI_AnimalProstheticArm</li>
+					<li>AI_AnimalProstheticTail</li>
+					<li>AI_AnimalProstheticJaw</li>
+					<li>AI_AnimalProstheticHeart</li>
+					<li>AI_AnimalProstheticSpine</li>
+					<li>AI_AnimalProstheticStomach</li>
+					<li>AI_AnimalProstheticLung</li>
+					<li>AI_AnimalProstheticKidney</li>
+					<li>AI_AnimalProstheticLiver</li>
+					<li>AI_AnimalProstheticBeak</li>
+					<li>AI_AnimalProstheticTentacle</li>
+					<li>AI_AnimalProstheticBuoyancy</li>
+					<li>AI_AnimalProstheticShell</li>
+					<li>AI_AnimalProstheticWing</li>
+					<li>AI_AnimalProstheticBlade</li>
+					<li>AI_AnimalProstheticStinger</li>
+					<li>AI_AnimalProstheticHorn</li>
+					<li>AI_AnimalPowerClaw</li>
+					<li>AI_AnimalPainstopper</li>
+					<li>AI_RemovePainstopper</li>
+					<li>AI_AnimalController</li>
+					<li>AI_RemoveAnimalController</li>
+					<li>AI_AnimalJump</li>
+					<li>AI_AnimalThermoregulator</li>
+					<li>AI_RemoveAnimalThermoregulator</li>
+					<li>AI_AnimalChemfuelNodules</li>
+					<li>AI_RemoveAnimalChemfuelNodules</li>
+					
+					<li>AI_AnimalBionicLeg</li>
+					<li>AI_AnimalBionicArm</li>
+					<li>AI_AnimalBionicTail</li>
+					<li>AI_AnimalBionicJaw</li>
+					<li>AI_AnimalBionicHeart</li>
+					<li>AI_AnimalBionicSpine</li>
+					<li>AI_AnimalBionicStomach</li>
+					<li>AI_AnimalBionicEye</li>
+					<li>AI_AnimalBionicNose</li>
+					<li>AI_AnimalBionicEar</li>
+					<li>AI_AnimalBionicBeak</li>
+					<li>AI_AnimalBionicTentacle</li>
+					<li>AI_AnimalBionicBuoyancy</li>
+					<li>AI_AnimalBionicShell</li>
+					<li>AI_AnimalBionicWing</li>
+					<li>AI_AnimalBionicBlade</li>
+					<li>AI_AnimalBionicStinger</li>
+					<li>AI_AnimalBionicHorn</li>
+					<li>AI_AnimalStealthskinImplant</li>
+					<li>AI_RemoveAnimalStealthskinImplant</li>
+					<li>AI_AnimalWorkChipFlick</li>
+					<li>AI_RemoveAnimalWorkChipFlick</li>
+					<li>AI_AnimalWorkChipClean</li>
+					<li>AI_RemoveAnimalWorkChipClean</li>
+					<li>AI_AnimalWorkChipSlaughter</li>
+					<li>AI_RemoveAnimalWorkChipSlaughter</li>
+					<li>AI_AnimalWorkChipMine</li>
+					<li>AI_RemoveAnimalWorkChipMine</li>
+					<li>AI_AnimalWorkChipFeedPatient</li>
+					<li>AI_RemoveAnimalWorkChipFeedPatient</li>
+					<li>AI_AnimalWorkChipHarvest</li>
+					<li>AI_RemoveAnimalWorkChipHarvest</li>
+					<li>AI_AnimalWorkChipSow</li>
+					<li>AI_RemoveAnimalWorkChipSow</li>
+					<li>AI_AnimalWorkChipHunt</li>
+					<li>AI_RemoveAnimalWorkChipHunt</li>
+					<li>AI_AnimalShrinker</li>
+					<li>AI_RemoveAnimalShrinker</li>
+					<li>AI_AnimalEnlarger</li>
+					<li>AI_RemoveAnimalEnlarger</li>
+					<li>AI_AdditionalBuoyancyVacuoles</li>
+					<li>AI_RemoveAdditionalBuoyancyVacuoles</li>
+					
+					<li>AI_AnimalArchotechLeg</li>
+					<li>AI_AnimalArchotechArm</li>
+					<li>AI_AnimalArchotechTail</li>
+					<li>AI_AnimalSynapticReinforcer</li>
+					
+					<!-- Alpha Animals inspired -->
+					
+					<li>AI_AnimalRangedSpinneret</li>
+					<li>AI_RemoveAnimalRangedSpinneret</li>
+					<li>AI_AnimalVenomousSpitter</li>
+					<li>AI_RemoveAnimalVenomousSpitter</li>
+					<li>AI_AnimalAcidicSpitter</li>
+					<li>AI_RemoveAnimalAcidicSpitter</li>
+					<li>AI_AnimalBarbedQuillThrower</li>
+					<li>AI_RemoveAnimalBarbedQuillThrower</li>
+					<li>AI_AnimalQuadTeslaCannon</li>
+					<li>AI_RemoveAnimalQuadTeslaCannon</li>
+					<li>AI_AnimalBioelectricOrgan</li>
+					<li>AI_RemoveAnimalBioelectricOrgan</li>
+					<li>AI_AnimalLightFocusingLens</li>
+					<li>AI_RemoveAnimalLightFocusingLens</li>
+					<li>AI_AnimalHyperAcidicStomach</li>
+					<li>AI_RemoveAnimalHyperAcidicStomach</li>
+					
+					<!-- Alpha Mythology inspired -->
+					
+					<li>AI_AnimalPetrifyingGaze</li>
+					<li>AI_RemoveAnimalPetrifyingGaze</li>
+					<li>AI_AnimalWispFire</li>
+					<li>AI_RemoveAnimalWispFire</li>
+					<li>AI_AnimalAcidicBreath</li>
+					<li>AI_RemoveAnimalAcidicBreath</li>
+					<li>AI_AnimalFireBreath</li>
+					<li>AI_RemoveAnimalFireBreath</li>
+					<li>AI_AnimalToxicBreath</li>
+					<li>AI_RemoveAnimalToxicBreath</li>
+					
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
+

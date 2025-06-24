@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+				<value>
+					
+					<li>AI_AnimalTentacle</li>
+					<li>AI_AnimalToughspikes</li>
+					<li>AI_RemoveAnimalToughspikes</li>
+					<li>AI_AnimalRangedTrispikes</li>
+					<li>AI_RemoveAnimalRangedTrispikes</li>
+					<li>AI_AnimalPseudoDeadlifeShaper</li>
+					<li>AI_RemoveAnimalPseudoDeadlifeShaper</li>
+					
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
+

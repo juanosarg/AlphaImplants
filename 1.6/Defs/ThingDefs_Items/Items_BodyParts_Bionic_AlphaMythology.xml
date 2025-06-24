@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	
+	<!-- Petrifying Gaze -->
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AnimalPetrifyingGaze</defName>
+		<label>animal petrifying gaze</label>
+		<description>An animal petrifying gaze implant. This implant will allow this creature to use a very dangerous petrifying gaze that will slow down its target, and eventually kill it.\n\nNote that installing this on a creature that already has a petrifying attack will have no effect. And obviously a creature will need eyes to use this attack.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalPetrifyingGaze</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<!-- Wisp Fire -->
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AnimalWispFire</defName>
+		<label>animal wisp fire</label>
+		<description>An animal wisp fire implant. This implant will allow this creature to use a ranged fire attack.\n\nNote that installing this on a creature that already has a wisp fire will have no effect.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalWispFire</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<!-- Acidic Breath -->
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AnimalAcidicBreath</defName>
+		<label>animal acidic breath</label>
+		<description>An animal acidic breath implant. This implant will allow this creature to use a ranged acidic breath attack that causes damage over time.\n\nNote that installing this on a creature that already has an acidic breath will have no effect.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalAcidicBreath</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<!-- Fire Breath -->
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AnimalFireBreath</defName>
+		<label>animal fire breath</label>
+		<description>An animal fire breath implant. This implant will allow this creature to use a ranged fire breath attack that lights enemies on fire.\n\nNote that installing this on a creature that already has a fire breath of this kind will have no effect.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalFireBreath</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<!-- Toxic Breath -->
+	<ThingDef ParentName="AI_AdvancedAnimalBionicPartBase">
+		<defName>AI_AnimalToxicBreath</defName>
+		<label>animal toxic breath</label>
+		<description>An animal toxic breath implant. This implant will allow this creature to use a ranged toxic breath attack that causes toxic buildup in its targer.\n\nNote that installing this on a creature that already has a toxic breath of this kind will have no effect.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalToxicBreath</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

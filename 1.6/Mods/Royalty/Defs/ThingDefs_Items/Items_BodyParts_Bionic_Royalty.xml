@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalImmunoenhancer</defName>
+		<label>animal immunoenhancer</label>
+		<description>An analysis computer which inspects the bloodstream, classifies pathogens, and rapidly prompts the body's natural immune system to respond to them faster than it could alone. This speeds immunity gain significantly.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalImmunoenhancer</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>8</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>MolecularAnalysis</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalCircadianSupercharger</defName>
+		<label>animal circadian supercharger</label>
+		<description>A combination assistant and half-cycler, disables the need to rest of the animal without affecting its consciousness. An animal using this implant will be susceptible to EMP weapons.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalCircadianSupercharger</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>8</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>CircadianInfluence</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalHealClotSynergizer</defName>
+		<label>animal healclot synergizer</label>
+		<description>A combination coagulator and healing enhancer, combines advanced coagulation and accelerated healing technologies, providing rapid blood clotting and enhanced tissue repair.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalHealClotSynergizer</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>3</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>HealingFactors</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalDermalArmorGland</defName>
+		<label>animal dermal armor gland</label>
+		<description>An animal dermal armor gland implant. Releases chemical and nanomachines that transform the user's skin into a built-in suit of armor. The whole epidermis thickens and hardens to resist burns, while jointed exterior keratin plates form everywhere they can - including the head and face.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalDermalArmorGland</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>SkinHardening</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalNuclearStomach</defName>
+		<label>animal nuclear stomach</label>
+		<description>An animal nuclear stomach implant. A micro-nuclear reactor combined with complex chemical synthesis replaces the body's need for food energy. Food is required only to replace matter lost from the body, reducing the animal's intake needs significantly. However, there is little room to shield the reactor, so the radiation increases the risk of cancer.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalNuclearStomach</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>ArtificialMetabolism</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase">
+		<defName>AI_AnimalUnstableSkipSynapsis</defName>
+		<label>animal unstable skip synapsis</label>
+		<description>An animal unstable skip synapsis implant that enables the animal to teleport short distances instantly. By creating controlled neural disruptions and linking them with micro-skipgates, it allows for rapid, unpredictable movement, enhancing the animal's ability to evade threats and reposition quickly in its environment.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalUnstableSkipSynapsis</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>BrainWiring</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Added body parts -->
+	<HediffDef Name="AI_ArchotechBodyPartBase" ParentName="AI_ImplantHediffBase" Abstract="True">
+		<hediffClass>Hediff_AddedPart</hediffClass>
+	</HediffDef>
+	<HediffDef ParentName="AI_ArchotechBodyPartBase">
+		<defName>AI_AnimalArchotechLeg</defName>
+		<label>animal archotech leg</label>
+		<labelNoun>an animal archotech leg</labelNoun>
+		<description>An installed animal archotech leg. It looks and feels like natural flesh, but it can make the animal move lightning fast, and it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<extraTooltip>Provides a Scratch attack with a strength 150% higher than the animal's original leg / paws / claws attack, plus 50% of its cooldown.</extraTooltip>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalArchotechLeg</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalArchotechLeg</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.5</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>archotech leg</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>1</power>
+						<cooldownTime>1</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>FrontLeftLeg</li>
+					<li>FrontRightLeg</li>
+					<li>FrontLeftPaw</li>
+					<li>FrontRightPaw</li>
+					<li>FrontLeftClaws</li>
+					<li>FrontRightClaws</li>
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>2.5</powerMultiplier>
+				<cooldownTimeMultiplier>0.5</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
+	</HediffDef>
+	<HediffDef ParentName="AI_ArchotechBodyPartBase">
+		<defName>AI_AnimalArchotechArm</defName>
+		<label>animal archotech arm</label>
+		<labelNoun>an animal archotech arm</labelNoun>
+		<description>An installed animal archotech arm. Strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than plasteel. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to all human minds.</description>
+		<extraTooltip>Provides a Blunt attack with a strength 150% higher than the animal's original fist attack, plus 50% of its cooldown.</extraTooltip>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalArchotechArm</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalArchotechArm</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.5</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>archotech arm</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>1</power>
+						<cooldownTime>1</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>LeftHand</li>
+					<li>RightHand</li>
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>2.5</powerMultiplier>
+				<cooldownTimeMultiplier>0.5</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
+	</HediffDef>
+	<HediffDef ParentName="AI_ArchotechBodyPartBase">
+		<defName>AI_AnimalArchotechTail</defName>
+		<label>animal archotech tail</label>
+		<labelNoun>an animal archotech tail</labelNoun>
+		<description>An installed animal archotech tail. Indistinguishable from a natural tail, while at the same time providing the animal with a surge of speed and agility.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalArchotechTail</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalArchotechTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_ArchotechBodyPartBase">
+		<defName>AI_AnimalSynapticReinforcer</defName>
+		<label>animal synaptic reinforcer</label>
+		<labelNoun>an animal synaptic reinforcer</labelNoun>
+		<description>An installed animal synaptic reinforcer that enhances neural connections, improving cognitive functions such as memory, learning, and response times, basically healing the brain and allowing the animal improved function.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalSynapticReinforcer</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalSynapticReinforcer</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.5</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		
+	</HediffDef>
+	
+</Defs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+				<value>
+					
+					<li>AI_AnimalImmunoenhancer</li>
+					<li>AI_RemoveAnimalImmunoenhancer</li>
+					<li>AI_AnimalCircadianSupercharger</li>
+					<li>AI_RemoveAnimalCircadianSupercharger</li>
+					<li>AI_AnimalHealClotSynergizer</li>
+					<li>AI_RemoveAnimalHealClotSynergizer</li>
+					<li>AI_AnimalSkinHardener</li>
+					<li>AI_RemoveAnimalSkinHardener</li>
+					<li>AI_AnimalDermalArmorGland</li>
+					<li>AI_RemoveAnimalDermalArmorGland</li>
+					<li>AI_AnimalNuclearStomach</li>
+					<li>AI_AnimalVenomFangs</li>
+					<li>AI_AnimalUnstableSkipSynapsis</li>
+					<li>AI_RemoveAnimalUnstableSkipSynapsis</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
+

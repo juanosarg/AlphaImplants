@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityDef>
+		<defName>AI_AnimalPiercingSpine</defName>
+		<label>piercing spine</label>
+		<description>Use a powerful chemical reaction to launch a bony spine at the target. The spine is propelled through a specialized opening between the collarbones, ensuring precise and effortless aiming.</description>
+		<iconPath>UI/Abilities/PiercingSpine</iconPath>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<cooldownTicksRange>6000</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>3.9</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>PiercingSpine_Launch</soundCast>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>PiercingSpine</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef>
+		<defName>AI_AnimalAcidSpray</defName>
+		<label>acid spray</label>
+		<description>Spray a sticky acid substance from glands in the neck up through the mouth and all over the target area. The acid will stick to targets and burn them.</description>
+		<iconPath>UI/Abilities/AcidSpray</iconPath>
+		<cooldownTicksRange>30000</cooldownTicksRange>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
+		<warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>8.9</range>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>AcidSpray_Resolve</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilitySprayLiquid">
+				<projectileDef>Proj_Acid</projectileDef>
+				<numCellsToHit>9</numCellsToHit>
+				<sprayEffecter>AcidSpray_Directional</sprayEffecter>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef>
+		<defName>AI_AnimalFoamSpray</defName>
+		<label>foam spray</label>
+		<description>Spray thick fire-retardant foam from glands in the neck up through the mouth. The foam will cover a small area and extinguish any fire it touches.</description>
+		<iconPath>UI/Icons/Genes/Gene_FoamSpray</iconPath>
+		<cooldownTicksRange>30000</cooldownTicksRange>
+		<warmupStartSound>FoamSpray_Warmup</warmupStartSound>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<hostile>false</hostile>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>4.9</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>FoamSpray_Resolve</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilitySprayLiquid">
+				<projectileDef>Proj_Foam_Ability</projectileDef>
+				<numCellsToHit>9</numCellsToHit>
+				<sprayEffecter>FoamSpray_Directional</sprayEffecter>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef>
+		<defName>AI_AnimalFireSpew</defName>
+		<label>fire spew</label>
+		<description>Spit a stream of sticky, flammable bile from the mouth. The bile can ignite anything or anyone it hits, and also form flaming pools on the ground.\n\nThe bile is generated and stored by an organ in the neck, along with a separate pouch of hypergolic reactant for ignition.</description>
+		<iconPath>UI/Abilities/FireSpew</iconPath>
+		<cooldownTicksRange>300000</cooldownTicksRange>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsIncendiary>true</ai_IsIncendiary>
+		<warmupStartSound>FireSpew_Warmup</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>7.9</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>FireSpew_Resolve</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityFireSpew">
+				<range>7.9</range>
+				<lineWidthEnd>3</lineWidthEnd>
+				<filthDef>Filth_FlammableBile</filthDef>
+				<effecterDef>Fire_Spew</effecterDef>
+				<canHitFilledCells>true</canHitFilledCells>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>AI_AnimalUpsyDaisyVampireyHealyPower</defName>
+		<label>Upsy Daisy vampirey healy power</label>
+		<description>Use special glands to quickly tend someone's wounds.</description>
+		<iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
+		<stunTargetWhileCasting>true</stunTargetWhileCasting>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<warmupMote>Mote_CoagulateStencil</warmupMote>
+		<warmupEffecter>Coagulate</warmupEffecter>
+		<warmupStartSound>Coagulate_Cast</warmupStartSound>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>-1</range>
+			<warmupTime>1</warmupTime>
+			<targetParams>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetBloodfeeders>true</canTargetBloodfeeders>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			  <li Class="CompProperties_AbilityCoagulate">
+        <tendQualityRange>0.4~0.8</tendQualityRange>
+      </li>
+		</comps>
+	</AbilityDef>
+</Defs>

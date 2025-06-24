@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Waste Animals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Body"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>VAEWaste_Thorax</li>
+						
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Body"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>VAEWaste_Thorax</li>
+						
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallCrude_Mouth"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>VAEWaste_InsectMouth</li>
+						
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Mouth"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>VAEWaste_InsectMouth</li>
+						
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Mouth"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>VAEWaste_InsectMouth</li>
+						
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallCrude_Tail"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>VAEWaste_InsectTail</li>
+						
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Tail"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>VAEWaste_InsectTail</li>
+						
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Tail"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>VAEWaste_InsectTail</li>
+						
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallArchotech_Tail"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>VAEWaste_InsectTail</li>
+						
+					</value>
+				</li>
+			
+			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Stinger"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>VAEWaste_InsectSting</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Stinger"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>VAEWaste_InsectSting</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallProsthetic_Blade"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>VAEWaste_LeftPincer</li>
+						<li>VAEWaste_RightPincer</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name= "AI_SurgeryInstallBionic_Blade"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>VAEWaste_LeftPincer</li>
+						<li>VAEWaste_RightPincer</li>
+					</value>
+				</li>
+	
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[defName= "AI_AnimalProstheticStinger"]/modExtensions/li[@Class="AlphaImplants.HediffImplantExtension"]/bodyPartGroupsToMultiplyDamage</xpath>
+					<value>
+						<li>VAEWaste_Sting</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[defName= "AI_AnimalBionicStinger"]/modExtensions/li[@Class="AlphaImplants.HediffImplantExtension"]/bodyPartGroupsToMultiplyDamage</xpath>
+					<value>
+						<li>VAEWaste_Sting</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[defName= "AI_AnimalProstheticBlade"]/modExtensions/li[@Class="AlphaImplants.HediffImplantExtension"]/bodyPartGroupsToMultiplyDamage</xpath>
+					<value>
+						<li>VAEWaste_PincerAttackTool</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/HediffDef[defName= "AI_AnimalBionicBlade"]/modExtensions/li[@Class="AlphaImplants.HediffImplantExtension"]/bodyPartGroupsToMultiplyDamage</xpath>
+					<value>
+						<li>VAEWaste_PincerAttackTool</li>
+					</value>
+				</li>
+				
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

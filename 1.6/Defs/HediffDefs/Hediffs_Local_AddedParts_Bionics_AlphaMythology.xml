@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Petrifying Gaze -->
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalPetrifyingGaze</defName>
+		<label>animal petrifying gaze</label>
+		<labelNoun>an animal petrifying gaze</labelNoun>
+		<description>An installed petrifying gaze implant. This implant will allow this creature to use a very dangerous petrifying gaze that will slow down its target, and eventually kill it.\n\nNote that installing this on a creature that already has a petrifying attack will have no effect. And obviously a creature will need eyes to use this attack.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPetrifyingGaze</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalPetrifyingGaze</spawnThingOnRemoved>
+		<abilities>
+			<li>AI_PetrifyingGaze</li>
+		</abilities>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.75</partEfficiency>
+			<betterThanNatural>false</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+	<!-- Wisp Fire -->
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalWispFire</defName>
+		<label>animal wisp fire</label>
+		<labelNoun>an animal wisp fire</labelNoun>
+		<description>An installed wisp fire implant. This implant will allow this creature to use a ranged fire attack.\n\nNote that installing this on a creature that already has a wisp fire will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWispFire</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalWispFire</spawnThingOnRemoved>
+		<abilities>
+			<li>AI_WispFire</li>
+		</abilities>
+	</HediffDef>
+	<!-- Acidic Breath -->
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalAcidicBreath</defName>
+		<label>animal acidic breath</label>
+		<labelNoun>an animal acidic breath</labelNoun>
+		<description>An installed acidic breath implant. This implant will allow this creature to use a ranged acidic breath attack that causes damage over time.\n\nNote that installing this on a creature that already has an acidic breath will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalAcidicBreath</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalAcidicBreath</spawnThingOnRemoved>
+		<abilities>
+			<li>AI_AcidicBreath</li>
+		</abilities>
+	</HediffDef>
+	<!-- Fire Breath -->
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalFireBreath</defName>
+		<label>animal fire breath</label>
+		<labelNoun>an animal fire breath</labelNoun>
+		<description>An installed fire breath implant. This implant will allow this creature to use a ranged fire breath attack that lights enemies on fire.\n\nNote that installing this on a creature that already has a fire breath of this kind will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalFireBreath</ThingDef>
+		</descriptionHyperlinks>
+		<abilities>
+			<li>AI_FireBreath</li>
+		</abilities>
+		<spawnThingOnRemoved>AI_AnimalFireBreath</spawnThingOnRemoved>
+	</HediffDef>
+	<!-- Toxic Breath -->
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalToxicBreath</defName>
+		<label>animal toxic breath</label>
+		<labelNoun>an animal toxic breath</labelNoun>
+		<description>An installed toxic breath implant. This implant will allow this creature to use a ranged toxic breath attack that causes toxic buildup in its targer.\n\nNote that installing this on a creature that already has a toxic breath of this kind will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalToxicBreath</ThingDef>
+		</descriptionHyperlinks>
+		<abilities>
+			<li>AI_ToxicBreath</li>
+		</abilities>
+		<spawnThingOnRemoved>AI_AnimalToxicBreath</spawnThingOnRemoved>
+	</HediffDef>
+</Defs>

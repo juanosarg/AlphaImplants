@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalSkinHardener</defName>
+		<label>animal skin hardener</label>
+		<labelNoun>an animal skin hardener</labelNoun>
+		<description>An installed animal skin hardener implant. Releases chemicals and nanomachines that toughen the skin, making it somewhat more resistant to damage.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalSkinHardener</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.95</postFactor>
+					</li>
+				</capMods>
+				<statOffsets>
+					<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.3</ArmorRating_Heat>
+					<MaxHitPoints>15</MaxHitPoints>
+				</statOffsets>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>AI_AnimalSkinHardener</spawnThingOnRemoved>
+		<tags><li>ArmorGland</li></tags>
+		<modExtensions>
+			<li Class="AlphaImplants.HealthModifierExtension">
+				<healthPointToAdd>15</healthPointToAdd>
+			</li>
+		</modExtensions>
+	</HediffDef>
+	
+	<HediffDef ParentName="AI_ProstheticBodyPartBase">
+		<defName>AI_AnimalVenomFangs</defName>
+		<label>animal venom fangs</label>
+		<labelNoun>animal venom fangs</labelNoun>
+		<description>Installed animal venom fangs. Injector tubules that are carefully set inside the animal's original teeth, and connected to small sacs of a very powerful venom. Contrary to the human implant, these integrate too much with the animal's teeth and can't be removed afterwards.</description>
+		<extraTooltip>Provides a Toxic Buildup attack with a strength 50% higher than the original animal's jaw / beak attack, with the same cooldown.</extraTooltip>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalVenomFangs</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalVenomFangs</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>venom fangs</label>
+            <capacities>
+              <li>ToxicBite</li>
+            </capacities>
+            <power>1</power>
+            <cooldownTime>1</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+          </li>
+        </tools>
+      </li>
+		</comps>
+		<modExtensions>
+			<li Class="AlphaImplants.HediffImplantExtension">
+				<bodyPartGroupsToMultiplyDamage>
+					<li>Teeth</li>
+					<li>Beak</li>
+					<li>TurtleBeakAttackTool</li>
+					<li>Mouth</li>
+					
+				</bodyPartGroupsToMultiplyDamage>
+				<powerMultiplier>1.5</powerMultiplier>
+				<cooldownTimeMultiplier>1</cooldownTimeMultiplier>
+			</li>
+		</modExtensions>
+	</HediffDef>
+</Defs>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="AI_AnimalBionicPartBase_Mutation" ParentName="AI_AnimalBionicPartBase" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>MutationWeaponry</li>
+			</researchPrerequisites>
+			<recipeUsers>
+				<li>BioferriteShaper</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase_Mutation">
+		<defName>AI_AnimalTentacle</defName>
+		<label>animal eldritch flesh tentacle</label>
+		<description>An animal eldritch flesh tentacle. A fleshy, muscled tentacle resembling a partial transformation into a fleshbeast. The tentacle is excellent at manipulation and grabbing targets.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalTentacle</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Bioferrite>35</Bioferrite>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase_Mutation">
+		<defName>AI_AnimalToughspikes</defName>
+		<label>animal toughspikes</label>
+		<description>An animal implant that adds two rending claws to the animal's body, independent of their original limbs.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalToughspikes</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Bioferrite>35</Bioferrite>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase_Mutation">
+		<defName>AI_AnimalRangedTrispikes</defName>
+		<label>animal ranged trispikes</label>
+		<description>An animal implant that adds three fleshy spikes to the animal's body, independent of their original limbs. These extra limbs allow them to use a ranged attack.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalRangedTrispikes</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Bioferrite>35</Bioferrite>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalBionicPartBase_Mutation">
+		<defName>AI_AnimalPseudoDeadlifeShaper</defName>
+		<label>animal pseudo deadlife shaper</label>
+		<description>An animal implant that produces a cloud of microscopic archites that induce a state of pseudo deadlife, granting great resilience to an animal without outright killing it. Removing the implant will deactivate the archites and return the animal to normalcy.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalPseudoDeadlifeShaper</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Bioferrite>35</Bioferrite>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+</Defs>

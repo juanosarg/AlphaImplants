@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicLung</defName>
+		<label>animal detoxifier lung</label>
+		<labelNoun>an animal detoxifier lung</labelNoun>
+		<description>An installed animal detoxifier lung. Includes a series of nanoweave microfilters that remove any pollutants from the air, allowing the animal to breathe comfortably. It is better than a biological lung in almost every way.</description>
+		<preventsLungRot>true</preventsLungRot>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicLung</ThingDef>
+			<HediffDef>LungRot</HediffDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicLung</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.1</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ToxicEnvironmentResistance>0.6</ToxicEnvironmentResistance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicKidney</defName>
+		<label>animal detoxifier kidney</label>
+		<labelNoun>an animal detoxifier kidney</labelNoun>
+		<description>An installed animal detoxifier kidney. Using a series of nanofilters, it can rapidly remove a vast range of toxins from the blood, making it effective against environmental toxins, venoms, and injected poisons. It is better than a biological kidney in almost every way.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicKidney</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicKidney</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.1</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ToxicResistance>0.5</ToxicResistance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalBionicLiver</defName>
+		<label>animal detoxifier liver</label>
+		<labelNoun>an animal detoxifier liver</labelNoun>
+		<description>An installed animal detoxifier liver. Utilizes advanced technology for precise toxin removal. Enhanced with real-time monitoring, it ensures optimal metabolic health, surpassing natural detoxification processes. It is better than a biological liver in almost every way.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalBionicLiver</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalBionicLiver</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ToxicResistance>0.15</ToxicResistance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalPiercingSpine</defName>
+		<label>animal piercing spine</label>
+		<labelNoun>an animal piercing spine</labelNoun>
+		<description>An installed animal piercing spine that enables the animal to launch a bony spine at targets using a powerful chemical reaction. The spine is propelled through a specialized opening between the collarbones, ensuring precise and effortless aiming.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPiercingSpine</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalPiercingSpine</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>0.9</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+				<ability>AI_AnimalPiercingSpine</ability>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalAcidSpray</defName>
+		<label>animal acid spray</label>
+		<labelNoun>an animal acid spray</labelNoun>
+		<description>An installed animal acid spray that enables the animal to spray a sticky acid substance from glands in the neck up through the mouth and all over the target area. The acid will stick to targets and burn them.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalAcidSpray</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalAcidSpray</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>0.9</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+				<ability>AI_AnimalAcidSpray</ability>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalFoamSpray</defName>
+		<label>animal foam spray</label>
+		<labelNoun>an animal foam spray</labelNoun>
+		<description>An installed animal foam spray that enables the animal to spray thick fire-retardant foam from glands in the neck up through the mouth. The foam will cover a small area and extinguish any fire it touches.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalFoamSpray</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalFoamSpray</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>0.9</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+				<ability>AI_AnimalFoamSpray</ability>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_BionicBodyPartBase">
+		<defName>AI_AnimalFireSpew</defName>
+		<label>animal fire spray</label>
+		<labelNoun>an animal fire spray</labelNoun>
+		<description>An installed animal fire spray that enables the animal to spit a stream of sticky, flammable bile from the mouth. The bile can ignite anything or anyone it hits, and also form flaming pools on the ground.\n\nThe bile is generated and stored by an organ in the neck, along with a separate pouch of hypergolic reactant for ignition.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalFireSpew</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalFireSpew</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+			<partEfficiency>0.9</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+				<ability>AI_AnimalFireSpew</ability>
+			</li>
+		</comps>
+	</HediffDef>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalUpsyDaisyVampireyHealyPower</defName>
+		<label>animal Upsy Daisy vampirey healy power</label>
+		<labelNoun>an animal Upsy Daisy vampirey healy power</labelNoun>
+		<description>An installed animal implant that enables the animal to use the coagulate abil... I mean, Upsy Daisy vampirey healy power ability, of course.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalUpsyDaisyVampireyHealyPower</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AI_AnimalUpsyDaisyVampireyHealyPower</spawnThingOnRemoved>
+		
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+				<ability>AI_AnimalUpsyDaisyVampireyHealyPower</ability>
+			</li>
+			
+		</comps>
+	</HediffDef>
+</Defs>

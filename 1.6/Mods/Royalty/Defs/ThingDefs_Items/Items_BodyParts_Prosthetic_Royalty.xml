@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalSkinHardener</defName>
+		<label>animal skin hardener</label>
+		<description>An animal skin hardener. Releases chemicals and nanomachines that toughen the skin, making it somewhat more resistant to damage.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalSkinHardener</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>7</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>SkinHardening</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalVenomFangs</defName>
+		<label>animal venom fangs</label>
+		<description>Animal venom fangs. Injector tubules that are carefully set inside the animal's original teeth, and connected to small sacs of a very powerful venom. Contrary to the human implant, these integrate too much with the animal's teeth and can't be removed afterwards.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalVenomFangs</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			 <Steel>20</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>VenomSynthesis</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+</Defs>

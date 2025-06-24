@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Eye">
+		<defName>AI_AnimalPetrifyingGaze</defName>
+		<label>install animal petrifying gaze</label>
+		<description>Install an animal petrifying gaze.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPetrifyingGaze</ThingDef>
+			<HediffDef>AI_AnimalPetrifyingGaze</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal petrifying gaze.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalPetrifyingGaze</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalPetrifyingGaze</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalPetrifyingGaze</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalPetrifyingGaze</defName>
+		<label>remove animal petrifying gaze</label>
+		<description>Remove the animal petrifying gaze.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalPetrifyingGaze</ThingDef>
+			<HediffDef>AI_AnimalPetrifyingGaze</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal petrifying gaze.</jobString>
+		<removesHediff>AI_AnimalPetrifyingGaze</removesHediff>
+	</RecipeDef>
+	
+	
+	
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalWispFire</defName>
+		<label>install animal wisp fire</label>
+		<description>Install an animal wisp fire.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWispFire</ThingDef>
+			<HediffDef>AI_AnimalWispFire</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal wisp fire.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalWispFire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalWispFire</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalWispFire</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalWispFire</defName>
+		<label>remove animal wisp fire</label>
+		<description>Remove the animal wisp fire.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalWispFire</ThingDef>
+			<HediffDef>AI_AnimalWispFire</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal wisp fire.</jobString>
+		<removesHediff>AI_AnimalWispFire</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalAcidicBreath</defName>
+		<label>install animal acidic breath</label>
+		<description>Install an animal acidic breath.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalAcidicBreath</ThingDef>
+			<HediffDef>AI_AnimalAcidicBreath</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal acidic breath.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalAcidicBreath</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalAcidicBreath</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalAcidicBreath</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalAcidicBreath</defName>
+		<label>remove animal acidic breath</label>
+		<description>Remove the animal acidic breath.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalAcidicBreath</ThingDef>
+			<HediffDef>AI_AnimalAcidicBreath</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal acidic breath.</jobString>
+		<removesHediff>AI_AnimalAcidicBreath</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalFireBreath</defName>
+		<label>install animal fire breath</label>
+		<description>Install an animal fire breath.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalFireBreath</ThingDef>
+			<HediffDef>AI_AnimalFireBreath</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal fire breath.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalFireBreath</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalFireBreath</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalFireBreath</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalFireBreath</defName>
+		<label>remove animal fire breath</label>
+		<description>Remove the animal fire breath.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalFireBreath</ThingDef>
+			<HediffDef>AI_AnimalFireBreath</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal fire breath.</jobString>
+		<removesHediff>AI_AnimalFireBreath</removesHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AI_SurgeryInstallBionic_Body">
+		<defName>AI_AnimalToxicBreath</defName>
+		<label>install animal toxic breath</label>
+		<description>Install an animal toxic breath.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalToxicBreath</ThingDef>
+			<HediffDef>AI_AnimalToxicBreath</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal toxic breath.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalToxicBreath</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalToxicBreath</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalToxicBreath</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalToxicBreath</defName>
+		<label>remove animal toxic breath</label>
+		<description>Remove the animal toxic breath.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalToxicBreath</ThingDef>
+			<HediffDef>AI_AnimalToxicBreath</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal toxic breath.</jobString>
+		<removesHediff>AI_AnimalToxicBreath</removesHediff>
+	</RecipeDef>
+	
+</Defs>

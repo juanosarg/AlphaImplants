@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="AI_AnimalProstheticPartBase" ParentName="BodyPartBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Things/Item/AI_Implant_Prosthetic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<thingCategories>
+			<li>AI_ImplantCategory</li>
+		</thingCategories>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<displayPriority>600</displayPriority>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>AI_AnimalProstheticsTable</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+			<researchPrerequisite>Prosthetics</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	<ThingDef Name="AI_AnimalProstheticPartBase_AdvancedResearch" ParentName="AI_AnimalProstheticPartBase" Abstract="True">
+		<statBases>
+			<WorkToMake>25000</WorkToMake>
+		</statBases>
+		<recipeMaker Inherit="false">
+			<displayPriority>600</displayPriority>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>AI_AdvancedAnimalProstheticsTable</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+			<researchPrerequisite>AI_AdvancedAnimalBionics</researchPrerequisite>
+		</recipeMaker>
+		
+	</ThingDef>
+	<ThingDef Name="AI_AnimalProstheticPartBase_NotMakeable" ParentName="BodyPartBase" Abstract="True">
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Things/Item/AI_Implant_Prosthetic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<thingCategories>
+			<li>AI_ImplantCategory</li>
+		</thingCategories>		
+	</ThingDef>
+	
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticLeg</defName>
+		<label>animal prosthetic leg</label>
+		<description>An animal prosthetic leg. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real leg.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticLeg</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>8</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticArm</defName>
+		<label>animal prosthetic arm</label>
+		<description>An animal prosthetic arm. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real arm.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticArm</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticTail</defName>
+		<label>animal prosthetic tail</label>
+		<description>An animal prosthetic tail, crafted to replace a lost or injured tail, providing support, balance, and expression while facilitating natural movement and comfort.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticTail</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticJaw</defName>
+		<label>animal prosthetic jaw</label>
+		<description>An animal prosthetic jaw, tailored to restore oral function and aesthetics, enabling animals to eat, drink, and interact comfortably.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticJaw</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticHeart</defName>
+		<label>animal prosthetic heart</label>
+		<description>An animal prosthetic heart. It contains an electric motor that pumps blood smoothly around the body.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticHeart</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>15</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticSpine</defName>
+		<label>animal prosthetic spine</label>
+		<description>An animal prosthetic spine consisting of basic materials and rudimentary construction, offering modest support and mobility enhancement. Worse than an undamaged natural spine.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticSpine</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>15</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticStomach</defName>
+		<label>animal prosthetic stomach</label>
+		<description>An animal prosthetic stomach constructed from rudimentary materials, providing minimal digestive support. It lacks advanced features and offers a simple solution for basic nutrient processing, although it is worse than an undamaged natural stomach.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticStomach</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>15</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticLung</defName>
+		<label>animal prosthetic lung</label>
+		<description>An animal prosthetic lung made with simple components, offering basic respiratory support. Despite its simplicity, it aids in oxygenation to a limited extent, supporting the animal's breathing function. Worse than an undamaged natural lung.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticLung</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>7</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticKidney</defName>
+		<label>animal prosthetic kidney</label>
+		<description>An animal prosthetic kidney providing elementary filtration capabilities. Though lacking complexity, it offers a simple solution for waste removal, aiding in maintaining basic metabolic balance. Worse than an undamaged natural kidney.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticKidney</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>7</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticLiver</defName>
+		<label>animal prosthetic liver</label>
+		<description>An animal prosthetic liver offering rudimentary detoxification functions. Despite its simplicity, it provides a straightforward solution for metabolic regulation. Worse than an undamaged natural liver.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticLiver</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>15</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticBeak</defName>
+		<label>animal prosthetic beak</label>
+		<description>An animal prosthetic beak built with simple materials. Should be able to replace almost any avian-like beak.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticBeak</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticTentacle</defName>
+		<label>animal prosthetic tentacle</label>
+		<description>An animal prosthetic tentacle built with simple materials. Should be able to replace almost any tentacle, though they'll be quite rigid and not very functional, specially if the animal uses it for locomotion. Bear in mind the original animal needs to have tentacles of its own. For extra tentacles, look into Anomaly implants.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticTentacle</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticBuoyancy</defName>
+		<label>animal prosthetic buoyancy mechanism</label>
+		<description>An animal prosthetic buoyancy mechanism built with simple materials. Should be able to replace hydrogen sacs and other exotic organs keeping hovering creatures in the air.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticBuoyancy</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticShell</defName>
+		<label>animal prosthetic shell</label>
+		<description>An animal prosthetic shell constructed from basic, durable materials, providing essential protection and structural support. Though simple in design, it offers a practical solution for shielding the animal from harm.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticShell</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>10</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticWing</defName>
+		<label>animal prosthetic wing</label>
+		<description>An animal prosthetic wing made from basic, sturdy materials, offering essential support for limited flight and gliding. Though simple, it provides a functional solution for basic aerial mobility. Note that base game birds DON'T have wings (yes, really).</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticWing</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticBlade</defName>
+		<label>animal prosthetic blade</label>
+		<description>An animal prosthetic blade made from basic, sturdy materials. Will replace a range of biological structures such as single claws (not claws that are part of a paw, for example) and an insect's headclaw.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticBlade</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticStinger</defName>
+		<label>animal prosthetic stinger</label>
+		<description>An animal prosthetic stinger made from basic, sturdy materials and designed to replace a lost or damaged stinger.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticStinger</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalProstheticHorn</defName>
+		<label>animal prosthetic horn</label>
+		<description>An animal prosthetic horn acting as a synthetic replacement for a lost or damaged horn, crafted from durable materials to restore natural appearance and function.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalProstheticHorn</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>5</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase_NotMakeable">
+		<defName>AI_AnimalPowerClaw</defName>
+		<label>animal power claw</label>
+		<description>A combat-oriented paw replacement consisting of a hooked claw extending besides the animal's original limb. It cuts deep, and it is strong enough to crush a skull like a hand crushes an egg. Its overall ungainliness slows down movement slightly.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalPowerClaw</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase_NotMakeable">
+		<defName>AI_AnimalPainstopper</defName>
+		<label>animal painstopper</label>
+		<description>An animal brain implant which inhibits nociception, or pain sensation. While it does allow the user to accomplish more, it turns out pain has a purpose. When you don't feel it, you can get hurt really bad really easily.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalPainstopper</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>2</Mass>
+		</statBases>
+		
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase_AdvancedResearch">
+		<defName>AI_AnimalController</defName>
+		<label>animal controller</label>
+		<description>An animal mind controller implant. This implant will allow this creature to be drafted and controlled by the player. Counts as a prosthetic when considering animal body size to be installed.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalController</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalJump</defName>
+		<label>animal pouncing leg</label>
+		<description>An animal pouncing leg. Engineered with high-tension springs and advanced composite materials, it enables the animal to make precise, powerful leaps.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalJump</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+		</statBases>
+		
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalThermoregulator</defName>
+		<label>animal thermoregulator</label>
+		<description>An animal thermoregulator implant using sensors and adaptive materials to maintain optimal body temperature in varying environmental conditions, enhancing the animal's ability to thrive in extreme heat or cold.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalThermoregulator</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<Steel>10</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		
+	</ThingDef>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalChemfuelNodules</defName>
+		<label>animal chemfuel nodules</label>
+		<description>An animal implant that adds several chemfuel nodules to the animal's skin. These nodules contain unstable chemfuel and will explode upon the animal's death.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalChemfuelNodules</RecipeDef>
+		</descriptionHyperlinks>		
+		<costList>			
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		
+	</ThingDef>
+</Defs>
