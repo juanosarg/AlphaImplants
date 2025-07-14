@@ -10,9 +10,13 @@
 			<ThingDef>AI_AnimalPetrifyingGaze</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>AI_AnimalPetrifyingGaze</spawnThingOnRemoved>
-		<abilities>
-			<li>AI_PetrifyingGaze</li>
-		</abilities>
+		
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+			<ability>AI_PetrifyingGaze</ability>
+			</li>
+			
+		</comps>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.75</partEfficiency>
@@ -29,9 +33,13 @@
 			<ThingDef>AI_AnimalWispFire</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>AI_AnimalWispFire</spawnThingOnRemoved>
-		<abilities>
-			<li>AI_WispFire</li>
-		</abilities>
+		
+			<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+			<ability>AI_WispFire</ability>
+			</li>
+			
+		</comps>
 	</HediffDef>
 	<!-- Acidic Breath -->
 	<HediffDef ParentName="AI_ImplantHediffBase">
@@ -43,9 +51,13 @@
 			<ThingDef>AI_AnimalAcidicBreath</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>AI_AnimalAcidicBreath</spawnThingOnRemoved>
-		<abilities>
-			<li>AI_AcidicBreath</li>
-		</abilities>
+		
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+			<ability>AI_AcidicBreath</ability>
+			</li>
+			
+		</comps>
 	</HediffDef>
 	<!-- Fire Breath -->
 	<HediffDef ParentName="AI_ImplantHediffBase">
@@ -56,9 +68,13 @@
 		<descriptionHyperlinks>
 			<ThingDef>AI_AnimalFireBreath</ThingDef>
 		</descriptionHyperlinks>
-		<abilities>
-			<li>AI_FireBreath</li>
-		</abilities>
+		
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+			<ability>AI_FireBreath</ability>
+			</li>
+			
+		</comps>
 		<spawnThingOnRemoved>AI_AnimalFireBreath</spawnThingOnRemoved>
 	</HediffDef>
 	<!-- Toxic Breath -->
@@ -70,9 +86,13 @@
 		<descriptionHyperlinks>
 			<ThingDef>AI_AnimalToxicBreath</ThingDef>
 		</descriptionHyperlinks>
-		<abilities>
-			<li>AI_ToxicBreath</li>
-		</abilities>
+	
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+			<ability>AI_ToxicBreath</ability>
+			</li>
+			
+		</comps>
 		<spawnThingOnRemoved>AI_AnimalToxicBreath</spawnThingOnRemoved>
 	</HediffDef>
 </Defs>

@@ -11,9 +11,13 @@
 			<ThingDef>AI_AnimalRangedSpinneret</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>AI_AnimalRangedSpinneret</spawnThingOnRemoved>
-		<abilities>
-			<li>AI_Web</li>
-		</abilities>
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+			<ability>AI_Web</ability>
+			</li>
+			
+		</comps>
+		
 	</HediffDef>
 	<!-- Venomous Spitter -->
 	<HediffDef ParentName="AI_ImplantHediffBase">
@@ -25,9 +29,13 @@
 			<ThingDef>AI_AnimalVenomousSpitter</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>AI_AnimalVenomousSpitter</spawnThingOnRemoved>
-		<abilities>
-			<li>AI_PoisonBolt</li>
-		</abilities>
+		
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+			<ability>AI_PoisonBolt</ability>
+			</li>
+			
+		</comps>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.75</partEfficiency>
@@ -44,9 +52,13 @@
 			<ThingDef>AI_AnimalAcidicSpitter</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>AI_AnimalAcidicSpitter</spawnThingOnRemoved>
-		<abilities>
-			<li>AI_AcidBolt</li>
-		</abilities>
+		
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+			<ability>AI_AcidBolt</ability>
+			</li>
+			
+		</comps>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.75</partEfficiency>
@@ -63,9 +75,13 @@
 			<ThingDef>AI_AnimalBarbedQuillThrower</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>AI_AnimalBarbedQuillThrower</spawnThingOnRemoved>
-		<abilities>
-			<li>AI_Quill</li>
-		</abilities>
+		
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+			<ability>AI_Quill</ability>
+			</li>
+			
+		</comps>
 	</HediffDef>
 	<!-- Quad Tesla Cannon -->
 	<HediffDef ParentName="AI_ImplantHediffBase">
@@ -77,9 +93,13 @@
 			<ThingDef>AI_AnimalQuadTeslaCannon</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>AI_AnimalQuadTeslaCannon</spawnThingOnRemoved>
-		<abilities>
-			<li>AI_Plasma</li>
-		</abilities>
+		
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+			<ability>AI_Plasma</ability>
+			</li>
+			
+		</comps>
 	</HediffDef>
 	<!-- Bioelectric Organ -->
 	<HediffDef ParentName="AI_ImplantHediffBase">
@@ -91,9 +111,13 @@
 			<ThingDef>AI_AnimalBioelectricOrgan</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>AI_AnimalBioelectricOrgan</spawnThingOnRemoved>
-		<abilities>
-			<li>AI_ElectricBolt</li>
-		</abilities>
+		
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+			<ability>AI_ElectricBolt</ability>
+			</li>
+			
+		</comps>
 	</HediffDef>
 	<!-- Light Focusing Lens -->
 	<HediffDef ParentName="AI_ImplantHediffBase">
@@ -105,9 +129,13 @@
 			<ThingDef>AI_AnimalLightFocusingLens</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>AI_AnimalLightFocusingLens</spawnThingOnRemoved>
-		<abilities>
-			<li>AI_LaserBullet</li>
-		</abilities>
+		
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+			<ability>AI_LaserBullet</ability>
+			</li>
+			
+		</comps>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.75</partEfficiency>
@@ -124,9 +152,13 @@
 			<ThingDef>AI_AnimalHyperAcidicStomach</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>AI_AnimalHyperAcidicStomach</spawnThingOnRemoved>
-		<abilities>
-			<li>AI_AcidicVomit</li>
-		</abilities>
+		
+		<comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Ability">
+			<ability>AI_AcidicVomit</ability>
+			</li>
+			
+		</comps>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.75</partEfficiency>
