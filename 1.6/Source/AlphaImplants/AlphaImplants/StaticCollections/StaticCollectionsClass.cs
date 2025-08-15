@@ -15,6 +15,7 @@ namespace AlphaImplants
 
         public static Dictionary<HediffDef, float> hediffs_and_health_modifiers = new Dictionary<HediffDef, float>();
         public static Dictionary<Pawn, List<string>> pawn_and_jobgivers = new Dictionary<Pawn, List<string>>();
+        public static List<RecipeDef> implantsIgnoringSize = new List<RecipeDef>() { InternalDefOf.AI_AnimalEnlarger, InternalDefOf.AI_AnimalShrinker };
 
         static StaticCollectionsClass()
         {

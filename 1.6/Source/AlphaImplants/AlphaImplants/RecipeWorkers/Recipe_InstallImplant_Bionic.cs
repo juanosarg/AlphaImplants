@@ -10,16 +10,20 @@ namespace AlphaImplants
 
         public override AcceptanceReport AvailableReport(Thing thing, BodyPartRecord part = null)
         {
-            Pawn pawn;
-            if ((pawn = thing as Pawn) == null)
+            if (!StaticCollectionsClass.implantsIgnoringSize.Contains(this.recipe))
             {
-                return false;
+                Pawn pawn;
+                if ((pawn = thing as Pawn) == null)
+                {
+                    return false;
+                }
+                //Log.Message(pawn.RaceProps.baseBodySize);
+                if (pawn.RaceProps.baseBodySize < AlphaImplants_Settings.bionicBodyLimit)
+                {
+                    return false;
+                }
             }
-            //Log.Message(pawn.RaceProps.baseBodySize);
-            if (pawn.RaceProps.baseBodySize < AlphaImplants_Settings.bionicBodyLimit)
-            {
-                return false;
-            }
+            
             return base.AvailableReport(thing, part);
         }
 

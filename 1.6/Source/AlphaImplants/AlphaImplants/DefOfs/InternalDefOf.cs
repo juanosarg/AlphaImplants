@@ -2,6 +2,7 @@
 using RimWorld;
 using Verse;
 using System.Collections.Generic;
+using Verse.AI;
 
 namespace AlphaImplants
 {
@@ -21,5 +22,9 @@ namespace AlphaImplants
 
         public static WorkGiverDef GrowerSow;
         public static WorkGiverDef Mine;
+
+        public static RecipeDef AI_AnimalEnlarger;
+        public static RecipeDef AI_AnimalShrinker;
+
     }
 }
