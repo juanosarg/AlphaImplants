@@ -115,6 +115,7 @@
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<warmupMote>Mote_CoagulateStencil</warmupMote>
 		<warmupEffecter>Coagulate</warmupEffecter>
+		<cooldownTicksRange>60000</cooldownTicksRange>
 		<warmupStartSound>Coagulate_Cast</warmupStartSound>
 		<jobDef>CastAbilityOnThingMelee</jobDef>
 		<hostile>false</hostile>

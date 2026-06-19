@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="AI_ImplantHediffBase">
+		<defName>AI_AnimalVacSkinGland</defName>
+		<label>animal vacskin gland</label>
+		<labelNoun>an animal vacskin gland</labelNoun>
+		<description>An installed animal vacskin gland implant. Releases a waxy substance that forms an insulating barrier on the skin, preventing vacuum burns but restricting movement. The gland also regulates blood oxygen levels, allowing longer survival in the vacuum of space.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalVacSkinGland</ThingDef>
+		</descriptionHyperlinks>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+				</capMods>
+				<statOffsets>
+					<VacuumResistance>0.85</VacuumResistance>
+					<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+				</statOffsets>
+				<preventVacuumBurns>true</preventVacuumBurns>
+			</li>
+		</stages>
+		<spawnThingOnRemoved>AI_AnimalVacSkinGland</spawnThingOnRemoved>
+		<tags>
+			<li>ArmorGland</li>
+		</tags>
+		<modExtensions>
+			<li Class="AlphaImplants.HealthModifierExtension">
+				<healthPointToAdd>15</healthPointToAdd>
+			</li>
+		</modExtensions>
+	</HediffDef>
+</Defs>

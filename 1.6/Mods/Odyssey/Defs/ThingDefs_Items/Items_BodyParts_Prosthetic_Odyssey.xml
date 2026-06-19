@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AI_AnimalProstheticPartBase">
+		<defName>AI_AnimalVacSkinGland</defName>
+		<label>animal vacskin gland</label>
+		<description>An animal vacskin gland. Releases a waxy substance that forms an insulating barrier on the skin, preventing vacuum burns but restricting movement. The gland also regulates blood oxygen levels, allowing longer survival in the vacuum of space.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>AI_AnimalVacSkinGland</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+			<researchPrerequisite>SkinHardening</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+</Defs>

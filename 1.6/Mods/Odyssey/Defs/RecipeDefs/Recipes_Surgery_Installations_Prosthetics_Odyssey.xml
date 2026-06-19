@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="AI_SurgeryInstallProsthetic_Body">
+		<defName>AI_AnimalVacSkinGland</defName>
+		<label>install animal vacskin gland</label>
+		<description>Install an animal vacskin gland.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalVacSkinGland</ThingDef>
+			<HediffDef>AI_AnimalVacSkinGland</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing animal vacskin gland.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AI_AnimalVacSkinGland</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AI_AnimalVacSkinGland</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<addsHediff>AI_AnimalVacSkinGland</addsHediff>
+		<incompatibleWithHediffTags>
+			<li>ArmorGland</li>
+		</incompatibleWithHediffTags>
+	</RecipeDef>
+	<RecipeDef ParentName="AI_SurgeryRemoveImplantBase">
+		<defName>AI_RemoveAnimalVacSkinGland</defName>
+		<label>remove animal vacskin gland</label>
+		<description>Remove the animal vacskin gland.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AI_AnimalVacSkinGland</ThingDef>
+			<HediffDef>AI_AnimalVacSkinGland</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing animal vacskin gland.</jobString>
+		<removesHediff>AI_AnimalVacSkinGland</removesHediff>
+	</RecipeDef>
+	
+</Defs>
